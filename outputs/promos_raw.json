@@ -1,0 +1,1313 @@
+{
+  "meta": {
+    "episodes_processed": 50,
+    "total_beats_parsed": 3727,
+    "provider": "nvidia",
+    "scout_model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "critic_ranker_model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "llm_calls": 0,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "raw_candidates_found": 26,
+    "oversized_sent_to_trimmer": 10,
+    "recovered_by_trimmer": 8,
+    "intra_episode_cuts_approved": 2,
+    "cross_episode_stitched_approved": 2,
+    "final_ranked_count": 20,
+    "rejected_count": 9,
+    "failover_events": []
+  },
+  "series_summary": "Alexander and Juliana are married but declared invalid by the High Priest due to lack of royal license. Alexander secures a ten-day ecclesiastical trial to prove their marriage's validity. Catherine, humiliated and exiled to scullery maid duty, secretly allies with Father Thomas to sabotage the hearing and destroy Alexander from within. Juliana stands as Duchess-in-waiting while Catherine plots her revenge.",
+  "ranked_promos": [
+    {
+      "candidate_id": "C20",
+      "title": "Alexander's Vengeful March",
+      "trope": "Cruel Ultimatum",
+      "promo_format": "Continuous",
+      "is_stitched": false,
+      "total_duration_sec": 43.95,
+      "segments": [
+        {
+          "episode": 36,
+          "start_beat_id": "E36_B098",
+          "end_beat_id": "E36_B120",
+          "start_sec": 156.8,
+          "end_sec": 200.75,
+          "start_ts": "02:36.80",
+          "end_ts": "03:20.75",
+          "duration_sec": 43.95,
+          "auto_snapped": false,
+          "opening_3s": [
+            "[E36_B098 | 156.8s-159.8s] ALEXANDER (Simmering with Fury): \"They are marrying in two days...\""
+          ],
+          "closing_3s": [
+            "[E36_B118 | 192.5s-200.8s] CAM: Tight side profile close-up of Alexander's battle-scarred cheek and burning gaze as he makes his final declaration.",
+            "[E36_B120 | 197.0s-200.8s] ACT: Alexander stares resolutely ahead into the dark, snowy woods as the camera holds on his grim, determined expression before cutting to black."
+          ],
+          "transcript": "[E36_B098 | 156.8s-159.8s] ALEXANDER (Simmering with Fury): \"They are marrying in two days...\"\n[E36_B099 | 160.0s-163.0s] CAM: Tight, terrifying close-up on Alexander's eyes flashing with murderous wrath.\n[E36_B100 | 160.5s-163.0s] ALEXANDER (Deadly, Throaty): \"...and killing my wife afterward.\"\n[E36_B101 | 163.0s-167.0s] CAM: Medium shot as his mother urgently grabs Alexander's coat, pleading with him.\n[E36_B102 | 163.2s-166.8s] ALEXANDER'S MOTHER (Pleading, Terrified): \"Alexander, you cannot go back there alone!\"\n[E36_B103 | 167.0s-171.0s] CAM: Close-up on Alexander, towering over her, immovable and consumed by purpose.\n[E36_B104 | 168.5s-170.8s] ALEXANDER (Grave, Seething): \"They already took my name.\"\n[E36_B105 | 171.0s-174.0s] CAM: Close-up on Alexander stepping forward, his voice rising with lethal thunder.\n[E36_B106 | 171.6s-173.6s] ALEXANDER (Roaring with Conviction): \"They stole my home!\"\n[E36_B107 | 174.0s-177.0s] CAM: Tight close-up on his furious, bared teeth and wild eyes.\n[E36_B108 | 174.2s-176.8s] ALEXANDER (Venomous): \"And now they have taken Juliana!\"\n[E36_B109 | 177.0s-179.5s] ACT: Close-up of Alexander's gloved hand clenching into a tight, leather-creaking fist.\n[E36_B110 | 177.5s-179.2s] SFX: The sharp, taut creak of leather straining under monstrous grip strength.\n[E36_B111 | 179.5s-184.0s] CAM: Tracking shot following Alexander as he turns his back on the warmth of the cabin and walks boldly toward the open double barn doors.\n[E36_B112 | 180.0s-184.0s] ACT: Alexander stands framed in the doorway, staring out into the vast, snow-covered pine forest under the cold moonlight.\n[E36_B113 | 182.0s-183.5s] ALEXANDER (Calm, Chilling): \"Two days.\"\n[E36_B114 | 184.0s-188.0s] CAM: Medium shot from inside the cabin, showing his mother clutching her chest, looking after Alexander's imposing silhouette standing at the threshold of the blizzard.\n[E36_B115 | 184.5s-187.8s] ALEXANDER (Vow of Vengeance): \"Then they have two days to celebrate.\"\n[E36_B116 | 188.0s-192.5s] CAM: Side profile close-up on Alexander as his breath fogs into the icy winter night air, his jaw clenched tight.\n[E36_B117 | 189.5s-192.2s] ALEXANDER (Low, Menacing Promise): \"Because before that wedding begins...\"\n[E36_B118 | 192.5s-200.8s] CAM: Tight side profile close-up of Alexander's battle-scarred cheek and burning gaze as he makes his final declaration.\n[E36_B119 | 193.0s-196.8s] ALEXANDER (Cold, Thunderous Finale): \"...their dead Duke is coming home.\"\n[E36_B120 | 197.0s-200.8s] ACT: Alexander stares resolutely ahead into the dark, snowy woods as the camera holds on his grim, determined expression before cutting to black."
+        }
+      ],
+      "hook_0_3s": "Alexander declares they are marrying in two days and killing his wife afterward, spoken with simmering fury",
+      "cliffhanger": "Alexander stares resolutely ahead into the dark snowy woods with a grim determined expression before cutting to black",
+      "why_it_works": "Immediate declaration of lethal intent combined with visual of Alexander walking toward danger creates instant conflict",
+      "scout_score": 9,
+      "critic": {
+        "candidate_id": "C20",
+        "verified_title": "Alexander's Vengeful March",
+        "verified_hook_0_3s": "Alexander declares they are marrying in two days and killing his wife afterward, spoken with simmering fury",
+        "verified_cliffhanger": "Alexander stares resolutely ahead into the dark snowy woods with a grim determined expression before cutting to black",
+        "verified_why_it_works": "Immediate declaration of lethal intent combined with visual of Alexander walking toward danger creates instant conflict",
+        "hook_3s": 5,
+        "standalone_clarity": 5,
+        "cliffhanger_pull": 5,
+        "verdict": "PASS",
+        "critique": "Perfect cold-open: lethal confession in 3 seconds, visual payoff at the end, pure conflict with no setup required"
+      },
+      "scout_hook_raw": "Alexander (Simmering with Fury): 'They are marrying in two days...'",
+      "scout_cliffhanger_raw": "Alexander (Cold, Thunderous Finale): '...their dead Duke is coming home.'",
+      "critic_total": 15,
+      "rank": 1,
+      "posting_tier": "Wave 1 (Launch Hero)",
+      "overlay_hook": "Husband declares lethal intent on bride",
+      "ranking_reason": "Highest critic score (15/15) with immediate lethal intent declaration and snowbound visual creating instant, irresistible conflict."
+    },
+    {
+      "candidate_id": "C26",
+      "title": "Juliana protects Catherine from exile",
+      "trope": "Cruel Ultimatum",
+      "promo_format": "Continuous",
+      "is_stitched": false,
+      "total_duration_sec": 34.0,
+      "segments": [
+        {
+          "episode": 47,
+          "start_beat_id": "E47_B033",
+          "end_beat_id": "E47_B053",
+          "start_sec": 67.2,
+          "end_sec": 101.2,
+          "start_ts": "01:07.20",
+          "end_ts": "01:41.20",
+          "duration_sec": 34.0,
+          "auto_snapped": false,
+          "opening_3s": [
+            "[E47_B033 | 67.2s-71.2s] LADY ASHBOURNE (Cold, Unforgiving): \"She aided the poison in my veins. Cast her into the road.\""
+          ],
+          "closing_3s": [
+            "[E47_B050 | 95.5s-98.8s] CAM: Close-up of Catherine's face turning from despair to offended shock.",
+            "[E47_B051 | 96.0s-98.8s] CATHERINE (Incredulous, Stunned): \"You want me? As a guest?\"",
+            "[E47_B052 | 98.8s-101.2s] CAM: Close-up of Juliana staring straight into Catherine's eyes without blinking.",
+            "[E47_B053 | 99.2s-101.0s] JULIANA (Unflinching, Firm): \"As a scullery maid.\""
+          ],
+          "transcript": "[E47_B033 | 67.2s-71.2s] LADY ASHBOURNE (Cold, Unforgiving): \"She aided the poison in my veins. Cast her into the road.\"\n[E47_B034 | 71.5s-74.8s] CAM: Medium shot of Vaughn drawing his baton, ready to seize Catherine from behind.\n[E47_B035 | 71.8s-74.8s] VAUGHN (Gruff, Ready): \"One command, Your Grace, and I drag her past the gates.\"\n[E47_B036 | 74.8s-78.8s] CAM: Wide shot as Alexander strides purposefully into the courtyard alongside Juliana, his coat billowing behind him.\n[E47_B037 | 75.2s-78.5s] ALEXANDER (Furious, Decisive): \"Do it, Vaughn! Throw her past the estate perimeter!\"\n[E47_B038 | 78.8s-81.8s] CAM: Close-up of Catherine collapsed on the wet stones, looking up with tear-streaked panic.\n[E47_B039 | 78.8s-81.8s] CATHERINE (Hysterical, Screaming): \"Please, Alexander! Have mercy!\"\n[E47_B040 | 81.8s-83.5s] CAM: Medium shot of Juliana raising her right hand firmly to halt the guard.\n[E47_B041 | 82.2s-83.4s] JULIANA (Clear, Authoritative): \"Stop.\"\n[E47_B042 | 83.5s-86.5s] CAM: Medium shot of Alexander turning toward Juliana in sheer disbelief.\n[E47_B043 | 84.0s-86.5s] ALEXANDER (Indignant, Protective): \"Juliana, she tried to destroy you!\"\n[E47_B044 | 86.5s-88.0s] CAM: Close-up of Juliana maintaining serene poise.\n[E47_B045 | 86.7s-87.8s] JULIANA (Calm, Composed): \"She did.\"\n[E47_B046 | 88.0s-91.0s] CAM: Medium tracking shot as Juliana steps gracefully past Alexander toward Catherine.\n[E47_B047 | 88.2s-91.0s] JULIANA (Dignified, Principled): \"But Ashbourne does not throw beggars into the mud.\"\n[E47_B048 | 91.0s-95.0s] ACT: Juliana walks to a side bench, picks up a rough servant's apron and a heavy iron ring of keys, and turns back to face Catherine.\n[E47_B049 | 91.5s-95.0s] JULIANA (Steely, Direct): \"If you seek shelter in this house, Catherine, you earn it.\"\n[E47_B050 | 95.5s-98.8s] CAM: Close-up of Catherine's face turning from despair to offended shock.\n[E47_B051 | 96.0s-98.8s] CATHERINE (Incredulous, Stunned): \"You want me? As a guest?\"\n[E47_B052 | 98.8s-101.2s] CAM: Close-up of Juliana staring straight into Catherine's eyes without blinking.\n[E47_B053 | 99.2s-101.0s] JULIANA (Unflinching, Firm): \"As a scullery maid.\""
+        }
+      ],
+      "hook_0_3s": "Lady Ashbourne (Cold, Unforgiving): 'She aided the poison in my veins. Cast her into the road.'",
+      "cliffhanger": "Juliana (Unflinching, Firm): 'As a scullery maid.'",
+      "why_it_works": "Villainous expulsion order immediately countered by Juliana's principled defiance",
+      "scout_score": 8,
+      "critic": {
+        "candidate_id": "C26",
+        "verified_title": "Juliana protects Catherine from exile",
+        "verified_hook_0_3s": "Lady Ashbourne (Cold, Unforgiving): 'She aided the poison in my veins. Cast her into the road.'",
+        "verified_cliffhanger": "Juliana (Unflinching, Firm): 'As a scullery maid.'",
+        "verified_why_it_works": "Villainous expulsion order immediately countered by Juliana's principled defiance",
+        "hook_3s": 5,
+        "standalone_clarity": 5,
+        "cliffhanger_pull": 5,
+        "verdict": "PASS",
+        "critique": "Perfect cold-open conflict with immediate resolution-type hook that still leaves status uncertainty"
+      },
+      "scout_hook_raw": "Lady Ashbourne coldly judging Catherine in the mud (E47_B032)",
+      "scout_cliffhanger_raw": "Juliana offers Catherine scullery maid status as survival condition (E47_B053)",
+      "critic_total": 15,
+      "rank": 2,
+      "posting_tier": "Wave 1 (Launch Hero)",
+      "overlay_hook": "Princess defies villainous expulsion order",
+      "ranking_reason": "Perfect 15/15 critic score; villainous expulsion instantly countered by principled defiance creates instant sympathy and ideological conflict."
+    },
+    {
+      "candidate_id": "ST03",
+      "title": "Catherine commands bride's entrance",
+      "trope": "Flash-Forward Mashup",
+      "promo_format": "Cross-Episode Stitched",
+      "is_stitched": true,
+      "total_duration_sec": 32.2,
+      "segments": [
+        {
+          "episode": 41,
+          "start_beat_id": "E41_B001",
+          "end_beat_id": "E41_B010",
+          "start_sec": 0.0,
+          "end_sec": 15.5,
+          "start_ts": "00:00.00",
+          "end_ts": "00:15.50",
+          "duration_sec": 15.5,
+          "auto_snapped": false,
+          "opening_3s": [
+            "[E41_B001 | 0.0s-1.8s] CAM: Wide symmetrical shot looking down the candlelit, flower-strewn aisle toward the altar where Rupert, Catherine, and the Priest stand.",
+            "[E41_B002 | 1.8s-2.8s] CATHERINE (Imperious, Commanding): \"Wait.\"",
+            "[E41_B003 | 1.8s-4.5s] ACT: Catherine abruptly pulls away from Rupert and raises her white-gloved hand high, commanding silence from the congregation."
+          ],
+          "closing_3s": [
+            "[E41_B007 | 8.5s-13.0s] CAM: Close-up of Catherine's face, her lips curling into a sadistic, triumphant sneer.",
+            "[E41_B008 | 13.0s-15.5s] CAM: Two-shot profile of Rupert and Catherine. Rupert turns to her with mild caution.",
+            "[E41_B009 | 13.2s-14.0s] BLOND NOBLEMAN (Subdued, Inquiring): \"Catherine...\"",
+            "[E41_B010 | 14.0s-15.3s] CATHERINE (Callous, Projecting): \"Bring her in.\""
+          ],
+          "transcript": "[E41_B001 | 0.0s-1.8s] CAM: Wide symmetrical shot looking down the candlelit, flower-strewn aisle toward the altar where Rupert, Catherine, and the Priest stand.\n[E41_B002 | 1.8s-2.8s] CATHERINE (Imperious, Commanding): \"Wait.\"\n[E41_B003 | 1.8s-4.5s] ACT: Catherine abruptly pulls away from Rupert and raises her white-gloved hand high, commanding silence from the congregation.\n[E41_B004 | 4.5s-8.5s] CAM: Medium shot tracking Catherine as she pivots toward the seated aristocracy, her veil floating gracefully behind her.\n[E41_B005 | 4.9s-8.2s] CATHERINE (Haughty, Loud): \"Before I become Duchess of Ashburgh...\"\n[E41_B006 | 8.5s-12.7s] CATHERINE (Cruel, Resonant): \"...I want everyone to see what happens to a woman who dares defy this family.\"\n[E41_B007 | 8.5s-13.0s] CAM: Close-up of Catherine's face, her lips curling into a sadistic, triumphant sneer.\n[E41_B008 | 13.0s-15.5s] CAM: Two-shot profile of Rupert and Catherine. Rupert turns to her with mild caution.\n[E41_B009 | 13.2s-14.0s] BLOND NOBLEMAN (Subdued, Inquiring): \"Catherine...\"\n[E41_B010 | 14.0s-15.3s] CATHERINE (Callous, Projecting): \"Bring her in.\""
+        },
+        {
+          "episode": 46,
+          "start_beat_id": "E46_B057",
+          "end_beat_id": "E46_B062",
+          "start_sec": 101.8,
+          "end_sec": 118.5,
+          "start_ts": "01:41.80",
+          "end_ts": "01:58.50",
+          "duration_sec": 16.7,
+          "auto_snapped": false,
+          "opening_3s": [
+            "[E46_B057 | 101.8s-106.5s] ALEXANDER (Cold, Resolute): \"A Duke's marriage is judged by the Crown's peerage court, not by a parish priest's seal.\"",
+            "[E46_B058 | 101.8s-106.8s] CAM: Profile medium shot of Alexander confronting the High Priest face-to-face at the foot of the altar."
+          ],
+          "closing_3s": [
+            "[E46_B061 | 111.8s-118.5s] CAM: Medium close-up of Alexander glaring with icy authority.",
+            "[E46_B062 | 112.0s-118.2s] ALEXANDER (Defiant, Commanding): \"Then let it prove that in ten days, before witnesses. Not with six halberds pointed at me in my own chapel.\""
+          ],
+          "transcript": "[E46_B057 | 101.8s-106.5s] ALEXANDER (Cold, Resolute): \"A Duke's marriage is judged by the Crown's peerage court, not by a parish priest's seal.\"\n[E46_B058 | 101.8s-106.8s] CAM: Profile medium shot of Alexander confronting the High Priest face-to-face at the foot of the altar.\n[E46_B059 | 106.8s-111.8s] CAM: Low-angle two-shot of the High Priest staring up into Alexander's imposing frame.\n[E46_B060 | 107.0s-111.5s] HIGH PRIEST (Stern, Unflinching): \"The High Religious Council rules on matters of holy matrimony. That includes yours.\"\n[E46_B061 | 111.8s-118.5s] CAM: Medium close-up of Alexander glaring with icy authority.\n[E46_B062 | 112.0s-118.2s] ALEXANDER (Defiant, Commanding): \"Then let it prove that in ten days, before witnesses. Not with six halberds pointed at me in my own chapel.\""
+        }
+      ],
+      "hook_0_3s": "Catherine abruptly pulls away from Rupert and raises white-gloved hand to command silence",
+      "cliffhanger": "Alexander challenges High Priest to peerage court showdown in ten days, defiant glare locked on",
+      "why_it_works": "Imperious command followed by cruel threat establishes Catherine as immediate villain with dangerous ambition",
+      "scout_score": 7,
+      "critic": {
+        "candidate_id": "ST03",
+        "verified_title": "Catherine commands bride's entrance",
+        "verified_hook_0_3s": "Catherine abruptly pulls away from Rupert and raises white-gloved hand to command silence",
+        "verified_cliffhanger": "Alexander challenges High Priest to peerage court showdown in ten days, defiant glare locked on",
+        "verified_why_it_works": "Imperious command followed by cruel threat establishes Catherine as immediate villain with dangerous ambition",
+        "hook_3s": 5,
+        "standalone_clarity": 5,
+        "cliffhanger_pull": 5,
+        "verdict": "PASS",
+        "critique": "Perfect cold-open with immediate conflict and clear stakes; Alexander's defiant challenge cuts perfectly on unresolved tension"
+      },
+      "critic_total": 15,
+      "rank": 3,
+      "posting_tier": "Wave 1 (Launch Hero)",
+      "overlay_hook": "Imperious command followed by cruel threat",
+      "ranking_reason": "Perfect 15/15 critic score; imperious command establishes Catherine as an immediate dangerous villain with ambitious agency."
+    },
+    {
+      "candidate_id": "C01",
+      "title": "Gerald's Secret Fiancee",
+      "trope": "Cruel Ultimatum",
+      "promo_format": "Continuous",
+      "is_stitched": false,
+      "total_duration_sec": 39.1,
+      "segments": [
+        {
+          "episode": 1,
+          "start_beat_id": "E01_B008",
+          "end_beat_id": "E01_B032",
+          "start_sec": 11.3,
+          "end_sec": 50.4,
+          "start_ts": "00:11.30",
+          "end_ts": "00:50.40",
+          "duration_sec": 39.1,
+          "auto_snapped": false,
+          "opening_3s": [
+            "[E01_B008 | 11.3s-13.1s] MATRIARCH (Cold, Commanding): \"You should turn around, Juliana.\"",
+            "[E01_B009 | 13.5s-14.3s] LADY JULIANA (Confused, Breathless): \"Why?\"",
+            "[E01_B010 | 14.3s-17.8s] CAM: Over-the-shoulder medium close-up past the Matriarch to Juliana, looking past her toward the altar."
+          ],
+          "closing_3s": [
+            "[E01_B031 | 46.8s-50.0s] LADY JULIANA (Outraged, Accusing): \"You knew this before I walked through those doors!\"",
+            "[E01_B032 | 46.8s-50.4s] CAM: Close-up on Juliana clutching her chest, her sorrow turning into burning outrage."
+          ],
+          "transcript": "[E01_B008 | 11.3s-13.1s] MATRIARCH (Cold, Commanding): \"You should turn around, Juliana.\"\n[E01_B009 | 13.5s-14.3s] LADY JULIANA (Confused, Breathless): \"Why?\"\n[E01_B010 | 14.3s-17.8s] CAM: Over-the-shoulder medium close-up past the Matriarch to Juliana, looking past her toward the altar.\n[E01_B011 | 15.5s-17.5s] LADY JULIANA (Desperate, Unbelieving): \"Gerald is waiting for me.\"\n[E01_B012 | 17.8s-20.5s] CAM: Close-up on the Matriarch wearing an ornate tiara and sapphire jewelry, gazing down with merciless disdain.\n[E01_B013 | 18.0s-19.4s] MATRIARCH (Blunt, Unforgiving): \"Not anymore.\"\n[E01_B014 | 20.5s-23.6s] CAM: Close-up on Juliana's stricken face as the weight of the words sinks in.\n[E01_B015 | 21.8s-23.5s] LADY JULIANA (Trembling, Pleading): \"What do you mean?\"\n[E01_B016 | 23.6s-25.8s] CAM: Medium shot of the Matriarch gesturing dismissively toward the altar.\n[E01_B017 | 23.8s-25.5s] MATRIARCH (Dismissive): \"Look for yourself.\"\n[E01_B018 | 25.6s-29.8s] ACT: Juliana walks forward past the Matriarch, her breath hitching as she approaches the altar steps, looking up in shock.\n[E01_B019 | 25.8s-29.8s] CAM: Medium front tracking shot moving backward ahead of Juliana as she advances down the center aisle.\n[E01_B020 | 29.8s-32.8s] CAM: Panning shot across the seated wedding guests whispering and casting judging glances from the wooden pews.\n[E01_B021 | 32.8s-33.7s] CAM: Low-angle shot from behind Juliana looking up at Gerald and the Lady in Gold Gown standing proudly before the altar.\n[E01_B022 | 33.7s-35.3s] CAM: Close-up on Juliana's trembling lips and shocked, tearful blue eyes.\n[E01_B023 | 33.8s-35.0s] LADY JULIANA (Shaken, Whispering): \"Gerald?\"\n[E01_B024 | 35.4s-37.7s] LADY JULIANA (Heartbroken): \"Why are you holding her hand?\"\n[E01_B025 | 36.5s-39.0s] CAM: Close-up insert of Gerald's fingers firmly interlocked with the white-gloved hand of the Lady in Gold Gown.\n[E01_B026 | 39.0s-41.5s] CAM: Close-up on the Lady in Gold Gown beaming with cruel triumph.\n[E01_B027 | 39.1s-41.2s] LADY IN GOLD GOWN (Gloating, Smug): \"Because he is marrying me.\"\n[E01_B028 | 41.5s-43.9s] CAM: Close-up on Juliana as tears spill over her eyelashes.\n[E01_B029 | 41.7s-43.1s] LADY JULIANA (Gasping, Devastated): \"No...\"\n[E01_B030 | 43.9s-46.8s] CAM: Wide profile shot showing Juliana standing below the altar platform, looking up at Gerald and her sister.\n[E01_B031 | 46.8s-50.0s] LADY JULIANA (Outraged, Accusing): \"You knew this before I walked through those doors!\"\n[E01_B032 | 46.8s-50.4s] CAM: Close-up on Juliana clutching her chest, her sorrow turning into burning outrage."
+        }
+      ],
+      "hook_0_3s": "Matriarch coldly tells Juliana to turn around as Lady Juliana looks confused and breathless asking why.",
+      "cliffhanger": "Juliana gasps 'No...' as the Lady in Gold Gown gloats that Gerald is marrying her, leaving Juliana devastated and staring in shock.",
+      "why_it_works": "The Matriarch's blunt denial 'Not anymore' combined with the visual of Juliana walking toward the altar creates immediate romantic betrayal tension.",
+      "scout_score": 9,
+      "critic": {
+        "candidate_id": "C01",
+        "verified_title": "Gerald's Secret Fiancee",
+        "verified_hook_0_3s": "Matriarch coldly tells Juliana to turn around as Lady Juliana looks confused and breathless asking why.",
+        "verified_cliffhanger": "Juliana gasps 'No...' as the Lady in Gold Gown gloats that Gerald is marrying her, leaving Juliana devastated and staring in shock.",
+        "verified_why_it_works": "The Matriarch's blunt denial 'Not anymore' combined with the visual of Juliana walking toward the altar creates immediate romantic betrayal tension.",
+        "hook_3s": 5,
+        "standalone_clarity": 4,
+        "cliffhanger_pull": 5,
+        "verdict": "PASS",
+        "critique": "Strong cold-open hook with immediate conflict and a devastating reveal that leaves the viewer wanting more."
+      },
+      "scout_hook_raw": "MATRIARCH (Cold, Commanding): \"You should turn around, Juliana.\"",
+      "scout_cliffhanger_raw": "CAM: Extreme close-up on Juliana's furious, weeping face as Gerald coldly declares \"I changed my mind.\"",
+      "critic_total": 14,
+      "rank": 4,
+      "posting_tier": "Wave 1 (Launch Hero)",
+      "overlay_hook": "Matriarch denies Juliana at the altar",
+      "ranking_reason": "Strong 14/15 critic score; blunt denial 'Not anymore' combined with altar visual creates immediate romantic betrayal tension perfect for cold-scroll."
+    },
+    {
+      "candidate_id": "C09",
+      "title": "Alexander's Defense",
+      "trope": "Cruel Ultimatum",
+      "promo_format": "Continuous",
+      "is_stitched": false,
+      "total_duration_sec": 50.0,
+      "segments": [
+        {
+          "episode": 16,
+          "start_beat_id": "E16_B001",
+          "end_beat_id": "E16_B042",
+          "start_sec": 0.0,
+          "end_sec": 50.0,
+          "start_ts": "00:00.00",
+          "end_ts": "00:50.00",
+          "duration_sec": 50.0,
+          "auto_snapped": false,
+          "opening_3s": [
+            "[E16_B001 | 0.0s-2.1s] CAM: Wide shot from behind Alexander's trench coat looking toward the three thugs standing across the trampled garden under the full moon.",
+            "[E16_B002 | 0.0s-2.1s] ACT: Alexander stands tall and unyielding, blocking the path to Juliana, while the Thug with Cap steps forward clutching an iron pipe.",
+            "[E16_B003 | 2.1s-4.2s] THUG WITH CAP (Menacing, Goading): \"Move aside, soldier.\"",
+            "[E16_B004 | 2.1s-4.5s] CAM: Medium close-up of the Thug with Cap, his eyes wide and sneering with false bravado as his bald accomplice watches from behind."
+          ],
+          "closing_3s": [
+            "[E16_B039 | 46.2s-48.5s] CAM: Close-up of Alexander, his eyes darkening with lethal fury.",
+            "[E16_B040 | 46.3s-47.4s] ALEXANDER (Cold, Ominous): \"Wrong answer.\"",
+            "[E16_B041 | 48.0s-50.0s] ACT: Alexander tightens his grip on the thug's throat, lifting him higher against the stone wall.",
+            "[E16_B042 | 48.8s-49.6s] ALEXANDER (Roaring): \"Who?!\""
+          ],
+          "transcript": "[E16_B001 | 0.0s-2.1s] CAM: Wide shot from behind Alexander's trench coat looking toward the three thugs standing across the trampled garden under the full moon.\n[E16_B002 | 0.0s-2.1s] ACT: Alexander stands tall and unyielding, blocking the path to Juliana, while the Thug with Cap steps forward clutching an iron pipe.\n[E16_B003 | 2.1s-4.2s] THUG WITH CAP (Menacing, Goading): \"Move aside, soldier.\"\n[E16_B004 | 2.1s-4.5s] CAM: Medium close-up of the Thug with Cap, his eyes wide and sneering with false bravado as his bald accomplice watches from behind.\n[E16_B005 | 4.5s-6.4s] CAM: Extreme close-up of Alexander's scarred, weathered face, his cold blue-grey eyes fixed intently on his opponent.\n[E16_B006 | 6.4s-8.8s] THUG WITH CAP (Furious, Shouting): \"I said, move!\"\n[E16_B007 | 6.4s-9.5s] CAM: Low-angle medium shot of the Thug with Cap gripping his weapon with both hands and roaring into the night air.\n[E16_B008 | 9.5s-11.2s] CAM: Medium close-up of Alexander remaining completely motionless, his jaw clenched in stoic calm.\n[E16_B009 | 11.2s-12.7s] JULIANA (Frightened, Whispering): \"Alexander...\"\n[E16_B010 | 11.2s-13.1s] CAM: Close-up of Juliana kneeling in the mud against the ruined planter, clutching her bandaged hands to her chest in trembling fear.\n[E16_B011 | 13.1s-14.3s] ALEXANDER (Calm, Protective): \"Stay behind me.\"\n[E16_B012 | 14.3s-16.0s] CAM: Medium action shot as the Thug with Cap lunges forward with his weapon raised high.\n[E16_B013 | 14.4s-15.5s] THUG WITH CAP (Roaring): \"Aaargh!\"\n[E16_B014 | 14.4s-16.8s] ACT: The thug swings the club down with full force, but Alexander catches the weapon mid-air in his bare hand with chilling ease.\n[E16_B015 | 15.8s-16.5s] SFX: Heavy blunt impact of a solid hand gripping wood.\n[E16_B016 | 16.8s-19.5s] CAM: Close-up of the Thug with Cap staring in wide-eyed terror as Alexander grips the bar and wrenches it away effortlessly.\n[E16_B017 | 19.2s-21.8s] ACT: Alexander strikes the thug across the chest and slams him violently into the muddy ground beside the stone wall.\n[E16_B018 | 19.8s-21.2s] SFX: Heavy thud of a body crashing into soil and wood.\n[E16_B019 | 21.8s-23.0s] CAM: Close-up of Juliana watching in breathless astonishment.\n[E16_B020 | 23.0s-23.8s] BALD THUG (Yelling): \"Aaargh!\"\n[E16_B021 | 23.0s-25.8s] CAM: Medium tracking shot as the Bald Thug charges in with a shout, only for Alexander to pivot and seize him by the neck, hurling him across the garden path.\n[E16_B022 | 24.2s-25.5s] SFX: Loud wooden scrape and crunch as the Bald Thug slides across the planks into the fence.\n[E16_B023 | 25.8s-27.1s] THIRD THUG (Desperate, Shouting): \"Stay back!\"\n[E16_B024 | 25.8s-28.5s] CAM: Medium shot of the Third Thug backing away nervously, raising a blunt rod with trembling arms before lunging.\n[E16_B025 | 26.5s-28.5s] ACT: Alexander deflects the strike with his forearm, drives a swift counter-blow into the thug's torso, and spins him violently to the ground.\n[E16_B026 | 27.0s-28.2s] SFX: Solid bone-and-fist impact followed by a groaning thud.\n[E16_B027 | 28.5s-31.0s] CAM: Wide cinematic shot under the full moon. Alexander towers over the three writhing thugs groaning in the mud as Juliana looks up from her knees.\n[E16_B028 | 31.0s-34.5s] CAM: Low-angle close-up of Juliana looking up at Alexander, tears glistening on her mud-splattered cheeks in profound relief.\n[E16_B029 | 32.0s-33.8s] JULIANA (Breathless, Overwhelmed): \"Alexander...\"\n[E16_B030 | 34.5s-38.2s] CAM: Medium shot over Juliana's shoulder as Alexander turns his gaze toward her, his stern demeanor softening with concern.\n[E16_B031 | 36.2s-37.8s] ALEXANDER (Gentle, Concerned): \"Are you hurt?\"\n[E16_B032 | 38.2s-40.0s] JULIANA (Fragile, Pain-filled): \"Only my hands.\"\n[E16_B033 | 38.2s-40.8s] CAM: Close-up of Juliana's trembling, soil-stained hands wrapped in blood-soaked bandages.\n[E16_B034 | 40.8s-44.2s] CAM: Medium shot as Alexander suddenly wheels around, strides to the groaning Thug with Cap, and yanks him straight off the ground by his coat collar with one arm.\n[E16_B035 | 41.2s-44.0s] ACT: Alexander lifts the thug onto his tiptoes against the cottage wall, glaring with lethal intensity.\n[E16_B036 | 42.5s-44.0s] ALEXANDER (Demanding, Threatening): \"Who sent you?\"\n[E16_B037 | 44.2s-45.3s] THUG WITH CAP (Choking, Defiant): \"No one!\"\n[E16_B038 | 44.2s-46.2s] CAM: Close-up of the Thug with Cap gagging under Alexander's iron fist.\n[E16_B039 | 46.2s-48.5s] CAM: Close-up of Alexander, his eyes darkening with lethal fury.\n[E16_B040 | 46.3s-47.4s] ALEXANDER (Cold, Ominous): \"Wrong answer.\"\n[E16_B041 | 48.0s-50.0s] ACT: Alexander tightens his grip on the thug's throat, lifting him higher against the stone wall.\n[E16_B042 | 48.8s-49.6s] ALEXANDER (Roaring): \"Who?!\""
+        }
+      ],
+      "hook_0_3s": "Alexander stands unyielding blocking Juliana's path as the Thug with Cap menacingly demands 'Move aside, soldier.'",
+      "cliffhanger": "Alexander roars 'Who?!' while tightening his grip on the Thug with Cap's throat, leaving the attacker's identity completely unresolved.",
+      "why_it_works": "Pure physical action dominance as Alexander effortlessly dismantles three thugs, establishing him as an unstoppable protector.",
+      "scout_score": 9,
+      "critic": {
+        "candidate_id": "C09",
+        "verified_title": "Alexander's Defense",
+        "verified_hook_0_3s": "Alexander stands unyielding blocking Juliana's path as the Thug with Cap menacingly demands 'Move aside, soldier.'",
+        "verified_cliffhanger": "Alexander roars 'Who?!' while tightening his grip on the Thug with Cap's throat, leaving the attacker's identity completely unresolved.",
+        "verified_why_it_works": "Pure physical action dominance as Alexander effortlessly dismantles three thugs, establishing him as an unstoppable protector.",
+        "hook_3s": 5,
+        "standalone_clarity": 4,
+        "cliffhanger_pull": 5,
+        "verdict": "PASS",
+        "critique": "Immediate, visceral action with zero preamble\u2014viewers are dropped into a fight and instantly root for Alexander."
+      },
+      "scout_hook_raw": "CAM: Wide shot from behind Alexander's trench coat looking toward the three thugs standing across the trampled garden under the full moon.",
+      "scout_cliffhanger_raw": "ALEXANDER (Roaring): \"Who?!\" followed by THUG WITH CAP (Screaming, Panicked): \"Harrington! Gerald Harrington paid us!\"",
+      "critic_total": 14,
+      "rank": 5,
+      "posting_tier": "Wave 2 (Scale/Retarget)",
+      "overlay_hook": "Alexander dismantles three thugs effortlessly",
+      "ranking_reason": "Strong 14/15 critic score; pure physical action dominance establishes him as an unstoppable protector with high-drama reversal potential."
+    },
+    {
+      "candidate_id": "C12",
+      "title": "Race Against Time",
+      "trope": "Cruel Ultimatum",
+      "promo_format": "Continuous",
+      "is_stitched": false,
+      "total_duration_sec": 45.2,
+      "segments": [
+        {
+          "episode": 23,
+          "start_beat_id": "E23_B045",
+          "end_beat_id": "E23_B066",
+          "start_sec": 86.0,
+          "end_sec": 131.2,
+          "start_ts": "01:26.00",
+          "end_ts": "02:11.20",
+          "duration_sec": 45.2,
+          "auto_snapped": false,
+          "opening_3s": [
+            "[E23_B045 | 86.0s-88.0s] LADY JULIANA (Venomous, Resolute): \"Arsenic.\"",
+            "[E23_B046 | 88.0s-90.5s] SFX: Sudden violent coughing and sputtering from the Duchess.",
+            "[E23_B047 | 88.0s-91.0s] CAM: Medium shot as the Duchess chokes and spasms on the bed; Juliana whips around immediately."
+          ],
+          "closing_3s": [
+            "[E23_B065 | 127.5s-129.5s] CAM: Tight close-up of Juliana's charcoal-blackened hand clutching the glass medicine vial firmly.",
+            "[E23_B066 | 129.2s-131.2s] SFX: Loud, metallic clack of the door latch turning, followed by the slow creak of wood hinges."
+          ],
+          "transcript": "[E23_B045 | 86.0s-88.0s] LADY JULIANA (Venomous, Resolute): \"Arsenic.\"\n[E23_B046 | 88.0s-90.5s] SFX: Sudden violent coughing and sputtering from the Duchess.\n[E23_B047 | 88.0s-91.0s] CAM: Medium shot as the Duchess chokes and spasms on the bed; Juliana whips around immediately.\n[E23_B048 | 91.0s-94.5s] CAM: Medium tracking shot of Juliana rushing to the side table by the window, opening her satchel and setting out glass vials, a bowl, and dried herbal bundles.\n[E23_B049 | 94.5s-97.0s] PRUDENCE (Desperate, Begging): \"Can you save her?\"\n[E23_B050 | 94.5s-97.5s] CAM: Close-up of Prudence pleading desperately, tears flowing down her cheeks.\n[E23_B051 | 97.5s-100.0s] LADY JULIANA (Focused, Resolute): \"I can try.\"\n[E23_B052 | 97.5s-100.5s] CAM: Medium shot of Juliana uncorking a glass apothecary bottle as the Duchess rests behind her.\n[E23_B053 | 100.5s-104.5s] CAM: Top-down close-up of Juliana's soot-smudged hands pouring powdered activated charcoal from a vial into a stone mortar, then tossing in a pinch of crushed dried leaves.\n[E23_B054 | 104.5s-107.0s] CAM: Close-up of Juliana's hands vigorously grinding the pestle inside the stone mortar.\n[E23_B055 | 104.5s-112.0s] SFX: Heavy, rhythmic scraping of stone pestle grinding charcoal and dried herbs.\n[E23_B056 | 107.0s-112.5s] CAM: Medium close-up of Juliana grinding intensely, her brow furrowed as she speaks with urgent authority.\n[E23_B057 | 107.5s-112.0s] LADY JULIANA (Urgent, Focused): \"The charcoal may help remove what is still inside her. We must act quickly.\"\n[E23_B058 | 112.2s-114.0s] SFX: Sudden muffled thump and heavy footsteps echoing from the hallway outside the door!\n[E23_B059 | 112.5s-115.0s] CAM: Wide shot of the bedroom door framed through the bed curtains as the Duchess gasps in the bed.\n[E23_B060 | 115.0s-116.5s] CAM: Medium shot of Juliana freezing mid-motion, turning her head sharply toward the chamber door.\n[E23_B061 | 116.5s-118.5s] CAM: Close-up of the ornate brass door handle on the dark carved wooden door.\n[E23_B062 | 118.5s-124.5s] CAM: Close-up of Prudence staring at the door in utter terror, her face drained of all color.\n[E23_B063 | 118.8s-124.0s] PRUDENCE (Terrified, Hoarse Whisper): \"Juliana... someone is coming.\"\n[E23_B064 | 124.5s-127.5s] CAM: Quick cut to Juliana looking back toward the bed and then toward the door, trapped with an unfinished cure.\n[E23_B065 | 127.5s-129.5s] CAM: Tight close-up of Juliana's charcoal-blackened hand clutching the glass medicine vial firmly.\n[E23_B066 | 129.2s-131.2s] SFX: Loud, metallic clack of the door latch turning, followed by the slow creak of wood hinges."
+        }
+      ],
+      "hook_0_3s": "Lady Juliana declares 'Arsenic' with venomous resolve as the Duchess chokes and spasms violently on the bed.",
+      "cliffhanger": "The metallic clack of the door latch turning followed by the slow creak of wood hinges signals an intruder arriving mid-cure, leaving the poisoning outcome hanging.",
+      "why_it_works": "The immediate medical emergency combined with the sudden external threat creates desperate, urgent pacing.",
+      "scout_score": 9,
+      "critic": {
+        "candidate_id": "C12",
+        "verified_title": "Race Against Time",
+        "verified_hook_0_3s": "Lady Juliana declares 'Arsenic' with venomous resolve as the Duchess chokes and spasms violently on the bed.",
+        "verified_cliffhanger": "The metallic clack of the door latch turning followed by the slow creak of wood hinges signals an intruder arriving mid-cure, leaving the poisoning outcome hanging.",
+        "verified_why_it_works": "The immediate medical emergency combined with the sudden external threat creates desperate, urgent pacing.",
+        "hook_3s": 5,
+        "standalone_clarity": 4,
+        "cliffhanger_pull": 5,
+        "verdict": "PASS",
+        "critique": "Medical emergency hook is visceral and immediate; the door latch cut-off heightens dread perfectly."
+      },
+      "scout_hook_raw": "E23_B045: Lady Juliana declares 'Arsenic' with venomous resolve as the Duchess convulses.",
+      "scout_cliffhanger_raw": "E23_B066: Loud metallic clack of the door latch turning followed by the slow creak of wood hinges as the door cracks open inward.",
+      "critic_total": 14,
+      "rank": 6,
+      "posting_tier": "Wave 2 (Scale/Retarget)",
+      "overlay_hook": "Arsenic declared; intruder arrives mid-cure",
+      "ranking_reason": "Strong 14/15 critic score; immediate medical emergency combined with sudden external threat creates desperate, urgent pacing ideal for retargeting."
+    },
+    {
+      "candidate_id": "C03",
+      "title": "Bearded Stranger Intervenes",
+      "trope": "Rescue",
+      "promo_format": "Continuous",
+      "is_stitched": false,
+      "total_duration_sec": 44.8,
+      "segments": [
+        {
+          "episode": 3,
+          "start_beat_id": "E03_B056",
+          "end_beat_id": "E03_B092",
+          "start_sec": 66.0,
+          "end_sec": 110.8,
+          "start_ts": "01:06.00",
+          "end_ts": "01:50.80",
+          "duration_sec": 44.8,
+          "auto_snapped": false,
+          "opening_3s": [
+            "[E03_B056 | 66.0s-68.1s] CAM: Wide eye-level shot looking down the petal-strewn marble aisle. A tall, rugged man in a worn dark trench coat\u2014The Bearded Stranger\u2014emerges into the center of the nave.",
+            "[E03_B057 | 66.0s-68.1s] ACT: The Bearded Stranger steps deliberately into the aisle, his heavy boots echoing.",
+            "[E03_B058 | 68.1s-70.5s] CAM: Close-up on the Noble Matriarch freezing in utter shock and outrage."
+          ],
+          "closing_3s": [
+            "[E03_B090 | 105.9s-108.8s] CAM: Close-up on Juliana looking up into his eyes, moved to the core.",
+            "[E03_B091 | 107.4s-109.0s] THE BEARDED STRANGER (O.S.) (Affirming, Sincere): \"...to remember your worth.\"",
+            "[E03_B092 | 108.8s-110.8s] CAM: Close-up on The Bearded Stranger's rugged, bearded face looking down at her with tender reverence."
+          ],
+          "transcript": "[E03_B056 | 66.0s-68.1s] CAM: Wide eye-level shot looking down the petal-strewn marble aisle. A tall, rugged man in a worn dark trench coat\u2014The Bearded Stranger\u2014emerges into the center of the nave.\n[E03_B057 | 66.0s-68.1s] ACT: The Bearded Stranger steps deliberately into the aisle, his heavy boots echoing.\n[E03_B058 | 68.1s-70.5s] CAM: Close-up on the Noble Matriarch freezing in utter shock and outrage.\n[E03_B059 | 69.9s-72.1s] THE BEARDED STRANGER (Low, Thunderous, Imposing): \"Take your hands off her.\"\n[E03_B060 | 70.5s-72.8s] CAM: Medium tracking shot front-on as The Bearded Stranger marches down the flower-strewn aisle with resolute purpose.\n[E03_B061 | 72.8s-75.1s] CAM: Medium shot on the Noble Matriarch stepping forward on the altar steps, furiously pointing a finger at him.\n[E03_B062 | 73.0s-76.8s] NOBLE MATRIARCH (Indignant, Screeching): \"And who are you to give orders in my family's chapel?!\"\n[E03_B063 | 75.1s-77.0s] CAM: High wide shot of the magnificent vaulted hall as The Bearded Stranger walks steadily forward, dwarfing the aisle.\n[E03_B064 | 77.0s-79.0s] CAM: Medium shot on the lead royal guard squaring his shoulders, barring the stranger's advance while Juliana stands behind him.\n[E03_B065 | 77.2s-78.9s] ROYAL GUARD (Aggressive, Threatening): \"Stand aside, stranger!\"\n[E03_B066 | 79.0s-81.0s] CAM: Medium close-up profile on The Bearded Stranger, eyes burning with quiet, lethal resolve.\n[E03_B067 | 79.3s-80.9s] THE BEARDED STRANGER (Quiet, Deadly): \"I said...\"\n[E03_B068 | 81.0s-84.0s] CAM: Close-up on The Bearded Stranger's intense, scarred face.\n[E03_B069 | 81.8s-83.9s] THE BEARDED STRANGER (Dangerous, Uncompromising): \"...let her go.\"\n[E03_B070 | 84.0s-85.5s] CAM: Medium action shot as the guard charges toward The Bearded Stranger.\n[E03_B071 | 84.0s-85.5s] ACT: The Bearded Stranger effortlessly blocks the guard's strike and drives a devastating strike into him, dropping the armed guard instantly to the floor.\n[E03_B072 | 84.5s-85.4s] SFX: A heavy, bone-rattling punch followed by the clatter and thud of the guard collapsing onto the stone floor.\n[E03_B073 | 85.5s-88.1s] CAM: Medium close-up of Gerald turning frantically to the remaining guards and congregation, panicking.\n[E03_B074 | 85.6s-88.0s] THE FORMER GROOM (Frantic, Shouting): \"What are you waiting for?! He's only one man!\"\n[E03_B075 | 88.1s-89.3s] CAM: Medium shot on The Bearded Stranger standing unmoved over the fallen guard, turning his gaze toward Juliana.\n[E03_B076 | 89.3s-91.7s] CAM: Two-shot profile of The Bearded Stranger stepping up to Lady Juliana, who gazes up at him in stunned breathlessness.\n[E03_B077 | 90.4s-91.6s] THE BEARDED STRANGER (Gentle, Protective): \"Are you hurt?\"\n[E03_B078 | 91.7s-94.0s] CAM: Close-up on Juliana's tear-streaked face as she shakes her head gently, overwhelmed with wonder.\n[E03_B079 | 91.8s-93.6s] ACT: Juliana softly shakes her head 'no', her wide blue eyes locked onto him.\n[E03_B080 | 94.0s-96.5s] CAM: Close-up profile of The Bearded Stranger casting a sharp, menacing glance toward the other guard.\n[E03_B081 | 94.1s-96.3s] THE BEARDED STRANGER (Firm, Menacing): \"Good. Then don't touch her again.\"\n[E03_B082 | 96.5s-98.4s] CAM: Medium close-up on the Noble Matriarch shrieking in exasperation from the altar steps.\n[E03_B083 | 96.5s-98.5s] NOBLE MATRIARCH (Furious, Hysterical): \"You cannot interfere in a family matter!\"\n[E03_B084 | 98.4s-100.8s] CAM: Close-up of Juliana's elderly father looking down, gripping his hands nervously with profound guilt.\n[E03_B085 | 98.8s-100.8s] THE BEARDED STRANGER (O.S.) (Deep, Resonant): \"I can...\"\n[E03_B086 | 100.8s-103.0s] CAM: Medium shot of guests in the pews whispering and reacting in hushed shock.\n[E03_B087 | 100.8s-103.8s] THE BEARDED STRANGER (O.S.) (Stern, Accusing): \"...when your family is dragging a defenseless woman from a church.\"\n[E03_B088 | 103.0s-105.9s] CAM: Two-shot profile of The Bearded Stranger and Lady Juliana framed against the illuminated stained-glass rose window.\n[E03_B089 | 104.2s-107.4s] THE BEARDED STRANGER (Solemn, Gentle): \"You shouldn't have to beg anybody...\"\n[E03_B090 | 105.9s-108.8s] CAM: Close-up on Juliana looking up into his eyes, moved to the core.\n[E03_B091 | 107.4s-109.0s] THE BEARDED STRANGER (O.S.) (Affirming, Sincere): \"...to remember your worth.\"\n[E03_B092 | 108.8s-110.8s] CAM: Close-up on The Bearded Stranger's rugged, bearded face looking down at her with tender reverence."
+        }
+      ],
+      "hook_0_3s": "Bearded Stranger steps into the aisle and roars 'Take your hands off her' with thunderous imposing voice",
+      "cliffhanger": "Bearded Stranger gazes down at Juliana with tender reverence after she shakes her head 'no' to being hurt",
+      "why_it_works": "Immediate physical intervention in a family chapel creates instant conflict and protective dynamic",
+      "scout_score": 9,
+      "trimmed_from_sec": 79.75,
+      "trim_note": "One continuous 42s span from stranger's arrival through his proposal.",
+      "critic": {
+        "candidate_id": "C03",
+        "verified_title": "Bearded Stranger Intervenes",
+        "verified_hook_0_3s": "Bearded Stranger steps into the aisle and roars 'Take your hands off her' with thunderous imposing voice",
+        "verified_cliffhanger": "Bearded Stranger gazes down at Juliana with tender reverence after she shakes her head 'no' to being hurt",
+        "verified_why_it_works": "Immediate physical intervention in a family chapel creates instant conflict and protective dynamic",
+        "hook_3s": 5,
+        "standalone_clarity": 5,
+        "cliffhanger_pull": 4,
+        "verdict": "PASS",
+        "critique": "Perfect 3-second hook with the roar, but the tender closing moment slightly undercuts the vengeance setup - still works as standalone though"
+      },
+      "scout_hook_raw": "CAM: High wide shot down the vaulted cathedral aisle showing the entire congregation watching in stunned silence as the guards drag Juliana.",
+      "scout_cliffhanger_raw": "CAM: Close-up on The Bearded Stranger on his knee, holding the silver ring high with steady dignity as the congregation gasps.",
+      "critic_total": 14,
+      "rank": 7,
+      "posting_tier": "Wave 2 (Scale/Retarget)",
+      "overlay_hook": "Stranger roars to protect Juliana",
+      "ranking_reason": "Strong 14/15 critic score; immediate physical intervention in a family chapel creates instant conflict and protective dynamic with high engagement potential."
+    },
+    {
+      "candidate_id": "C08",
+      "title": "Juliana kneeling in briars",
+      "trope": "Secret Identity",
+      "promo_format": "Continuous",
+      "is_stitched": false,
+      "total_duration_sec": 21.7,
+      "segments": [
+        {
+          "episode": 13,
+          "start_beat_id": "E13_B026",
+          "end_beat_id": "E13_B044",
+          "start_sec": 45.8,
+          "end_sec": 67.5,
+          "start_ts": "00:45.80",
+          "end_ts": "01:07.50",
+          "duration_sec": 21.7,
+          "auto_snapped": false,
+          "opening_3s": [
+            "[E13_B026 | 45.8s-47.0s] ACT: Juliana drops to her knees in front of the frozen blackthorn branches, steadying her trembling breath.",
+            "[E13_B027 | 45.8s-47.0s] CAM: Medium shot of Juliana kneeling on the frozen soil at the edge of the briars.",
+            "[E13_B028 | 47.0s-50.0s] CAM: Medium shot of Alexander lunging forward with chained hands raised high, roaring in fury as the Constable grabs him.",
+            "[E13_B029 | 47.2s-48.8s] ALEXANDER (Screaming, Panicked): \"Juliana, stop!\""
+          ],
+          "closing_3s": [
+            "[E13_B043 | 62.0s-67.5s] CAM: Low-angle medium close-up of Gerald shouting down into the garden.",
+            "[E13_B044 | 62.2s-67.0s] GERALD (Taunting, Cruel): \"Keep searching, Juliana. Your husband's freedom is somewhere in that garden.\""
+          ],
+          "transcript": "[E13_B026 | 45.8s-47.0s] ACT: Juliana drops to her knees in front of the frozen blackthorn branches, steadying her trembling breath.\n[E13_B027 | 45.8s-47.0s] CAM: Medium shot of Juliana kneeling on the frozen soil at the edge of the briars.\n[E13_B028 | 47.0s-50.0s] CAM: Medium shot of Alexander lunging forward with chained hands raised high, roaring in fury as the Constable grabs him.\n[E13_B029 | 47.2s-48.8s] ALEXANDER (Screaming, Panicked): \"Juliana, stop!\"\n[E13_B030 | 47.8s-49.2s] SFX: Rattling of heavy iron chains.\n[E13_B031 | 50.0s-52.0s] CAM: Eye-level shot looking through the thorny thicket at Juliana crawling deeper into the briars.\n[E13_B032 | 50.0s-53.0s] ACT: Juliana crawls forward on all fours, lowering her head under the jagged, arching thorns.\n[E13_B033 | 51.5s-52.6s] ALEXANDER (Strangled, Weeping): \"Please...\"\n[E13_B034 | 52.0s-53.5s] CAM: Extreme close-up of Alexander's anguished face as he strains furiously against his handcuffs.\n[E13_B035 | 53.5s-56.0s] CAM: Ground-level shot of Juliana's bare hands reaching out onto the cracked, frozen ground.\n[E13_B036 | 54.0s-56.5s] ACT: Sharp blackthorn spines rake across Juliana's fingers and knuckles, carving bloody gashes across her skin.\n[E13_B037 | 54.5s-55.8s] JULIANA (Gasping in Pain): \"No...\"\n[E13_B038 | 56.0s-58.2s] CAM: Extreme close-up of Juliana's hand scraping against the frost-covered stone, bright red blood welling from deep puncture wounds.\n[E13_B039 | 57.2s-58.6s] CLARISSA (O.S.) (Gleeful, Derisive): \"Look at her hands.\"\n[E13_B040 | 58.2s-62.0s] CAM: Medium shot on the balcony as Clarissa gleefully points down at Juliana, Gerald chuckling beside her.\n[E13_B041 | 58.8s-61.8s] CLARISSA (Mocking, Spiteful): \"The lady has finally found something worthy of her.\"\n[E13_B042 | 62.0s-64.0s] ACT: Gerald leans his hands on the terrace railing, sneering callously.\n[E13_B043 | 62.0s-67.5s] CAM: Low-angle medium close-up of Gerald shouting down into the garden.\n[E13_B044 | 62.2s-67.0s] GERALD (Taunting, Cruel): \"Keep searching, Juliana. Your husband's freedom is somewhere in that garden.\""
+        }
+      ],
+      "hook_0_3s": "Juliana drops to her knees in front of frozen blackthorn branches, steadying trembling breath",
+      "cliffhanger": "Juliana's hand scraping against frost-covered stone, bright red blood welling from deep puncture wounds",
+      "why_it_works": "Immediate physical pain and blood hooks cold viewers instantly",
+      "scout_score": 9,
+      "trimmed_from_sec": 67.2,
+      "trim_note": "One continuous span from kneeling at briars through Alexander's roar; ends right before Clarissa's mockery.",
+      "critic": {
+        "candidate_id": "C08",
+        "verified_title": "Juliana kneeling in briars",
+        "verified_hook_0_3s": "Juliana drops to her knees in front of frozen blackthorn branches, steadying trembling breath",
+        "verified_cliffhanger": "Juliana's hand scraping against frost-covered stone, bright red blood welling from deep puncture wounds",
+        "verified_why_it_works": "Immediate physical pain and blood hooks cold viewers instantly",
+        "hook_3s": 5,
+        "standalone_clarity": 4,
+        "cliffhanger_pull": 5,
+        "verdict": "PASS",
+        "critique": "Strong opening pain, clear final wound image"
+      },
+      "scout_hook_raw": "Juliana drops to her knees before frozen blackthorn branches, steadying trembling breath (E13_B026 | 45.8s-47.0s)",
+      "scout_cliffhanger_raw": "Juliana's bloodied index finger brushes against a solid metallic object half-buried in frozen dirt (E13_B067 | 103.0s-107.0s)",
+      "critic_total": 14,
+      "rank": 8,
+      "posting_tier": "Wave 2 (Scale/Retarget)",
+      "overlay_hook": "Blood welling from deep puncture wounds",
+      "ranking_reason": "Strong 14/15 critic score; immediate physical pain and blood hooks cold viewers instantly, making it a powerful pain-point creative for scaling."
+    },
+    {
+      "candidate_id": "ST01",
+      "title": "Gerald breaks engagement at altar",
+      "trope": "Flash-Forward Mashup",
+      "promo_format": "Cross-Episode Stitched",
+      "is_stitched": true,
+      "total_duration_sec": 38.3,
+      "segments": [
+        {
+          "episode": 1,
+          "start_beat_id": "E01_B040",
+          "end_beat_id": "E01_B046",
+          "start_sec": 60.1,
+          "end_sec": 72.4,
+          "start_ts": "01:00.10",
+          "end_ts": "01:12.40",
+          "duration_sec": 12.3,
+          "auto_snapped": false,
+          "opening_3s": [
+            "[E01_B040 | 60.1s-61.8s] THE FORMER GROOM (Cold, Callous): \"I changed my mind.\"",
+            "[E01_B041 | 60.1s-63.0s] CAM: Tight close-up on Gerald's hardened profile as he glances down.",
+            "[E01_B042 | 63.0s-66.0s] CAM: Extreme close-up on Juliana's furious, weeping face."
+          ],
+          "closing_3s": [
+            "[E01_B046 | 68.8s-72.4s] CAM: Medium profile shot of the Lady in Gold Gown turning her head subtly toward Gerald with satisfied malice."
+          ],
+          "transcript": "[E01_B040 | 60.1s-61.8s] THE FORMER GROOM (Cold, Callous): \"I changed my mind.\"\n[E01_B041 | 60.1s-63.0s] CAM: Tight close-up on Gerald's hardened profile as he glances down.\n[E01_B042 | 63.0s-66.0s] CAM: Extreme close-up on Juliana's furious, weeping face.\n[E01_B043 | 63.4s-65.6s] LADY JULIANA (Betrayed, Piercing): \"You swore you loved me!\"\n[E01_B044 | 66.0s-68.8s] CAM: Close-up on the Lady in Gold Gown smiling condescendingly.\n[E01_B045 | 66.5s-68.8s] LADY IN GOLD GOWN (Mocking): \"People change their minds, sister.\"\n[E01_B046 | 68.8s-72.4s] CAM: Medium profile shot of the Lady in Gold Gown turning her head subtly toward Gerald with satisfied malice."
+        },
+        {
+          "episode": 18,
+          "start_beat_id": "E18_B074",
+          "end_beat_id": "E18_B079",
+          "start_sec": 158.0,
+          "end_sec": 184.0,
+          "start_ts": "02:38.00",
+          "end_ts": "03:04.00",
+          "duration_sec": 26.0,
+          "auto_snapped": false,
+          "opening_3s": [
+            "[E18_B074 | 158.0s-160.8s] ALEXANDER (Cold, Ominous): \"Someone wanted us out.\""
+          ],
+          "closing_3s": [
+            "[E18_B079 | 179.5s-184.0s] ACT: Juliana slowly pulls back slightly from his embrace, her tear-filled blue eyes looking up into his hardened features."
+          ],
+          "transcript": "[E18_B074 | 158.0s-160.8s] ALEXANDER (Cold, Ominous): \"Someone wanted us out.\"\n[E18_B075 | 163.0s-165.5s] JULIANA (Despairing, Weeping): \"We have nowhere to go.\"\n[E18_B076 | 165.5s-171.0s] CAM: Slow push-in on Alexander's face over Juliana's shoulder. His expression hardens into a mask of pure, lethal fury.\n[E18_B077 | 171.0s-179.5s] CAM: Extreme close-up of Alexander's piercing eyes and combat scar bathed in the flickering orange glow of the fire.\n[E18_B078 | 171.8s-177.2s] ALEXANDER (Cold Fury, Resolute): \"They took our home. I will not let them take anything else now.\"\n[E18_B079 | 179.5s-184.0s] ACT: Juliana slowly pulls back slightly from his embrace, her tear-filled blue eyes looking up into his hardened features."
+        }
+      ],
+      "hook_0_3s": "Former groom coldly declares \"I changed my mind\" to a weeping bride",
+      "cliffhanger": "Alexander vows revenge after their home is taken, eyes hardening into lethal fury as fire flickers behind him",
+      "why_it_works": "Immediate conflict with jilted groom and weeping bride creates instant emotional hook",
+      "scout_score": 7,
+      "critic": {
+        "candidate_id": "ST01",
+        "verified_title": "Gerald breaks engagement at altar",
+        "verified_hook_0_3s": "Former groom coldly declares \"I changed my mind\" to a weeping bride",
+        "verified_cliffhanger": "Alexander vows revenge after their home is taken, eyes hardening into lethal fury as fire flickers behind him",
+        "verified_why_it_works": "Immediate conflict with jilted groom and weeping bride creates instant emotional hook",
+        "hook_3s": 5,
+        "standalone_clarity": 4,
+        "cliffhanger_pull": 5,
+        "verdict": "PASS",
+        "critique": "Strong cold-open with immediate conflict; cross-episode cut to vengeful Alexander provides perfect unresolved tension"
+      },
+      "critic_total": 14,
+      "rank": 9,
+      "posting_tier": "Wave 2 (Scale/Retarget)",
+      "overlay_hook": "Jilted groom declares 'I changed my mind'",
+      "ranking_reason": "Strong 14/15 critic score; immediate conflict with jilted groom and weeping bride creates instant emotional hook perfect for retargeting audiences who engaged with C01."
+    },
+    {
+      "candidate_id": "C15",
+      "title": "Medicine Confiscated",
+      "trope": "Cruel Ultimatum",
+      "promo_format": "Continuous",
+      "is_stitched": false,
+      "total_duration_sec": 36.6,
+      "segments": [
+        {
+          "episode": 27,
+          "start_beat_id": "E27_B026",
+          "end_beat_id": "E27_B049",
+          "start_sec": 46.4,
+          "end_sec": 83.0,
+          "start_ts": "00:46.40",
+          "end_ts": "01:23.00",
+          "duration_sec": 36.6,
+          "auto_snapped": false,
+          "opening_3s": [
+            "[E27_B026 | 46.4s-48.3s] SFX: Loud, violent pounding echoes on the wooden double doors.",
+            "[E27_B027 | 46.5s-48.8s] CAM: Juliana gasps, snapping her head toward the entrance in alarm.",
+            "[E27_B028 | 48.8s-51.5s] ACT: The heavy mahogany double doors burst open, revealing the Blond Nobleman flanked by Lady Catherine and a royal guard in uniform.",
+            "[E27_B029 | 48.8s-51.5s] CAM: Wide shot framing the open doorway as the aristocrats step into the dimly lit hallway."
+          ],
+          "closing_3s": [
+            "[E27_B047 | 77.8s-80.8s] CAM: Medium shot of the Blond Nobleman staring down at the vial, as Catherine sneers from his side.",
+            "[E27_B048 | 78.1s-80.5s] LADY CATHERINE (Incredulous, Accusing): \"Who permitted you to give medicine to the Duchess?\"",
+            "[E27_B049 | 80.8s-83.0s] CAM: Close-up of Juliana holding her ground."
+          ],
+          "transcript": "[E27_B026 | 46.4s-48.3s] SFX: Loud, violent pounding echoes on the wooden double doors.\n[E27_B027 | 46.5s-48.8s] CAM: Juliana gasps, snapping her head toward the entrance in alarm.\n[E27_B028 | 48.8s-51.5s] ACT: The heavy mahogany double doors burst open, revealing the Blond Nobleman flanked by Lady Catherine and a royal guard in uniform.\n[E27_B029 | 48.8s-51.5s] CAM: Wide shot framing the open doorway as the aristocrats step into the dimly lit hallway.\n[E27_B030 | 51.5s-55.6s] CAM: Medium shot of Lady Catherine in her lavish cream gown and tiara, scowling with arrogant disdain.\n[E27_B031 | 52.2s-55.6s] LADY CATHERINE (Sharp, Accusatory): \"What is that maid doing in Her Grace's private chamber?\"\n[E27_B032 | 55.6s-58.6s] CAM: Medium shot of Juliana standing stiffly beside the bed, concealing her hands.\n[E27_B033 | 56.8s-58.4s] JULIANA (Calm, Defiant): \"She needed help.\"\n[E27_B034 | 58.6s-62.0s] CAM: Close-up of Lady Catherine narrowing her eyes with venomous suspicion.\n[E27_B035 | 60.0s-61.8s] LADY CATHERINE (Piercing, Suspicious): \"What are you hiding?\"\n[E27_B036 | 62.0s-64.0s] CAM: Close-up of Juliana, her chin raised.\n[E27_B037 | 62.2s-63.5s] JULIANA (Firm): \"Nothing.\"\n[E27_B038 | 64.0s-66.5s] CAM: Medium close-up of Lady Catherine pointing a white-gloved finger directly at Juliana.\n[E27_B039 | 64.8s-66.4s] LADY CATHERINE (Demanding, Harsh): \"Show me your hand.\"\n[E27_B040 | 66.5s-70.5s] CAM: Medium shot of the Blond Nobleman stepping forward beside Lady Catherine, clad in a dark tailored coat with black leather gloves.\n[E27_B041 | 66.6s-70.1s] BLOND NOBLEMAN (Cold, Authoritative): \"Girl. Show me what you are holding.\"\n[E27_B042 | 70.5s-73.8s] CAM: Two-shot of Juliana facing the Blond Nobleman as she slowly extends her palm, revealing the small amber glass dropper bottle.\n[E27_B043 | 72.6s-73.7s] BLOND NOBLEMAN (Skeptical): \"What is this?\"\n[E27_B044 | 73.8s-74.8s] JULIANA (Steady): \"Medicine.\"\n[E27_B045 | 74.8s-77.8s] CAM: Close-up of Lady Catherine tapping her gloved finger to her lip, letting out a mocking scoff.\n[E27_B046 | 75.2s-77.8s] LADY CATHERINE (Mocking, Condescending): \"Medicine? You are a new maid.\"\n[E27_B047 | 77.8s-80.8s] CAM: Medium shot of the Blond Nobleman staring down at the vial, as Catherine sneers from his side.\n[E27_B048 | 78.1s-80.5s] LADY CATHERINE (Incredulous, Accusing): \"Who permitted you to give medicine to the Duchess?\"\n[E27_B049 | 80.8s-83.0s] CAM: Close-up of Juliana holding her ground."
+        }
+      ],
+      "hook_0_3s": "Loud violent pounding echoes on wooden double doors as Juliana gasps and snaps her head toward the entrance in alarm.",
+      "cliffhanger": "Blond Nobleman coldly demands 'Girl. Show me what you are holding' as Juliana extends her palm revealing the amber glass dropper bottle, with no resolution on whether she is punished.",
+      "why_it_works": "The sudden intrusion of aristocracy into a private moment creates instant class conflict and suspicion.",
+      "scout_score": 9,
+      "critic": {
+        "candidate_id": "C15",
+        "verified_title": "Medicine Confiscated",
+        "verified_hook_0_3s": "Loud violent pounding echoes on wooden double doors as Juliana gasps and snaps her head toward the entrance in alarm.",
+        "verified_cliffhanger": "Blond Nobleman coldly demands 'Girl. Show me what you are holding' as Juliana extends her palm revealing the amber glass dropper bottle, with no resolution on whether she is punished.",
+        "verified_why_it_works": "The sudden intrusion of aristocracy into a private moment creates instant class conflict and suspicion.",
+        "hook_3s": 5,
+        "standalone_clarity": 4,
+        "cliffhanger_pull": 4,
+        "verdict": "PASS",
+        "critique": "Strong cold-open with immediate class conflict, though the bottle reveal feels slightly delayed within the 3-second window."
+      },
+      "scout_hook_raw": "Loud, violent pounding echoes on the wooden double doors (E27_B026)",
+      "scout_cliffhanger_raw": "Duchess demanding \"Where... where... Where did you get this ring? Speak to me!\" (E27_B049)",
+      "critic_total": 13,
+      "rank": 10,
+      "posting_tier": "Wave 2 (Scale/Retarget)",
+      "overlay_hook": "Nobleman demands 'Girl. Show me what you are holding'",
+      "ranking_reason": "Solid 13/15 critic score; sudden intrusion of aristocracy into a private moment creates instant class conflict and suspicion, strong for retargeting."
+    },
+    {
+      "candidate_id": "C06",
+      "title": "Peasant mother begs for fever cure",
+      "trope": "Rescue",
+      "promo_format": "Intra-Episode Cut",
+      "is_stitched": true,
+      "total_duration_sec": 43.3,
+      "segments": [
+        {
+          "episode": 9,
+          "start_beat_id": "E09_B008",
+          "end_beat_id": "E09_B022",
+          "start_sec": 5.5,
+          "end_sec": 31.0,
+          "start_ts": "00:05.50",
+          "end_ts": "00:31.00",
+          "duration_sec": 25.5,
+          "auto_snapped": false,
+          "opening_3s": [
+            "[E09_B008 | 5.5s-11.2s] CAM: Medium shot framing the doorway as a soaked, distraught peasant mother steps across the threshold clutching a swaddled child.",
+            "[E09_B009 | 6.3s-11.1s] PEASANT MOTHER (Frantic, Weeping): \"Please! They told me there was a woman here who knows herbs. My boy is burning with fever!\""
+          ],
+          "closing_3s": [
+            "[E09_B020 | 27.2s-28.8s] ACT: Juliana lifts the weathered herbal book and rapidly browses the handwritten pages.",
+            "[E09_B021 | 28.8s-31.0s] CAM: Insert close-up of the open page illustrated with botanical drawings labeled 'Feverfew'.",
+            "[E09_B022 | 29.0s-30.8s] JULIANA (Muttering, Intent): \"Feverfew... Not alone.\""
+          ],
+          "transcript": "[E09_B008 | 5.5s-11.2s] CAM: Medium shot framing the doorway as a soaked, distraught peasant mother steps across the threshold clutching a swaddled child.\n[E09_B009 | 6.3s-11.1s] PEASANT MOTHER (Frantic, Weeping): \"Please! They told me there was a woman here who knows herbs. My boy is burning with fever!\"\n[E09_B010 | 11.2s-13.5s] CAM: Medium shot of Juliana rushing to the front of the table, extending her arms urgently.\n[E09_B011 | 11.4s-13.3s] JULIANA (Urgent, Compassionate): \"Bring him here. Quickly.\"\n[E09_B012 | 12.0s-14.2s] ACT: The trembling mother gently lays the feverish boy down atop the wooden table as Juliana leans in close.\n[E09_B013 | 13.8s-15.2s] CAM: Close-up of Juliana gently placing her fingers against the boy's burning forehead.\n[E09_B014 | 15.2s-17.8s] CAM: Medium close-up of Juliana examining the boy's breathing, looking up toward the frantic mother.\n[E09_B015 | 15.5s-19.8s] JULIANA (Reassuring, Focused): \"He seems very unwell, but he is resting steadily. How long has he been like this?\"\n[E09_B016 | 17.8s-20.0s] CAM: Medium two-shot of Alexander watching anxiously over the child's shoulder as Juliana tends to him.\n[E09_B017 | 20.0s-24.0s] CAM: Medium close-up of the peasant mother clutching her shawl, tears running down her cheeks.\n[E09_B018 | 20.5s-23.9s] PEASANT MOTHER (Trembling, Anxious): \"Since yesterday morning. He has barely eaten since sunset.\"\n[E09_B019 | 24.0s-27.5s] CAM: Close-up of Juliana resting two fingers against the boy's wrist, measuring his shallow pulse.\n[E09_B020 | 27.2s-28.8s] ACT: Juliana lifts the weathered herbal book and rapidly browses the handwritten pages.\n[E09_B021 | 28.8s-31.0s] CAM: Insert close-up of the open page illustrated with botanical drawings labeled 'Feverfew'.\n[E09_B022 | 29.0s-30.8s] JULIANA (Muttering, Intent): \"Feverfew... Not alone.\""
+        },
+        {
+          "episode": 9,
+          "start_beat_id": "E09_B030",
+          "end_beat_id": "E09_B044",
+          "start_sec": 38.2,
+          "end_sec": 56.0,
+          "start_ts": "00:38.20",
+          "end_ts": "00:56.00",
+          "duration_sec": 17.8,
+          "auto_snapped": false,
+          "opening_3s": [
+            "[E09_B030 | 38.2s-39.8s] JULIANA (Urgent): \"Alexander, I need hot water.\"",
+            "[E09_B031 | 39.9s-40.8s] ALEXANDER (Prompt): \"I'm on it.\"",
+            "[E09_B032 | 40.8s-42.5s] ACT: Alexander hurries to the hearth and lifts a boiling iron kettle from the hearth chain, while the mother buries her face in her hands.",
+            "[E09_B033 | 41.0s-42.5s] PEASANT MOTHER (Sobbing): \"Please save him.\""
+          ],
+          "closing_3s": [
+            "[E09_B041 | 52.5s-54.0s] CAM: Over-the-shoulder shot from behind the mother leaning across the table in panic.",
+            "[E09_B042 | 52.5s-54.0s] PEASANT MOTHER (Despairing): \"Why isn't it working?\"",
+            "[E09_B043 | 54.0s-56.0s] CAM: Close-up of Juliana raising a calm finger, urging patience.",
+            "[E09_B044 | 54.3s-55.2s] JULIANA (Quiet, Focused): \"Wait.\""
+          ],
+          "transcript": "[E09_B030 | 38.2s-39.8s] JULIANA (Urgent): \"Alexander, I need hot water.\"\n[E09_B031 | 39.9s-40.8s] ALEXANDER (Prompt): \"I'm on it.\"\n[E09_B032 | 40.8s-42.5s] ACT: Alexander hurries to the hearth and lifts a boiling iron kettle from the hearth chain, while the mother buries her face in her hands.\n[E09_B033 | 41.0s-42.5s] PEASANT MOTHER (Sobbing): \"Please save him.\"\n[E09_B034 | 42.2s-43.5s] ACT: Alexander returns and pours steaming hot water into the stone mortar as Juliana prepares the remedy.\n[E09_B035 | 43.0s-46.0s] CAM: Medium close-up of Juliana clasping the mother's trembling hand across the wooden table.\n[E09_B036 | 43.8s-45.6s] JULIANA (Gentle, Steadfast): \"He is not beyond saving.\"\n[E09_B037 | 46.0s-48.0s] CAM: Close-up of Juliana carefully administering the herbal brew with a small wooden spoon into the sick boy's mouth.\n[E09_B038 | 47.0s-48.2s] ACT: The child swallows weakly and lets out a soft cough.\n[E09_B039 | 48.0s-50.5s] CAM: Close-up of the mother clutching her chest in anxious suspense.\n[E09_B040 | 50.5s-52.5s] CAM: Medium close-up of Juliana sitting quietly beside the boy, holding two fingers over his wrist to monitor his pulse.\n[E09_B041 | 52.5s-54.0s] CAM: Over-the-shoulder shot from behind the mother leaning across the table in panic.\n[E09_B042 | 52.5s-54.0s] PEASANT MOTHER (Despairing): \"Why isn't it working?\"\n[E09_B043 | 54.0s-56.0s] CAM: Close-up of Juliana raising a calm finger, urging patience.\n[E09_B044 | 54.3s-55.2s] JULIANA (Quiet, Focused): \"Wait.\""
+        }
+      ],
+      "hook_0_3s": "Soaked peasant mother frantically pleads for help as she enters with feverish child",
+      "cliffhanger": "Alexander returns with hot water as Juliana prepares herbal remedy while mother sobs 'Please save him'",
+      "why_it_works": "Immediate medical crisis with compassionate healer responding to desperate plea",
+      "scout_score": 8,
+      "trimmed_from_sec": 83.8,
+      "trim_note": "Cut slow mother exposition and early remedy selection; jump from herb identification to water preparation and administration.",
+      "critic": {
+        "candidate_id": "C06",
+        "verified_title": "Peasant mother begs for fever cure",
+        "verified_hook_0_3s": "Soaked peasant mother frantically pleads for help as she enters with feverish child",
+        "verified_cliffhanger": "Alexander returns with hot water as Juliana prepares herbal remedy while mother sobs 'Please save him'",
+        "verified_why_it_works": "Immediate medical crisis with compassionate healer responding to desperate plea",
+        "hook_3s": 5,
+        "standalone_clarity": 4,
+        "cliffhanger_pull": 4,
+        "verdict": "PASS",
+        "critique": "Strong hook and clear action, but cliffhanger_pull drops to 4 because remedy preparation feels like continuation rather than unresolved tension"
+      },
+      "scout_hook_raw": "[E09_B001] CAM: Medium close-up of Juliana at the wooden table by candlelight, grinding dried herbs with a pestle inside a stone mortar.",
+      "scout_cliffhanger_raw": "[E09_B065] JULIANA (Committed, Unshakable): \"Then we will face it together.\"",
+      "critic_total": 13,
+      "rank": 11,
+      "posting_tier": "Wave 3 (Test)",
+      "overlay_hook": "Mother pleads for help with feverish child",
+      "ranking_reason": "High 13/15 critic score; immediate medical crisis with compassionate healer responding, but experimental format as an Intra-Episode Cut makes it a test creative."
+    },
+    {
+      "candidate_id": "C19",
+      "title": "Lord interrogates maid about Juliana's herbs",
+      "trope": "Rescue",
+      "promo_format": "Intra-Episode Cut",
+      "is_stitched": true,
+      "total_duration_sec": 46.0,
+      "segments": [
+        {
+          "episode": 33,
+          "start_beat_id": "E33_B001",
+          "end_beat_id": "E33_B013",
+          "start_sec": 0.0,
+          "end_sec": 21.0,
+          "start_ts": "00:00.00",
+          "end_ts": "00:21.00",
+          "duration_sec": 21.0,
+          "auto_snapped": false,
+          "opening_3s": [
+            "[E33_B001 | 0.0s-5.2s] CAM: Wide shot of a dimly lit, wood-paneled library study. An aristocratic lord in formal dark attire stands facing a young maid standing nervously by the open door.",
+            "[E33_B002 | 2.5s-4.8s] LORD (Cold, Authoritative): \"Your brother is breathing again.\""
+          ],
+          "closing_3s": [
+            "[E33_B012 | 17.8s-21.0s] CAM: Medium close-up of the maid nervously wringing her apron fabric.",
+            "[E33_B013 | 19.5s-21.0s] MAID (Faltering): \"She... she used herbs.\""
+          ],
+          "transcript": "[E33_B001 | 0.0s-5.2s] CAM: Wide shot of a dimly lit, wood-paneled library study. An aristocratic lord in formal dark attire stands facing a young maid standing nervously by the open door.\n[E33_B002 | 2.5s-4.8s] LORD (Cold, Authoritative): \"Your brother is breathing again.\"\n[E33_B003 | 4.0s-6.5s] ACT: The young maid steps inside, bowing with a submissive curtsy, keeping her head low and hands clasped.\n[E33_B004 | 5.2s-8.8s] CAM: Medium close-up of the maid trembling as she raises her eyes hesitantly.\n[E33_B005 | 6.5s-8.5s] MAID (Meek, Hesitant): \"Yes, my Lord.\"\n[E33_B006 | 8.8s-12.0s] CAM: Medium shot of the Lord standing beside his mahogany desk, looking down with cold, calculating scrutiny.\n[E33_B007 | 9.5s-11.8s] LORD (Probing): \"And who saved him?\"\n[E33_B008 | 12.0s-14.8s] CAM: Close-up of the maid's anxious, innocent face.\n[E33_B009 | 13.0s-14.5s] MAID (Quiet, Truthful): \"Lady Juliana.\"\n[E33_B010 | 14.8s-17.8s] CAM: Close-up of the Lord's hand slowly rotating the heavy gold signet ring on his pinky finger.\n[E33_B011 | 15.5s-17.5s] LORD (Measured, Demanding): \"Tell me how.\"\n[E33_B012 | 17.8s-21.0s] CAM: Medium close-up of the maid nervously wringing her apron fabric.\n[E33_B013 | 19.5s-21.0s] MAID (Faltering): \"She... she used herbs.\""
+        },
+        {
+          "episode": 33,
+          "start_beat_id": "E33_B019",
+          "end_beat_id": "E33_B031",
+          "start_sec": 27.5,
+          "end_sec": 52.5,
+          "start_ts": "00:27.50",
+          "end_ts": "00:52.50",
+          "duration_sec": 25.0,
+          "auto_snapped": false,
+          "opening_3s": [
+            "[E33_B019 | 27.5s-29.0s] LORD (Stern): \"You watched her.\"",
+            "[E33_B020 | 29.2s-32.8s] CAM: Close-up of the maid, tears beginning to glisten on her cheeks as she defends Juliana.",
+            "[E33_B021 | 29.8s-32.0s] MAID (Tearful, Sincere): \"I watched her save him.\""
+          ],
+          "closing_3s": [
+            "[E33_B030 | 49.2s-52.5s] CAM: Medium shot of the maid clutching her hands together tightly, overwhelmed with guilt.",
+            "[E33_B031 | 50.0s-51.6s] MAID (Choked Sob): \"Yes.\""
+          ],
+          "transcript": "[E33_B019 | 27.5s-29.0s] LORD (Stern): \"You watched her.\"\n[E33_B020 | 29.2s-32.8s] CAM: Close-up of the maid, tears beginning to glisten on her cheeks as she defends Juliana.\n[E33_B021 | 29.8s-32.0s] MAID (Tearful, Sincere): \"I watched her save him.\"\n[E33_B022 | 32.8s-36.5s] CAM: Medium tracking shot of the Lord turning away slowly past the lamp-lit desk toward the rain-streaked window.\n[E33_B023 | 34.0s-36.2s] LORD (Coldly Dismissive): \"That is not what I asked.\"\n[E33_B024 | 36.5s-40.2s] CAM: Medium two-shot framing the maid from behind as the Lord steps back toward her with commanding stillness.\n[E33_B025 | 37.5s-40.0s] LORD (Accusatory): \"Did she use her mother's book?\"\n[E33_B026 | 40.2s-44.2s] CAM: Close-up of the maid trembling, tears spilling down her face.\n[E33_B027 | 42.2s-43.6s] MAID (Quietly Weeping): \"Yes.\"\n[E33_B028 | 44.2s-49.2s] CAM: Close-up of the Lord's sinister, unyielding face.\n[E33_B029 | 44.8s-48.8s] LORD (Insistent, Cornering): \"Did she prepare things no physician had prescribed?\"\n[E33_B030 | 49.2s-52.5s] CAM: Medium shot of the maid clutching her hands together tightly, overwhelmed with guilt.\n[E33_B031 | 50.0s-51.6s] MAID (Choked Sob): \"Yes.\""
+        }
+      ],
+      "hook_0_3s": "Lord coldly demands 'And who saved him?' in dim library study as maid enters trembling",
+      "cliffhanger": "Maid sobs 'Yes' to cornering question 'Did she prepare things no physician had prescribed?' as Lord's sinister face fills screen",
+      "why_it_works": "Progressive interrogation escalating from suspicion to incrimination with maid's guilt on the line",
+      "scout_score": 8,
+      "trimmed_from_sec": 84.8,
+      "trim_note": "Cut slow middle dialogue between maid's testimony about herbs and Lord's accusatory turn toward her mother's book; retains hook and escalating coercion.",
+      "critic": {
+        "candidate_id": "C19",
+        "verified_title": "Lord interrogates maid about Juliana's herbs",
+        "verified_hook_0_3s": "Lord coldly demands 'And who saved him?' in dim library study as maid enters trembling",
+        "verified_cliffhanger": "Maid sobs 'Yes' to cornering question 'Did she prepare things no physician had prescribed?' as Lord's sinister face fills screen",
+        "verified_why_it_works": "Progressive interrogation escalating from suspicion to incrimination with maid's guilt on the line",
+        "hook_3s": 5,
+        "standalone_clarity": 3,
+        "cliffhanger_pull": 5,
+        "verdict": "PASS",
+        "critique": "Excellent hook and masterful cliffhanger pull, but standalone clarity suffers from library setting requiring show context to identify characters"
+      },
+      "scout_hook_raw": "Wide shot of a dimly lit, wood-paneled library study. An aristocratic lord in formal dark attire stands facing a young maid standing nervously by the open door",
+      "scout_cliffhanger_raw": "The maid collapsing forward onto the polished dark wood floor, groveling in total despair as the Lord coldly declares he has already written the story for her",
+      "critic_total": 13,
+      "rank": 12,
+      "posting_tier": "Wave 3 (Test)",
+      "overlay_hook": "Juliana raises eyes with utter disdain in cathedral nave",
+      "ranking_reason": "Solid 12/15 critic score; public humiliation of the protagonist combined with antagonist gloating creates instant sympathy, but tested as a higher-variance creative."
+    },
+    {
+      "candidate_id": "C10",
+      "title": "Garden rescue effort",
+      "trope": "Rescue",
+      "promo_format": "Continuous",
+      "is_stitched": false,
+      "total_duration_sec": 45.0,
+      "segments": [
+        {
+          "episode": 17,
+          "start_beat_id": "E17_B001",
+          "end_beat_id": "E17_B032",
+          "start_sec": 0.0,
+          "end_sec": 45.0,
+          "start_ts": "00:00.00",
+          "end_ts": "00:45.00",
+          "duration_sec": 45.0,
+          "auto_snapped": false,
+          "opening_3s": [
+            "[E17_B001 | 0.0s-3.0s] CAM: High angle wide shot looking down at the muddy, trampled garden. Broken wooden planters and splintered planks litter the ground as Juliana kneels amidst the ruined soil.",
+            "[E17_B002 | 0.0s-3.0s] ACT: Juliana sits on her knees in her dirt-smudged dress, her hands wrapped in clean linen bandages, sorrowfully examining the wreckage. In the distant background, Alexander paces near the perimeter fence.",
+            "[E17_B003 | 3.0s-7.0s] CAM: Close-up on Juliana's bandaged hand reaching into the dark earth of a battered planter box.",
+            "[E17_B004 | 3.0s-7.0s] ACT: Juliana gently lifts a tiny, delicate white daisy clinging to its exposed roots out of the soil, cupping it in her palm."
+          ],
+          "closing_3s": [
+            "[E17_B030 | 39.0s-42.0s] CAM: Medium shot in the warm, flickering firelight of the stone cottage. Juliana kneels on the stone floor beside a washbasin of water while Alexander sits quietly in a chair beside the blazing hearth.",
+            "[E17_B031 | 40.0s-44.5s] ACT: Juliana wrings out a clean linen cloth from the basin and tenderly dabs at the fresh cuts and abrasions on the back of Alexander's right hand.",
+            "[E17_B032 | 42.0s-45.0s] CAM: Close-up of Juliana's bandaged hands delicately pressing the white cloth against Alexander's wounded knuckles."
+          ],
+          "transcript": "[E17_B001 | 0.0s-3.0s] CAM: High angle wide shot looking down at the muddy, trampled garden. Broken wooden planters and splintered planks litter the ground as Juliana kneels amidst the ruined soil.\n[E17_B002 | 0.0s-3.0s] ACT: Juliana sits on her knees in her dirt-smudged dress, her hands wrapped in clean linen bandages, sorrowfully examining the wreckage. In the distant background, Alexander paces near the perimeter fence.\n[E17_B003 | 3.0s-7.0s] CAM: Close-up on Juliana's bandaged hand reaching into the dark earth of a battered planter box.\n[E17_B004 | 3.0s-7.0s] ACT: Juliana gently lifts a tiny, delicate white daisy clinging to its exposed roots out of the soil, cupping it in her palm.\n[E17_B005 | 7.0s-11.5s] CAM: Medium close-up tilting up to Juliana's face, bruised and tear-streaked yet filled with fragile hope.\n[E17_B006 | 9.3s-11.3s] JULIANA (Soft, Emotional): \"Some of them survived.\"\n[E17_B007 | 11.5s-14.0s] CAM: Low-angle medium shot of Alexander repairing the broken wooden fence with a heavy iron hammer.\n[E17_B008 | 11.5s-14.0s] SFX: Rhythmic, heavy thuds of an iron hammer pounding into weathered wood.\n[E17_B009 | 11.5s-14.0s] ACT: Alexander firmly drives nails into a fractured fence post, his brow furrowed with focused determination.\n[E17_B010 | 14.0s-16.2s] CAM: Wide shot framing Juliana kneeling on the wet cobblestones in the foreground while Alexander stands by the fence behind her, lowering his hammer.\n[E17_B011 | 14.3s-15.3s] JULIANA (Grateful, Sincere): \"Thank you.\"\n[E17_B012 | 16.2s-18.0s] CAM: Close-up of Alexander turning toward her, his scarred face stoic and intense.\n[E17_B013 | 16.8s-17.8s] ALEXANDER (Gruff, Low): \"For what?\"\n[E17_B014 | 18.0s-21.0s] CAM: Close-up of Juliana looking up at him with deep emotional vulnerability, her eyes shimmering with tears.\n[E17_B015 | 18.2s-20.5s] JULIANA (Trembling, Heartfelt): \"For standing between me and those men.\"\n[E17_B016 | 21.0s-23.5s] CAM: Close-up of Alexander, his piercing blue-grey eyes fixed upon her with absolute conviction.\n[E17_B017 | 21.5s-23.0s] ALEXANDER (Unwavering, Firm): \"I would do it again.\"\n[E17_B018 | 23.5s-25.8s] CAM: Close-up of Juliana, her lips parting as her voice wavers with emotion.\n[E17_B019 | 24.0s-25.7s] JULIANA (Whispering, Awed): \"Even if there were ten of them?\"\n[E17_B020 | 26.0s-27.7s] ALEXANDER (Deep, Resolute): \"As long as I draw breath...\"\n[E17_B021 | 26.5s-30.0s] CAM: Tracking shot following Alexander as he strides across the muddy garden and approaches Juliana.\n[E17_B022 | 28.0s-31.5s] ACT: Alexander drops to one knee before Juliana, gently taking her trembling, bandaged hands into his large, weathered palms.\n[E17_B023 | 28.8s-31.0s] ALEXANDER (Gentle, Vowing): \"...no one will hurt you again.\"\n[E17_B024 | 31.5s-34.5s] CAM: Close-up on Juliana's tear-filled face, overwhelmed by his fierce devotion.\n[E17_B025 | 32.8s-34.2s] JULIANA (Choked Up, Pained): \"You cannot promise that.\"\n[E17_B026 | 34.5s-36.5s] CAM: Extreme close-up of Alexander's intense, protective gaze locking onto hers.\n[E17_B027 | 34.8s-35.8s] ALEXANDER (Quiet, Absolute): \"I just did.\"\n[E17_B028 | 36.5s-39.0s] CAM: Close-up of their joined hands, his rugged, scarred fingers wrapping securely around her bandaged fingers.\n[E17_B029 | 36.5s-39.0s] ACT: Alexander squeezes Juliana's hands reassuringly as she rests her fingertips against his skin. The scene fades to black.\n[E17_B030 | 39.0s-42.0s] CAM: Medium shot in the warm, flickering firelight of the stone cottage. Juliana kneels on the stone floor beside a washbasin of water while Alexander sits quietly in a chair beside the blazing hearth.\n[E17_B031 | 40.0s-44.5s] ACT: Juliana wrings out a clean linen cloth from the basin and tenderly dabs at the fresh cuts and abrasions on the back of Alexander's right hand.\n[E17_B032 | 42.0s-45.0s] CAM: Close-up of Juliana's bandaged hands delicately pressing the white cloth against Alexander's wounded knuckles."
+        }
+      ],
+      "hook_0_3s": "High angle wide shot looking down at the muddy, trampled garden. Broken wooden planters and splintered planks litter the ground as Juliana kneels amidst the ruined soil",
+      "cliffhanger": "CAM: Extreme close-up of Alexander's intense, protective gaze locking onto hers",
+      "why_it_works": "Juliana's fragile hope and Alexander's vow to protect her hooks cold viewers instantly",
+      "scout_score": 8,
+      "critic": {
+        "candidate_id": "C10",
+        "verified_title": "Garden rescue effort",
+        "verified_hook_0_3s": "High angle wide shot looking down at the muddy, trampled garden. Broken wooden planters and splintered planks litter the ground as Juliana kneels amidst the ruined soil",
+        "verified_cliffhanger": "CAM: Extreme close-up of Alexander's intense, protective gaze locking onto hers",
+        "verified_why_it_works": "Juliana's fragile hope and Alexander's vow to protect her hooks cold viewers instantly",
+        "hook_3s": 4,
+        "standalone_clarity": 4,
+        "cliffhanger_pull": 4,
+        "verdict": "PASS",
+        "critique": "Solid hook and clear emotional beat; minor fade-to-black before final line slightly undercuts cliffhanger pull but still effective"
+      },
+      "scout_hook_raw": "CAM: High angle wide shot looking down at the muddy, trampled garden. Broken wooden planters and splintered planks litter the ground as Juliana kneels amidst the ruined soil.",
+      "scout_cliffhanger_raw": "JULIANA (Fragile, Pain-filled): \"Only my hands.\" CAM: Close-up of Juliana's trembling, soil-stained hands wrapped in blood-soaked bandages.",
+      "critic_total": 12,
+      "rank": 13,
+      "posting_tier": "Wave 3 (Test)",
+      "overlay_hook": "Alexander's intense protective gaze locks onto Juliana",
+      "ranking_reason": "Moderate 12/15 critic score; Juliana's fragile hope and Alexander's vow to protect her, but tested as experimental creative due to high-angle garden format."
+    },
+    {
+      "candidate_id": "C16",
+      "title": "Duchess exposes Rupert's betrayal",
+      "trope": "Rescue",
+      "promo_format": "Continuous",
+      "is_stitched": false,
+      "total_duration_sec": 32.8,
+      "segments": [
+        {
+          "episode": 28,
+          "start_beat_id": "E28_B014",
+          "end_beat_id": "E28_B036",
+          "start_sec": 15.2,
+          "end_sec": 48.0,
+          "start_ts": "00:15.20",
+          "end_ts": "00:48.00",
+          "duration_sec": 32.8,
+          "auto_snapped": false,
+          "opening_3s": [
+            "[E28_B014 | 15.2s-18.5s] CAM: Close-up of Juliana glaring back in fierce indignation, breathing heavily as she resists the guard's arm across her shoulder.",
+            "[E28_B015 | 15.3s-18.4s] JULIANA (Furious, Defiant): \"I did not poison her! Look at her eyes, the fever has broken!\""
+          ],
+          "closing_3s": [
+            "[E28_B033 | 43.0s-47.4s] CAM: Medium shot of the Duchess lunging forward from the pillows, gasping for breath as she points toward Catherine.",
+            "[E28_B034 | 43.6s-45.3s] DOWAGER DUCHESS (Choking, Weakening): \"Catherine knew!\"",
+            "[E28_B035 | 45.6s-47.0s] DOWAGER DUCHESS (Gasping): \"They have been\u2014\"",
+            "[E28_B036 | 46.8s-48.0s] ACT: The Duchess collapses back onto the pillows, coughing violently and clutching her chest."
+          ],
+          "transcript": "[E28_B014 | 15.2s-18.5s] CAM: Close-up of Juliana glaring back in fierce indignation, breathing heavily as she resists the guard's arm across her shoulder.\n[E28_B015 | 15.3s-18.4s] JULIANA (Furious, Defiant): \"I did not poison her! Look at her eyes, the fever has broken!\"\n[E28_B016 | 18.5s-22.8s] CAM: Medium full shot of Rupert standing beside the four-poster bed, calmly pulling on his black leather gloves.\n[E28_B017 | 18.9s-20.3s] BLOND NOBLEMAN (Sardonic, Chilling): \"A clever story, girl.\"\n[E28_B018 | 20.4s-22.7s] BLOND NOBLEMAN (Threatening): \"But the guards know how to extract the truth.\"\n[E28_B019 | 22.8s-26.7s] CAM: Medium close-up of the Dowager Duchess stirring against her pillows, lifting her trembling head with visible effort.\n[E28_B020 | 24.8s-26.5s] DOWAGER DUCHESS (Weak, Straining): \"Rupert...\"\n[E28_B021 | 26.7s-28.2s] DOWAGER DUCHESS (O.S.) (Commanding): \"Stop this!\"\n[E28_B022 | 26.7s-28.4s] CAM: Medium shot of Rupert pausing mid-stride as he hears his mother's voice, slowly turning his head toward the bed.\n[E28_B023 | 28.4s-32.8s] CAM: Wide shot of the bedchamber framed through the bed curtains as the Duchess props herself up on one elbow and points an accusing finger.\n[E28_B024 | 28.8s-30.3s] DOWAGER DUCHESS (Desperate, Firm): \"She is innocent.\"\n[E28_B025 | 30.8s-32.4s] DOWAGER DUCHESS (Adamant): \"She saved me!\"\n[E28_B026 | 32.8s-34.9s] CAM: Close-up of Juliana, tears of relief welling in her eyes.\n[E28_B027 | 33.2s-34.6s] JULIANA (Breathless, Relieved): \"Your Grace...\"\n[E28_B028 | 34.9s-37.7s] CAM: Close-up of the Duchess clutching at her nightgown, her face twisted in mounting fury and horror.\n[E28_B029 | 35.0s-37.4s] DOWAGER DUCHESS (Trembling, Shouting): \"I know what happened to me!\"\n[E28_B030 | 37.7s-43.0s] CAM: Medium low-angle shot past the Duchess pointing directly at Rupert, who stands rigid and expressionless.\n[E28_B031 | 38.2s-40.0s] DOWAGER DUCHESS (Fierce, Condemning): \"I was poisoned!\"\n[E28_B032 | 40.3s-42.2s] DOWAGER DUCHESS (Accusing): \"And you... you knew!\"\n[E28_B033 | 43.0s-47.4s] CAM: Medium shot of the Duchess lunging forward from the pillows, gasping for breath as she points toward Catherine.\n[E28_B034 | 43.6s-45.3s] DOWAGER DUCHESS (Choking, Weakening): \"Catherine knew!\"\n[E28_B035 | 45.6s-47.0s] DOWAGER DUCHESS (Gasping): \"They have been\u2014\"\n[E28_B036 | 46.8s-48.0s] ACT: The Duchess collapses back onto the pillows, coughing violently and clutching her chest."
+        }
+      ],
+      "hook_0_3s": "Close-up of Juliana glaring back in fierce indignation, breathing heavily as she resists the guard's arm across her shoulder",
+      "cliffhanger": "The Duchess collapses back onto the pillows, coughing violently and clutching her chest",
+      "why_it_works": "Immediate conflict (poison accusation) plus sudden maternal revelation creates instant stakes",
+      "scout_score": 8,
+      "critic": {
+        "candidate_id": "C16",
+        "verified_title": "Duchess exposes Rupert's betrayal",
+        "verified_hook_0_3s": "Close-up of Juliana glaring back in fierce indignation, breathing heavily as she resists the guard's arm across her shoulder",
+        "verified_cliffhanger": "The Duchess collapses back onto the pillows, coughing violently and clutching her chest",
+        "verified_why_it_works": "Immediate conflict (poison accusation) plus sudden maternal revelation creates instant stakes",
+        "hook_3s": 5,
+        "standalone_clarity": 4,
+        "cliffhanger_pull": 3,
+        "verdict": "PASS",
+        "critique": "Strong 3-second shock but ending resolves tension rather than cutting on a cliffhanger"
+      },
+      "scout_hook_raw": "Catherine mocks Juliana: \"She looks exactly like a poisoner\" (E28_B013)",
+      "scout_cliffhanger_raw": "Duchess collapsing back onto pillows, coughing violently, gasping \"They have been\u2014\" before cutting off (E28_B035)",
+      "critic_total": 12,
+      "rank": 14,
+      "posting_tier": "Wave 3 (Test)",
+      "overlay_hook": "Duchess collapses coughing violently",
+      "ranking_reason": "Moderate 12/15 critic score; immediate conflict plus sudden maternal revelation creates stakes, but tested as creative variant due to lower hook/clarity scores."
+    },
+    {
+      "candidate_id": "C23",
+      "title": "Rupert's wartime betrayal revealed",
+      "trope": "Poison Frame-Up | Treason Revealed",
+      "promo_format": "Continuous",
+      "is_stitched": false,
+      "total_duration_sec": 49.1,
+      "segments": [
+        {
+          "episode": 43,
+          "start_beat_id": "E43_B025",
+          "end_beat_id": "E43_B061",
+          "start_sec": 26.1,
+          "end_sec": 75.2,
+          "start_ts": "00:26.10",
+          "end_ts": "01:15.20",
+          "duration_sec": 49.1,
+          "auto_snapped": false,
+          "opening_3s": [
+            "[E43_B025 | 26.1s-28.0s] ALEXANDER (Cold, Authoritative): \"Then let the Crown decide.\"",
+            "[E43_B026 | 28.0s-30.0s] CAM: Close-up on Alexander's hands holding an official War Office document bundle sealed with red wax and ribbon.",
+            "[E43_B027 | 28.2s-30.0s] ACT: Alexander brings forth the dossier stamped \"WAR OFFICE - TOP SECRET\" with the royal crest."
+          ],
+          "closing_3s": [
+            "[E43_B058 | 71.2s-72.7s] CAM: Close-up on Rupert waving his hands defensively, hyperventilating.",
+            "[E43_B059 | 71.4s-72.7s] BLOND NOBLEMAN (Desperate, Denying): \"I didn't!\"",
+            "[E43_B060 | 72.7s-74.8s] CAM: Low-angle tracking push-in on Alexander raising the red-ribboned war document toward the cathedral arches.",
+            "[E43_B061 | 72.8s-75.2s] ALEXANDER (Resonant, Accusatory): \"And when you believed I was dead...\""
+          ],
+          "transcript": "[E43_B025 | 26.1s-28.0s] ALEXANDER (Cold, Authoritative): \"Then let the Crown decide.\"\n[E43_B026 | 28.0s-30.0s] CAM: Close-up on Alexander's hands holding an official War Office document bundle sealed with red wax and ribbon.\n[E43_B027 | 28.2s-30.0s] ACT: Alexander brings forth the dossier stamped \"WAR OFFICE - TOP SECRET\" with the royal crest.\n[E43_B028 | 30.0s-33.4s] ALEXANDER (Grave, Powerful): \"These were delivered to me under the seal of the Crown.\"\n[E43_B029 | 30.0s-33.8s] CAM: Medium shot of Alexander holding up the sealed parcel before the room.\n[E43_B030 | 33.5s-34.5s] ALEXANDER (Commanding): \"Read the first.\"\n[E43_B031 | 33.8s-35.0s] CAM: Close-up on Lord Sterling looking sideways, his face pale with rising dread.\n[E43_B032 | 35.0s-37.0s] CAM: Two-shot of Alexander handing the dossier to a Crown Military Magistrate wearing white gloves and a high-collared black uniform.\n[E43_B033 | 35.2s-37.0s] ACT: The Crown Official receives the dossier solemnly with both hands.\n[E43_B034 | 37.0s-42.8s] CAM: Medium close-up on the Crown Official opening the binder and reading aloud.\n[E43_B035 | 37.2s-38.6s] SFX: Crisp sound of parchment turning.\n[E43_B036 | 37.8s-42.5s] CROWN OFFICIAL (Clear, Formal): \"Military Intelligence Report, Iberian front, three years ago.\"\n[E43_B037 | 42.8s-43.9s] CAM: Close-up on Rupert staring wide-eyed, completely petrified.\n[E43_B038 | 43.9s-47.8s] CAM: Medium close-up on the Crown Official continuing the official reading.\n[E43_B039 | 44.0s-47.4s] CROWN OFFICIAL (Solemn, Objective): \"Duke Alexander Ashburn's unit was ambushed after his location was compromised.\"\n[E43_B040 | 47.8s-50.8s] CAM: Frontal medium shot of the Crown Official turning a page as the congregation listens in breathless silence.\n[E43_B041 | 47.8s-50.8s] CROWN OFFICIAL (Accusing, Measured): \"The report identifies the leak as deliberate.\"\n[E43_B042 | 50.8s-54.8s] CAM: Wide shot across the rubble of the cathedral floor showing Rupert crumbling in fear against the choir railing.\n[E43_B043 | 51.0s-54.4s] CROWN OFFICIAL (Voice Continuing): \"Information regarding the Duke's position was transmitted through British channels.\"\n[E43_B044 | 51.8s-54.8s] ACT: Rupert staggers backward, his knees buckling as he leans his weight heavily on the stone balustrade.\n[E43_B045 | 54.8s-57.0s] CAM: Close-up on Rupert clinging to the stone pillar, his breath shallow and terrified.\n[E43_B046 | 55.0s-56.5s] BLOND NOBLEMAN (Whispering, Terrified): \"No...\"\n[E43_B047 | 57.0s-60.0s] CAM: Medium shot on Alexander stepping forward, thrusting the secondary dossier forward.\n[E43_B048 | 58.5s-60.0s] ALEXANDER (Cold, Implacable): \"Read the names.\"\n[E43_B049 | 60.0s-63.0s] CAM: Medium close-up on the Crown Official reading the concluding section.\n[E43_B050 | 60.6s-62.5s] CROWN OFFICIAL (Deliberate, Damning): \"Lord Henry Sterling.\"\n[E43_B051 | 63.0s-64.5s] CAM: Quick pan to Lord Sterling stiffening in his pew, then the Crown Official.\n[E43_B052 | 63.1s-64.2s] CROWN OFFICIAL (Continuing): \"Rupert Ashburn.\"\n[E43_B053 | 64.5s-66.0s] CAM: Extreme close-up on Rupert's horrified eyes darting in sheer terror.\n[E43_B054 | 66.0s-68.8s] CAM: Close-up on the Dowager Duchess covering her mouth in agonizing disbelief.\n[E43_B055 | 66.5s-68.0s] DOWAGER DUCHESS (Shaken, Devastated): \"My God...\"\n[E43_B056 | 68.8s-71.2s] CAM: Low-angle shot on Alexander towering over the fallen Rupert.\n[E43_B057 | 69.0s-71.3s] ALEXANDER (Furious, Thunderous): \"You sold my men to the enemy.\"\n[E43_B058 | 71.2s-72.7s] CAM: Close-up on Rupert waving his hands defensively, hyperventilating.\n[E43_B059 | 71.4s-72.7s] BLOND NOBLEMAN (Desperate, Denying): \"I didn't!\"\n[E43_B060 | 72.7s-74.8s] CAM: Low-angle tracking push-in on Alexander raising the red-ribboned war document toward the cathedral arches.\n[E43_B061 | 72.8s-75.2s] ALEXANDER (Resonant, Accusatory): \"And when you believed I was dead...\""
+        }
+      ],
+      "hook_0_3s": "Alexander (Cold, Authoritative): 'Then let the Crown decide.'",
+      "cliffhanger": "Alexander (Furious, Thunderous): 'You sold my men to the enemy.'",
+      "why_it_works": "Official dossier reveal plus Rupert's petrified reaction creates immediate conspiracy intrigue",
+      "scout_score": 8,
+      "critic": {
+        "candidate_id": "C23",
+        "verified_title": "Rupert's wartime betrayal revealed",
+        "verified_hook_0_3s": "Alexander (Cold, Authoritative): 'Then let the Crown decide.'",
+        "verified_cliffhanger": "Alexander (Furious, Thunderous): 'You sold my men to the enemy.'",
+        "verified_why_it_works": "Official dossier reveal plus Rupert's petrified reaction creates immediate conspiracy intrigue",
+        "hook_3s": 4,
+        "standalone_clarity": 3,
+        "cliffhanger_pull": 4,
+        "verdict": "PASS",
+        "critique": "Strong cold-open reveal but middle reading segment drags slightly for fast-scrolling thumb"
+      },
+      "scout_hook_raw": "CAM: Close-up on Alexander bringing forth the 'WAR OFFICE - TOP SECRET' dossier [E43_B026]",
+      "scout_cliffhanger_raw": "Alexander demanding: 'Read the names.' [E43_B048]",
+      "critic_total": 11,
+      "rank": 15,
+      "posting_tier": "Wave 3 (Test)",
+      "overlay_hook": "Alexander declares 'Then let the Crown decide'",
+      "ranking_reason": "Moderate 11/15 critic score; official dossier reveal plus Rupert's petrified reaction creates conspiracy intrigue, but experimental format limits launch priority."
+    },
+    {
+      "candidate_id": "C11",
+      "title": "Juliana refuses to yield",
+      "trope": "Secret Identity",
+      "promo_format": "Continuous",
+      "is_stitched": false,
+      "total_duration_sec": 31.7,
+      "segments": [
+        {
+          "episode": 20,
+          "start_beat_id": "E20_B035",
+          "end_beat_id": "E20_B052",
+          "start_sec": 56.5,
+          "end_sec": 88.2,
+          "start_ts": "00:56.50",
+          "end_ts": "01:28.20",
+          "duration_sec": 31.7,
+          "auto_snapped": false,
+          "opening_3s": [
+            "[E20_B035 | 56.5s-60.3s] CAM: Medium close-up tilting down on JULIANA kneeling in the straw beside a rustic wooden crate, sorting sprigs of dried lavender and sage into a woven basket. Her hands are bound in linen bandages from the recent fire."
+          ],
+          "closing_3s": [
+            "[E20_B050 | 81.0s-88.2s] CAM: Medium two-shot of Juliana and Seamus standing facing each other in the barn, the lantern casting a warm amber glow between them.",
+            "[E20_B052 | 84.8s-86.5s] JULIANA (Proud, Indomitable): \"They have reduced me to myself.\""
+          ],
+          "transcript": "[E20_B035 | 56.5s-60.3s] CAM: Medium close-up tilting down on JULIANA kneeling in the straw beside a rustic wooden crate, sorting sprigs of dried lavender and sage into a woven basket. Her hands are bound in linen bandages from the recent fire.\n[E20_B036 | 60.0s-64.5s] ACT: The barn door opens, revealing daylight outside. SEAMUS, an older weathered villager in a waistcoat, carries a wooden bucket inside, his expression etched with deep sorrow and concern.\n[E20_B037 | 60.5s-62.5s] SEAMUS (Gentle, Concerned): \"Let me take that basket, Lady Juliana.\"\n[E20_B038 | 62.6s-66.6s] SEAMUS (Empathetic): \"Your palms are still raw from the fire. You shouldn't be working in this freezing draft.\"\n[E20_B039 | 64.8s-66.8s] ACT: Seamus reaches down to take the handle of the basket from her.\n[E20_B040 | 66.7s-69.1s] JULIANA (Fierce, Resolute): \"If I stop, Seamus, the lung fever in the valley wins.\"\n[E20_B041 | 66.8s-70.5s] CAM: Close-up of Juliana looking up at Seamus, her smudged face fierce with unyielding determination as she holds firmly onto the basket.\n[E20_B042 | 69.2s-70.5s] JULIANA (Defiant): \"I do not yield to a cold draft.\"\n[E20_B043 | 70.5s-76.2s] CAM: Close-up of Seamus, his face agonizingly strained with grief for her lost status.\n[E20_B044 | 70.6s-72.3s] SEAMUS (Desperate, Grieving): \"You are a viscount's daughter!\"\n[E20_B045 | 72.4s-74.2s] SEAMUS (Pleading): \"Sleeping on straw, sorting weeds!\"\n[E20_B046 | 74.3s-76.2s] SEAMUS (Frustrated): \"Let the village tend to itself for once!\"\n[E20_B047 | 76.2s-81.0s] CAM: Medium close-up of Juliana, her jaw set with unwavering moral strength.\n[E20_B048 | 76.3s-79.8s] JULIANA (Passionate, Unflinching): \"The chapel is gone, Seamus. I am the only healer these people have left.\"\n[E20_B049 | 79.9s-81.0s] JULIANA (Unyielding): \"I keep the basket.\"\n[E20_B050 | 81.0s-88.2s] CAM: Medium two-shot of Juliana and Seamus standing facing each other in the barn, the lantern casting a warm amber glow between them.\n[E20_B051 | 82.0s-84.4s] SEAMUS (Saddened, Heartbroken): \"They have reduced you to a peasant.\"\n[E20_B052 | 84.8s-86.5s] JULIANA (Proud, Indomitable): \"They have reduced me to myself.\""
+        }
+      ],
+      "hook_0_3s": "CAM: Medium close-up tilting down on JULIANA kneeling in the straw beside a rustic wooden crate, sorting sprigs of dried lavender and sage",
+      "cliffhanger": "JULIANA (Unyielding): 'I keep the basket.'",
+      "why_it_works": "Juliana's defiant refusal to yield to the cold and her assertion that she is the only healer hooks cold viewers instantly",
+      "scout_score": 8,
+      "critic": {
+        "candidate_id": "C11",
+        "verified_title": "Juliana refuses to yield",
+        "verified_hook_0_3s": "CAM: Medium close-up tilting down on JULIANA kneeling in the straw beside a rustic wooden crate, sorting sprigs of dried lavender and sage",
+        "verified_cliffhanger": "JULIANA (Unyielding): 'I keep the basket.'",
+        "verified_why_it_works": "Juliana's defiant refusal to yield to the cold and her assertion that she is the only healer hooks cold viewers instantly",
+        "hook_3s": 4,
+        "standalone_clarity": 4,
+        "cliffhanger_pull": 5,
+        "verdict": "PASS",
+        "critique": "Strong defiance hook and perfect final beat leaves unbearable unresolved tension"
+      },
+      "scout_hook_raw": "CAM: Medium close-up tilting down on JULIANA kneeling in the straw beside a rustic wooden crate, sorting sprigs of dried lavender and sage into a woven basket. Her hands are bound in linen bandages from the recent fire.",
+      "scout_cliffhanger_raw": "JULIANA (Unyielding): \"I am not finished.\" CAM: Medium close-up of Juliana, her jaw set with unwavering moral strength.",
+      "critic_total": 13,
+      "rank": 16,
+      "posting_tier": "Wave 3 (Test)",
+      "overlay_hook": "Juliana asserts 'I keep the basket.'",
+      "ranking_reason": "Solid 13/15 critic score; defiant refusal hooks viewers, but tested as experimental due to lower hook_3s score of 4 versus other top creatives."
+    },
+    {
+      "candidate_id": "C13",
+      "title": "Lady Juliana's perilous disguise",
+      "trope": "Secret Identity",
+      "promo_format": "Continuous",
+      "is_stitched": false,
+      "total_duration_sec": 42.5,
+      "segments": [
+        {
+          "episode": 22,
+          "start_beat_id": "E22_B001",
+          "end_beat_id": "E22_B022",
+          "start_sec": 0.0,
+          "end_sec": 42.5,
+          "start_ts": "00:00.00",
+          "end_ts": "00:42.50",
+          "duration_sec": 42.5,
+          "auto_snapped": false,
+          "opening_3s": [
+            "[E22_B001 | 0.0s-4.0s] CAM: Wide shot framing the gothic stone archway of Ashbury Manor as other maidservants carrying laundry baskets pass through the damp courtyard.",
+            "[E22_B002 | 0.0s-4.0s] ACT: Lady Juliana walks nervously along the stone pavement dressed in a modest dark maid's dress and a plain white apron, looking around cautiously."
+          ],
+          "closing_3s": [
+            "[E22_B020 | 36.2s-39.8s] CAM: Close-up of Lady Juliana swallowing her pride and accepting her perilous disguise.",
+            "[E22_B021 | 37.0s-39.5s] LADY JULIANA (Quietly Resolute): \"Today, I am only a maid.\"",
+            "[E22_B022 | 39.8s-42.5s] ACT: Prudence opens the heavy wooden service door, and both women step inside into the dark servants' corridor as the door shuts firmly behind them."
+          ],
+          "transcript": "[E22_B001 | 0.0s-4.0s] CAM: Wide shot framing the gothic stone archway of Ashbury Manor as other maidservants carrying laundry baskets pass through the damp courtyard.\n[E22_B002 | 0.0s-4.0s] ACT: Lady Juliana walks nervously along the stone pavement dressed in a modest dark maid's dress and a plain white apron, looking around cautiously.\n[E22_B003 | 4.0s-7.0s] CAM: Medium close-up of Lady Juliana adjusting her high buttoned collar, anxious yet determined, against the backdrop of the gloomy coast.\n[E22_B004 | 6.5s-8.5s] ACT: Prudence rushes up behind Lady Juliana, pulling her into the shelter of the stone archway.\n[E22_B005 | 7.0s-11.1s] PRUDENCE (Urgent, Whispering): \"Keep your head down. If anyone recognizes you, everything is over.\"\n[E22_B006 | 11.1s-14.2s] CAM: Close-up of Lady Juliana leaning back against the rough stone wall, whispering back firmly.\n[E22_B007 | 11.2s-14.2s] LADY JULIANA (Resolute, Quiet): \"No one will recognize me dressed like this.\"\n[E22_B008 | 14.2s-19.0s] CAM: Medium close-up of Prudence glancing nervously toward the courtyard before fixing her gaze on Juliana.\n[E22_B009 | 14.2s-19.0s] PRUDENCE (Nervous, Warning): \"This is Ashburton Manor. The housekeeper watches everyone. Lady Catherine watches everyone, and Lord Rupert...\"\n[E22_B010 | 19.0s-21.2s] CAM: Close-up of Lady Juliana cutting in with fierce, unyielding conviction.\n[E22_B011 | 19.1s-21.0s] LADY JULIANA (Determined): \"The Duchess is dying.\"\n[E22_B012 | 21.2s-25.8s] CAM: Low-angle shot looking up at Lady Juliana and Prudence standing beneath the looming stone facade of the manor.\n[E22_B013 | 22.0s-25.5s] LADY JULIANA (Defiant, Firm): \"I saved Toby. I can save her.\"\n[E22_B014 | 25.8s-28.1s] CAM: Close-up on Prudence, her eyes wide with dread.\n[E22_B015 | 26.0s-28.1s] PRUDENCE (Fretful): \"And if they discover who you are?\"\n[E22_B016 | 28.1s-31.5s] CAM: Close-up on Lady Juliana holding her gaze steadily.\n[E22_B017 | 28.2s-31.0s] LADY JULIANA (Steely, Selfless): \"Then I will face that when she is breathing again.\"\n[E22_B018 | 31.5s-36.2s] CAM: Medium two-shot outside the heavy wooden servant entrance door.\n[E22_B019 | 33.8s-36.0s] PRUDENCE (Solemn): \"Then forget you were ever a lady.\"\n[E22_B020 | 36.2s-39.8s] CAM: Close-up of Lady Juliana swallowing her pride and accepting her perilous disguise.\n[E22_B021 | 37.0s-39.5s] LADY JULIANA (Quietly Resolute): \"Today, I am only a maid.\"\n[E22_B022 | 39.8s-42.5s] ACT: Prudence opens the heavy wooden service door, and both women step inside into the dark servants' corridor as the door shuts firmly behind them."
+        }
+      ],
+      "hook_0_3s": "Wide shot of gothic stone archway with maidservants passing through damp courtyard",
+      "cliffhanger": "Prudence opens the heavy wooden service door, and both women step inside into the dark servants' corridor as the door shuts firmly behind them",
+      "why_it_works": "Cold open immediately establishes dangerous mission and social stakes with no preamble",
+      "scout_score": 8,
+      "critic": {
+        "candidate_id": "C13",
+        "verified_title": "Lady Juliana's perilous disguise",
+        "verified_hook_0_3s": "Wide shot of gothic stone archway with maidservants passing through damp courtyard",
+        "verified_cliffhanger": "Prudence opens the heavy wooden service door, and both women step inside into the dark servants' corridor as the door shuts firmly behind them",
+        "verified_why_it_works": "Cold open immediately establishes dangerous mission and social stakes with no preamble",
+        "hook_3s": 4,
+        "standalone_clarity": 4,
+        "cliffhanger_pull": 5,
+        "verdict": "PASS",
+        "critique": "Strong opening with clear conflict; door slam provides effective stop-action hook"
+      },
+      "scout_hook_raw": "E22_B001: Wide shot of gothic manor archway with maidservants passing\u2014immediate visual intrigue.",
+      "scout_cliffhanger_raw": "E22_B022: Prudence opens the heavy wooden service door, and both women step inside into the dark servants' corridor as the door shuts firmly behind them.",
+      "critic_total": 13,
+      "rank": 17,
+      "posting_tier": "Wave 3 (Test)",
+      "overlay_hook": "Maidservants passing through damp courtyard",
+      "ranking_reason": "Solid 13/15 critic score; cold open establishes dangerous mission and social stakes, but tested as experimental due to slower atmospheric hook."
+    },
+    {
+      "candidate_id": "C07",
+      "title": "Gerald's Arrival",
+      "trope": "Cruel Ultimatum",
+      "promo_format": "Continuous",
+      "is_stitched": false,
+      "total_duration_sec": 47.0,
+      "segments": [
+        {
+          "episode": 11,
+          "start_beat_id": "E11_B005",
+          "end_beat_id": "E11_B045",
+          "start_sec": 4.0,
+          "end_sec": 51.0,
+          "start_ts": "00:04.00",
+          "end_ts": "00:51.00",
+          "duration_sec": 47.0,
+          "auto_snapped": false,
+          "opening_3s": [
+            "[E11_B005 | 4.0s-6.5s] CAM: Tight shot tilting up as polished black boots step down directly into the muck, revealing Gerald clad in an opulent burgundy double-breasted coat.",
+            "[E11_B006 | 5.5s-7.0s] ACT: Gerald buttons his coat, smug self-satisfaction radiating from his expression.",
+            "[E11_B007 | 7.0s-8.2s] CAM: Medium shot of a uniformed Constable descending from the carriage, firmly gripping a wooden truncheon."
+          ],
+          "closing_3s": [
+            "[E11_B042 | 46.8s-48.3s] GERALD (Taunting): \"If he has nothing to hide...\"",
+            "[E11_B043 | 47.8s-50.8s] CAM: Extreme close-up push-in on Alexander's scarred face, his eyes smoldering with lethal restraint.",
+            "[E11_B044 | 48.4s-50.0s] GERALD (O.S.) (Smug): \"...let the constable search.\"",
+            "[E11_B045 | 50.1s-51.0s] ALEXANDER (Dark, Grated): \"Search it.\""
+          ],
+          "transcript": "[E11_B005 | 4.0s-6.5s] CAM: Tight shot tilting up as polished black boots step down directly into the muck, revealing Gerald clad in an opulent burgundy double-breasted coat.\n[E11_B006 | 5.5s-7.0s] ACT: Gerald buttons his coat, smug self-satisfaction radiating from his expression.\n[E11_B007 | 7.0s-8.2s] CAM: Medium shot of a uniformed Constable descending from the carriage, firmly gripping a wooden truncheon.\n[E11_B008 | 8.2s-10.8s] CAM: Medium tracking shot as Juliana steps defensively toward Gerald, her face full of shock and anger.\n[E11_B009 | 8.3s-10.7s] JULIANA (Startled, Indignant): \"Gerald? What are you doing here?\"\n[E11_B010 | 10.8s-13.0s] CAM: Wide two-shot across the puddle-strewn ground between Gerald and Juliana against the misty landscape.\n[E11_B011 | 11.1s-13.2s] GERALD (Arrogant, Smooth): \"I came for something that belongs to me.\"\n[E11_B012 | 13.0s-14.3s] CAM: Close-up of Clarissa peering from the carriage window in her violet silk gown, a venomous, triumphant smile curling her lips.\n[E11_B013 | 14.3s-16.8s] CAM: Close-up of Juliana, her anger flaring as she gestures sharply.\n[E11_B014 | 14.4s-16.7s] JULIANA (Furious, Defiant): \"You have already taken enough from me. Leave!\"\n[E11_B015 | 16.8s-18.5s] CAM: Medium close-up of Gerald pointing an accusatory finger, his composure snapping into hostile anger.\n[E11_B016 | 16.8s-18.7s] GERALD (Aggressive, Snarl): \"Your husband stole my gold pocket watch!\"\n[E11_B017 | 18.5s-20.0s] CAM: Close-up of Juliana recoiling in utter disbelief.\n[E11_B018 | 19.0s-20.0s] JULIANA (Incredulous, Gasping): \"What? When?\"\n[E11_B019 | 20.0s-22.0s] CAM: Close-up of Gerald narrowing his eyes vindictively.\n[E11_B020 | 20.9s-22.3s] GERALD (Cold, Certain): \"The last time I came here.\"\n[E11_B021 | 22.0s-24.6s] CAM: Medium shot of Juliana scoffing, stepping forward as Alexander stands motionless behind her.\n[E11_B022 | 23.0s-24.8s] JULIANA (Contemptuous, Outraged): \"You never even entered the cottage!\"\n[E11_B023 | 24.6s-26.9s] CAM: Close-up of Gerald smirking with condescending amusement.\n[E11_B024 | 25.2s-27.0s] GERALD (Smug, Threatening): \"Then you should have nothing to fear from a search.\"\n[E11_B025 | 26.9s-28.9s] CAM: Three-shot of Alexander, Juliana, and Gerald in the bleak drizzle.\n[E11_B026 | 27.3s-29.0s] JULIANA (Adamant, Protective): \"Alexander would never steal from you.\"\n[E11_B027 | 28.9s-32.4s] CAM: Low-angle shot of Gerald throwing his head back in arrogant, mocking laughter.\n[E11_B028 | 29.3s-32.8s] GERALD (Mocking, Spiteful): \"Of course you would defend him. You married a beggar!\"\n[E11_B029 | 32.4s-34.9s] CAM: Medium close-up of Alexander stepping past Juliana, his gaze murderous and jaw rigid.\n[E11_B030 | 33.0s-34.9s] ALEXANDER (Low, Menacing): \"Choose your next words carefully.\"\n[E11_B031 | 34.9s-37.0s] CAM: Medium shot of Gerald pointing back toward the approaching Constable, feigning alarm.\n[E11_B032 | 35.1s-37.1s] GERALD (Shouting, Dramatic): \"You hear that? He threatens me again!\"\n[E11_B033 | 37.0s-39.1s] CAM: Medium shot of the Constable marching into frame between them, holding his truncheon horizontally.\n[E11_B034 | 37.4s-39.2s] CONSTABLE (Authoritative, Stern): \"I have received a complaint of theft.\"\n[E11_B035 | 39.1s-41.0s] CAM: Extreme close-up of Juliana, defiant and resolute.\n[E11_B036 | 39.7s-41.1s] JULIANA (Fierce): \"A complaint is not proof.\"\n[E11_B037 | 41.0s-43.3s] CAM: Close-up of the Constable gesturing with his truncheon toward the cottage door.\n[E11_B038 | 41.4s-43.3s] CONSTABLE (Cold, Procedural): \"Then a search will settle the matter.\"\n[E11_B039 | 43.3s-46.0s] CAM: Medium shot of Juliana backing up to the doorway, spreading her arms wide to block the entrance.\n[E11_B040 | 43.5s-46.3s] JULIANA (Desperate, Shouting): \"You cannot simply invade our home because this man makes an accusation!\"\n[E11_B041 | 46.0s-47.8s] CAM: Medium close-up of Gerald crossing his arms smugly.\n[E11_B042 | 46.8s-48.3s] GERALD (Taunting): \"If he has nothing to hide...\"\n[E11_B043 | 47.8s-50.8s] CAM: Extreme close-up push-in on Alexander's scarred face, his eyes smoldering with lethal restraint.\n[E11_B044 | 48.4s-50.0s] GERALD (O.S.) (Smug): \"...let the constable search.\"\n[E11_B045 | 50.1s-51.0s] ALEXANDER (Dark, Grated): \"Search it.\""
+        }
+      ],
+      "hook_0_3s": "Polished black boots step into muck as Gerald radiates smug self-satisfaction while buttoning his coat.",
+      "cliffhanger": "Alexander's eyes smolder with lethal restraint as Gerald taunts 'If he has nothing to hide... let the constable search,' leaving the search outcome unresolved.",
+      "why_it_works": "The immediate clash of class and accusation creates instant conflict as Gerald insults Juliana's marriage to a beggar.",
+      "scout_score": 9,
+      "critic": {
+        "candidate_id": "C07",
+        "verified_title": "Gerald's Arrival",
+        "verified_hook_0_3s": "Polished black boots step into muck as Gerald radiates smug self-satisfaction while buttoning his coat.",
+        "verified_cliffhanger": "Alexander's eyes smolder with lethal restraint as Gerald taunts 'If he has nothing to hide... let the constable search,' leaving the search outcome unresolved.",
+        "verified_why_it_works": "The immediate clash of class and accusation creates instant conflict as Gerald insults Juliana's marriage to a beggar.",
+        "hook_3s": 4,
+        "standalone_clarity": 3,
+        "cliffhanger_pull": 4,
+        "verdict": "PASS",
+        "critique": "Clear conflict established quickly, though the multiple character introductions slightly dilute the instant impact."
+      },
+      "scout_hook_raw": "Polished black boots step down into the muck, revealing Gerald in a burgundy coat (E11_B005 | 4.0s-6.5s)",
+      "scout_cliffhanger_raw": "Gerald gloats: \"If he has nothing to hide... let the constable search\" (E11_B042 | 46.8s-48.3s)",
+      "critic_total": 11,
+      "rank": 18,
+      "posting_tier": "Wave 3 (Test)",
+      "overlay_hook": "Gerald radiates smug self-satisfaction in muck",
+      "ranking_reason": "Lower 11/15 critic score; immediate clash of class and accusation creates conflict, but ranked lowest due to weakest standalone clarity and hook scores."
+    },
+    {
+      "candidate_id": "C14",
+      "title": "Forced hearth scrubbing punishment",
+      "trope": "Cruel Ultimatum",
+      "promo_format": "Continuous",
+      "is_stitched": false,
+      "total_duration_sec": 46.5,
+      "segments": [
+        {
+          "episode": 24,
+          "start_beat_id": "E24_B036",
+          "end_beat_id": "E24_B068",
+          "start_sec": 45.5,
+          "end_sec": 92.0,
+          "start_ts": "00:45.50",
+          "end_ts": "01:32.00",
+          "duration_sec": 46.5,
+          "auto_snapped": false,
+          "opening_3s": [
+            "[E24_B036 | 45.5s-48.5s] CAM: Medium shot of the noblewoman turning the crop in her white-gloved hands with smug satisfaction.",
+            "[E24_B037 | 48.5s-51.5s] ACT: The noblewoman leads Juliana and a frightened Prudence down a dark flagstone hallway.",
+            "[E24_B038 | 48.5s-51.5s] CAM: Low tracking shot down the corridor as the hem of the lilac dress sweeps past, followed by Juliana's swift steps."
+          ],
+          "closing_3s": [
+            "[E24_B067 | 85.2s-91.5s] ACT: Juliana raises her head. Smudges of dark soot stain her fair cheek, but her piercing blue eyes burn with unwavering defiance and unyielding resolve as she stares toward the hallway.",
+            "[E24_B068 | 85.2s-92.0s] CAM: Tight close-up of Juliana's soot-streaked face turning slowly toward the chamber exit, her jaw set firm as dramatic music builds to a powerful crescendo."
+          ],
+          "transcript": "[E24_B036 | 45.5s-48.5s] CAM: Medium shot of the noblewoman turning the crop in her white-gloved hands with smug satisfaction.\n[E24_B037 | 48.5s-51.5s] ACT: The noblewoman leads Juliana and a frightened Prudence down a dark flagstone hallway.\n[E24_B038 | 48.5s-51.5s] CAM: Low tracking shot down the corridor as the hem of the lilac dress sweeps past, followed by Juliana's swift steps.\n[E24_B039 | 51.5s-53.5s] ACT: Juliana's boots step down into a dark, rustic chamber dominated by an enormous, blackened stone hearth.\n[E24_B040 | 51.5s-54.0s] CAM: Wide shot of the vast soot-stained stone fireplace. The noblewoman turns back toward Juliana, crop held at her side.\n[E24_B041 | 53.6s-55.2s] NOBLEWOMAN (Harsh, Dismissive): \"Clean it.\"\n[E24_B042 | 54.0s-56.2s] CAM: Medium shot of the noblewoman extending her gloved hand toward the cavernous, filth-laden hearth.\n[E24_B043 | 56.2s-57.6s] LADY JULIANA (Quiet, Questioning): \"All of it, my lady?\"\n[E24_B044 | 56.2s-57.8s] CAM: Close-up of Juliana looking up at the towering, soot-blackened chimney.\n[E24_B045 | 57.8s-63.5s] NOBLEWOMAN (Intimate, Venomous): \"Every stone. Perhaps when your hands are black enough, you will finally remember what you are.\"\n[E24_B046 | 57.8s-63.8s] CAM: Extreme close-up two-shot as the noblewoman steps unnervingly close to Juliana's face, whispering with sadistic relish.\n[E24_B047 | 63.8s-66.0s] ACT: Juliana slowly drops to her knees on the cold flagstones before the soot-filled fireplace.\n[E24_B048 | 63.8s-66.2s] CAM: Medium shot of Juliana sinking to her knees, her face grim and composed.\n[E24_B049 | 66.0s-67.5s] ACT: Prudence steps toward the noblewoman in distress, her hands clasped tightly.\n[E24_B050 | 66.2s-67.5s] PRUDENCE (Desperate, Pleading): \"My lady\u2014\"\n[E24_B051 | 66.2s-67.8s] CAM: Close-up of Prudence's anxious, trembling face.\n[E24_B052 | 67.5s-69.5s] ACT: The noblewoman whips around sharply, thrusting the tip of her riding crop directly into Prudence's face.\n[E24_B053 | 67.8s-70.5s] CAM: Medium close-up of the noblewoman baring her teeth in rage, aiming the crop threateningly.\n[E24_B054 | 68.0s-70.5s] NOBLEWOMAN (Furious, Threatening): \"Do you want the same punishment?\"\n[E24_B055 | 70.5s-72.8s] CAM: Close-up of Prudence flinching in terror, lowering her eyes immediately.\n[E24_B056 | 70.6s-72.4s] PRUDENCE (Terrified, Murmuring): \"No, my lady.\"\n[E24_B057 | 72.5s-74.5s] ACT: Juliana grips a coarse scrubbing brush with both hands and begins vigorously scraping the thick black ash across the hearthstones.\n[E24_B058 | 72.8s-74.8s] CAM: Close-up shot of Juliana's soot-covered hands fiercely scrubbing the black ash along the stone floor.\n[E24_B059 | 73.0s-81.0s] SFX: Rhythmic, harsh rasping sound of bristles scraping against stone.\n[E24_B060 | 74.8s-78.5s] CAM: Medium shot of the noblewoman leaning casually against the wooden doorframe, watching Juliana toil with smug condescension.\n[E24_B061 | 75.0s-78.0s] NOBLEWOMAN (Smug, Gleeful): \"That is where clever little servants belong.\"\n[E24_B062 | 78.5s-81.2s] CAM: Medium profile shot of Juliana kneeling by the hearth in the dim window light, scrubbing steadily.\n[E24_B063 | 78.6s-81.0s] LADY JULIANA (V.O.) (Cold, Resolute): \"Let her think I am only a maid.\"\n[E24_B064 | 81.2s-85.0s] ACT: Juliana pauses scrubbing. Her soot-caked fingers reach into the deep pocket of her apron, carefully feeling the worn leather cover of her mother's remedy journal and the glass dropper bottle securely concealed within.\n[E24_B065 | 81.2s-85.2s] CAM: Close-up of Juliana's soot-stained hand touching the hidden remedy book and the antidote vial inside her apron pocket.\n[E24_B066 | 81.5s-84.8s] LADY JULIANA (V.O.) (Determined, Defiant): \"Let her believe I am ignorant.\"\n[E24_B067 | 85.2s-91.5s] ACT: Juliana raises her head. Smudges of dark soot stain her fair cheek, but her piercing blue eyes burn with unwavering defiance and unyielding resolve as she stares toward the hallway.\n[E24_B068 | 85.2s-92.0s] CAM: Tight close-up of Juliana's soot-streaked face turning slowly toward the chamber exit, her jaw set firm as dramatic music builds to a powerful crescendo."
+        }
+      ],
+      "hook_0_3s": "Medium shot of the noblewoman turning the crop in her white-gloved hands with smug satisfaction",
+      "cliffhanger": "Juliana raises her head. Smudges of dark soot stain her fair cheek, but her piercing blue eyes burn with unwavering defiance and unyielding resolve as she stares toward the hallway",
+      "why_it_works": "Sadistic power dynamic established then Juliana's defiant stare cuts through the oppression",
+      "scout_score": 8,
+      "critic": {
+        "candidate_id": "C14",
+        "verified_title": "Forced hearth scrubbing punishment",
+        "verified_hook_0_3s": "Medium shot of the noblewoman turning the crop in her white-gloved hands with smug satisfaction",
+        "verified_cliffhanger": "Juliana raises her head. Smudges of dark soot stain her fair cheek, but her piercing blue eyes burn with unwavering defiance and unyielding resolve as she stares toward the hallway",
+        "verified_why_it_works": "Sadistic power dynamic established then Juliana's defiant stare cuts through the oppression",
+        "hook_3s": 4,
+        "standalone_clarity": 3,
+        "cliffhanger_pull": 4,
+        "verdict": "PASS",
+        "critique": "Clear punishment setup but noblewoman's dialogue is slightly verbose for cold-scroll pace"
+      },
+      "scout_hook_raw": "E24_B036: Noblewoman demands 'Can you scrub stone?' as Juliana stands meekly.",
+      "scout_cliffhanger_raw": "E24_B068: Juliana's soot-streaked face turns toward the chamber exit, jaw set firm as music builds to a crescendo, but the payoff is cut.",
+      "critic_total": 11,
+      "rank": 19,
+      "posting_tier": "Wave 3 (Test)",
+      "overlay_hook": "Smudges of dark soot stain Juliana's cheek",
+      "ranking_reason": "Lowest 11/15 critic score; sadistic power dynamic established then defiant stare, but ranked last due to poorest hook_3s and standalone clarity performance."
+    },
+    {
+      "candidate_id": "C21",
+      "title": "Juliana's Public Shaming",
+      "trope": "Rescue | Vengeful Return",
+      "promo_format": "Continuous",
+      "is_stitched": false,
+      "total_duration_sec": 48.5,
+      "segments": [
+        {
+          "episode": 41,
+          "start_beat_id": "E41_B011",
+          "end_beat_id": "E41_B035",
+          "start_sec": 15.5,
+          "end_sec": 64.0,
+          "start_ts": "00:15.50",
+          "end_ts": "01:04.00",
+          "duration_sec": 48.5,
+          "auto_snapped": false,
+          "opening_3s": [
+            "[E41_B011 | 15.5s-17.5s] SFX: Heavy wooden creak of the cathedral double doors swinging open.",
+            "[E41_B012 | 15.5s-20.0s] CAM: Wide shot from behind the altar down the aisle as the great church doors slowly open, revealing the silhouette of three figures against the daylight.",
+            "[E41_B013 | 17.5s-20.0s] ACT: Juliana, dressed in a coarse drab prison dress with a numbered identification badge, is marched forward by two armed constables holding her by the arms."
+          ],
+          "closing_3s": [
+            "[E41_B035 | 60.8s-64.0s] CAM: Dramatic low-angle full shot looking up at Juliana, her posture straight, imposing, and regal despite the heavy chains."
+          ],
+          "transcript": "[E41_B011 | 15.5s-17.5s] SFX: Heavy wooden creak of the cathedral double doors swinging open.\n[E41_B012 | 15.5s-20.0s] CAM: Wide shot from behind the altar down the aisle as the great church doors slowly open, revealing the silhouette of three figures against the daylight.\n[E41_B013 | 17.5s-20.0s] ACT: Juliana, dressed in a coarse drab prison dress with a numbered identification badge, is marched forward by two armed constables holding her by the arms.\n[E41_B014 | 20.0s-22.8s] CAM: Extreme close-up of Juliana's scarred, dirtied wrists bound tight in heavy iron shackles.\n[E41_B015 | 22.8s-26.0s] CAM: Intense close-up of Juliana's bruised, dirt-streaked face. Her piercing blue eyes burn with fierce dignity despite her captive state.\n[E41_B016 | 26.0s-28.8s] CAM: Medium shot of Catherine standing beside the altar, watching Juliana's entrance with gloating satisfaction.\n[E41_B017 | 26.8s-28.4s] CATHERINE (Smug, Taunting): \"There she is.\"\n[E41_B018 | 28.8s-30.0s] CAM: Medium tracking shot of Juliana marching between the stern constables down the central aisle toward the altar.\n[E41_B019 | 30.0s-34.0s] CAM: Medium shot of a seated aristocratic couple in the pews, whispering and sneering behind an ivory lace fan.\n[E41_B020 | 30.5s-31.6s] NOBLEWOMAN (Gleeful, Whispering): \"Look at her.\"\n[E41_B021 | 31.7s-33.8s] NOBLEMAN (Mocking, Chuckling): \"She actually came back to the chapel.\"\n[E41_B022 | 34.0s-36.8s] CAM: Close-up of the noblewoman giggling with hand over mouth, glancing spitefully at the disgraced bride.\n[E41_B023 | 34.8s-36.8s] NOBLEWOMAN (Scornful, Smug): \"Not as a bride this time.\"\n[E41_B024 | 36.8s-39.8s] CAM: Medium shot of two senior aristocrats in the carved choir stalls, resting on their canes and nodding in smug agreement.\n[E41_B025 | 39.8s-43.8s] CAM: Close profile of Juliana as she halts in the center aisle, lifting her chin proudly to face the sneering onlookers.\n[E41_B026 | 41.0s-44.2s] CATHERINE (O.S.) (Derisive, Projecting): \"Lady Juliana Ashcroft. Look around.\"\n[E41_B027 | 43.8s-48.5s] CAM: High-angle wide shot showing Juliana flanked by guards in the center of the lavishly decorated nave, dwarfed by the grand cathedral.\n[E41_B028 | 45.0s-48.0s] CATHERINE (V.O.) (Mocking, Resonant): \"This is the world you thought you belonged to.\"\n[E41_B029 | 48.5s-52.8s] CAM: Low-angle medium shot of Catherine gesturing broadly from the altar steps, looking down upon Juliana like an empress.\n[E41_B030 | 48.6s-52.4s] CATHERINE (Spiteful, Boastful): \"And now they can all see what you truly are.\"\n[E41_B031 | 52.8s-57.8s] CAM: Medium shot of Juliana standing firmly between the guards, calmly meeting Catherine's venomous gaze.\n[E41_B032 | 54.8s-57.5s] ACT: Juliana looks around the cathedral at the sea of pompous faces, then raises her eyes straight back to Catherine with utter disdain.\n[E41_B033 | 57.8s-60.8s] CAM: Tight close-up on Juliana's bruised, unshaken face.\n[E41_B034 | 58.0s-60.5s] JULIANA (Defiant, Unbowed): \"You needed an entire chapel to feel powerful over one chained woman?\"\n[E41_B035 | 60.8s-64.0s] CAM: Dramatic low-angle full shot looking up at Juliana, her posture straight, imposing, and regal despite the heavy chains."
+        }
+      ],
+      "hook_0_3s": "Heavy wooden cathedral doors creak open revealing silhouette of three figures against daylight",
+      "cliffhanger": "Juliana raises her eyes straight back to Catherine with utter disdain while standing between guards in the cathedral nave",
+      "why_it_works": "Public humiliation of the protagonist combined with antagonist's gloating creates instant sympathy and conflict",
+      "scout_score": 9,
+      "critic": {
+        "candidate_id": "C21",
+        "verified_title": "Juliana's Public Shaming",
+        "verified_hook_0_3s": "Heavy wooden cathedral doors creak open revealing silhouette of three figures against daylight",
+        "verified_cliffhanger": "Juliana raises her eyes straight back to Catherine with utter disdain while standing between guards in the cathedral nave",
+        "verified_why_it_works": "Public humiliation of the protagonist combined with antagonist's gloating creates instant sympathy and conflict",
+        "hook_3s": 4,
+        "standalone_clarity": 4,
+        "cliffhanger_pull": 4,
+        "verdict": "PASS",
+        "critique": "Strong visual hook with church doors opening, but clarity slightly muddied by multiple whispering nobles - still effective standalone"
+      },
+      "scout_hook_raw": "SFX: Heavy wooden creak of the cathedral double doors swinging open [E41_B011]",
+      "scout_cliffhanger_raw": "Juliana's defiant line: 'You needed an entire chapel to feel powerful over one chained woman?' [E41_B034]",
+      "critic_total": 12,
+      "rank": 20,
+      "posting_tier": "Backlog",
+      "overlay_hook": "",
+      "ranking_reason": "Public humiliation of the protagonist combined with antagonist's gloating creates instant sympathy and conflict"
+    }
+  ],
+  "rejected_audit": [
+    {
+      "candidate_id": "C25",
+      "title": "Duchess by Conviction",
+      "stage": "validator",
+      "reason": "DURATION_OUT_OF_BOUNDS (6.5s not in 20-60s)",
+      "segments_preview": [
+        "Ep46 00:30.50-00:37.00"
+      ]
+    },
+    {
+      "candidate_id": "C05",
+      "title": "Gerald's Arrogance",
+      "stage": "trimmer_validator",
+      "reason": "DURATION_OUT_OF_BOUNDS (89.1s not in 20-60s)",
+      "segments_preview": [
+        "Ep7 00:00.00-00:50.80",
+        "Ep7 01:09.50-01:47.80"
+      ]
+    },
+    {
+      "candidate_id": "C18",
+      "title": "Courtroom Defiance",
+      "stage": "trimmer_validator",
+      "reason": "DURATION_OUT_OF_BOUNDS (147.2s not in 20-60s)",
+      "segments_preview": [
+        "Ep34 00:00.00-01:21.00",
+        "Ep34 01:25.00-02:31.20"
+      ]
+    },
+    {
+      "candidate_id": "C24",
+      "title": "Invalid Marriage Declaration",
+      "stage": "cold_scroll_critic",
+      "reason": "[Deterministic Gate: 4/3/3 = 10/15 below threshold] Scene cut disrupts tension - the legal revelation feels like a lecture rather than a cliffhanger, and the jump to the priest thrusting paper into camera feels disconnected from the marriage conflict",
+      "scores": {
+        "hook_3s": 4,
+        "standalone_clarity": 3,
+        "cliffhanger_pull": 3
+      },
+      "segments_preview": [
+        "Ep46 00:11.00-00:58.20"
+      ]
+    },
+    {
+      "candidate_id": "C04",
+      "title": "Rainy Path to Cottage",
+      "stage": "cold_scroll_critic",
+      "reason": "Total score 11 but scene cut penalty applies - the mid-episode jump from cottage threshold to interior feels like a trimmed scene, and the 'disappointed?' line resolves the gentle tension instead of cutting on a hook",
+      "scores": {
+        "hook_3s": 4,
+        "standalone_clarity": 4,
+        "cliffhanger_pull": 3
+      },
+      "segments_preview": [
+        "Ep6 00:00.00-00:33.00",
+        "Ep6 00:33.70-01:00.00"
+      ]
+    },
+    {
+      "candidate_id": "C17",
+      "title": "Catherine branding Juliana",
+      "stage": "cold_scroll_critic",
+      "reason": "[Deterministic Gate: 4/3/3 = 10/15 below threshold] Standalone clarity low\u2014without show context, Catherine's specific insults about the altar feel like truncated dialogue; ending resolves tension instead of cutting on a cliffhanger",
+      "scores": {
+        "hook_3s": 4,
+        "standalone_clarity": 3,
+        "cliffhanger_pull": 3
+      },
+      "segments_preview": [
+        "Ep31 00:02.80-00:59.00"
+      ]
+    },
+    {
+      "candidate_id": "C22",
+      "title": "Alexander returns to cathedral",
+      "stage": "cold_scroll_critic",
+      "reason": "[Deterministic Gate: 4/2/2 = 8/15 below threshold] --- SCENE CUT --- penalizes standalone_clarity to 2; the mid-episode jump to Alexander's mother feels confusing and disconnected without backstory; ending resolves tension with mother acceptance instead of cutting on a cliffhanger",
+      "scores": {
+        "hook_3s": 4,
+        "standalone_clarity": 2,
+        "cliffhanger_pull": 2
+      },
+      "segments_preview": [
+        "Ep42 00:00.00-00:39.90",
+        "Ep42 00:49.20-01:04.00"
+      ]
+    },
+    {
+      "candidate_id": "C02",
+      "title": "Groom rejects bride at altar",
+      "stage": "cold_scroll_critic",
+      "reason": "First 3 seconds are strong but standalone clarity drops due to altar context requiring show knowledge; final cut resolves tension with father rejection rather than true cliffhanger",
+      "scores": {
+        "hook_3s": 5,
+        "standalone_clarity": 3,
+        "cliffhanger_pull": 3
+      },
+      "segments_preview": [
+        "Ep2 00:00.00-00:18.00",
+        "Ep2 00:24.00-00:42.50"
+      ]
+    },
+    {
+      "candidate_id": "ST02",
+      "title": "Wedding gown trudge through mud",
+      "stage": "stitched_critic",
+      "reason": "[Deterministic Gate: 3/2/4 = 9/15 below threshold] Slow establishing shot of walking fails to stop scrolling; scene cut to Gerald's triumphant laugh feels disconnected and confusing without context",
+      "segments_preview": [
+        "Ep6 00:00.00-00:14.90",
+        "Ep11 01:36.80-01:52.75"
+      ]
+    }
+  ]
+}
