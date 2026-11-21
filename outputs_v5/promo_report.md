@@ -1,290 +1,239 @@
-# Ranked Promo Report (v4)
+# Ranked Promo Report (v5)
 
 - **Episodes processed:** 50 (3,727 beats)
-- **Model:** `nvidia / nvidia/nemotron-3.5-lightning-30b-a3b` (Critic/Ranker: `nvidia/nemotron-3.5-lightning-30b-a3b`)
-- **API calls:** 0 | **Tokens:** 0 in / 0 out
-- **Funnel:** 26 scouted -> 10 sent to Smart Trimmer (8 recovered) -> **20 Approved & Ranked** (2 Intra-Episode Cuts, 2 Cross-Episode Stitched) | **9 Rejected in Audit**
+- **Scout model:** `nvidia / nvidia/nemotron-3.5-lightning-30b-a3b` | **Critic:** `nvidia / nvidia/nemotron-3.5-lightning-30b-a3b` | **Ranker & overlays:** `nvidia/nemotron-3.5-lightning-30b-a3b`
+- **API calls:** 0 | **Tokens:** 0 in / 0 out *(this run reused 35 cached LLM results; the original fresh run used 38 calls / 342,057 tokens)*
+- **Auto review flags:** 4 of 14 promos need a human look (wrong place/person in text, or hook/cliffhanger text that doesn't match the actual first/last 3 seconds)
+- **Funnel:** 26 scouted -> 13 sent to Smart Trimmer (8 recovered) -> **14 Approved & Ranked** (2 Intra-Episode Cuts, 2 Cross-Episode Stitched) | **15 Rejected in Audit**
 
 ---
 ## Ranked Promos
 
-### #1 [Wave 1 (Launch Hero)] Alexander's Vengeful March (43.95s)
-- **ID:** `C20` | **Format:** Continuous | **Trope:** Cruel Ultimatum
-- **Cold-Scroll Critic:** Hook 5/5 | Clarity 5/5 | Cliffhanger 5/5 (**15/15**)
+### #1 [Wave 1 (Launch Hero)] Stranger offers ring to Juliana (52.8s) *(compressed from 151.4s)*
+- **ID:** `C03` | **Format:** Continuous | **Trope:** Revenge | Dignity
+- **Cold-Scroll Critic:** Hook 5/5 | Clarity 4/5 | Cliffhanger 5/5 (**14/15**)
+- **NEEDS REVIEW:** OVERLAY names a place/person not in this clip: altar
 - **Segments:**
-  - Episode 36: `02:36.80 -> 03:20.75` (43.95s | beats `E36_B098..E36_B120`)
-- **Suggested 0-3s Text Overlay:** "Husband declares lethal intent on bride"
-- **Verified 0-3s Hook:** Alexander declares they are marrying in two days and killing his wife afterward, spoken with simmering fury
-  - *Script proof (0-3s):* `[E36_B098 | 156.8s-159.8s] ALEXANDER (Simmering with Fury): "They are marrying in two days..."`
-- **Verified Cliffhanger:** Alexander stares resolutely ahead into the dark snowy woods with a grim determined expression before cutting to black
-  - *Script proof (last 3s):* `[E36_B118 | 192.5s-200.8s] CAM: Tight side profile close-up of Alexander's battle-scarred cheek and burning gaze as he makes his final declaration. / [E36_B120 | 197.0s-200.8s] ACT: Alexander stares resolutely ahead into the dark, snowy woods as the camera holds on his grim, determined expression before cutting to black.`
-- **Why it works:** Immediate declaration of lethal intent combined with visual of Alexander walking toward danger creates instant conflict
-- **Ranking rationale:** Highest critic score (15/15) with immediate lethal intent declaration and snowbound visual creating instant, irresistible conflict.
+  - Episode 4: `00:00.00 -> 00:52.80` (52.8s | beats `E04_B001..E04_B038`)
+- **Suggested 0-3s Text Overlay:** "Scorned bride mocked at altar"
+  - *Overlay basis:* Gerald and Clarissa mock and threaten Juliana, calling her worthless and discarded, targeting her self-worth in front of the chapel congregation.
+- **Compression Note:** Cut Gerald's mockery and Clarissa's laughter between ring offer and Bearded Man's 'I know what I see' declaration.
+- **Verified 0-3s Hook:** Mysterious Bearded Man's scarred hand holding out the silver band ring
+  - *Script proof (0-3s):* `[E04_B001 | 0.0s-1.5s] CAM: Close-up of the Mysterious Bearded Man's scarred hand holding out the silver band ring. / [E04_B002 | 1.5s-3.2s] CAM: Medium close-up of Juliana, staring down in disbelief at the offered ring.`
+- **Verified Cliffhanger:** Extreme close-up of the ring held in his weathered fingers, Juliana's white silk gown blurred in background
+  - *Script proof (last 3s):* `[E04_B037 | 49.8s-52.8s] CAM: Extreme close-up of the ring held in his weathered fingers, Juliana's white silk gown blurred in background. / [E04_B038 | 50.0s-52.5s] MYSTERIOUS BEARDED MAN (Gentle): "You don't have to stand alone now."`
+- **Why it works:** Mysterious stranger offering a ring creates immediate romantic intrigue and mystery
+- **Ranking rationale:** A mysterious bearded man's scarred hand offers a silver ring to Juliana in white silk, instantly establishing romantic intrigue and mystery that compels cold-scrolling viewers to engage.
 
-### #2 [Wave 1 (Launch Hero)] Juliana protects Catherine from exile (34.0s)
-- **ID:** `C26` | **Format:** Continuous | **Trope:** Cruel Ultimatum
-- **Cold-Scroll Critic:** Hook 5/5 | Clarity 5/5 | Cliffhanger 5/5 (**15/15**)
+### #2 [Wave 1 (Launch Hero)] Catherine's cruel warning to defy the family (38.0s)
+- **ID:** `ST01` | **Format:** Cross-Episode Stitched | **Trope:** Flash-Forward Mashup
+- **Cold-Scroll Critic:** Hook 4/5 | Clarity 4/5 | Cliffhanger 5/5 (**13/15**)
+- **NEEDS REVIEW:** CLIFFHANGER text does not match the clip's last 3 seconds
 - **Segments:**
-  - Episode 47: `01:07.20 -> 01:41.20` (34.0s | beats `E47_B033..E47_B053`)
-- **Suggested 0-3s Text Overlay:** "Princess defies villainous expulsion order"
-- **Verified 0-3s Hook:** Lady Ashbourne (Cold, Unforgiving): 'She aided the poison in my veins. Cast her into the road.'
-  - *Script proof (0-3s):* `[E47_B033 | 67.2s-71.2s] LADY ASHBOURNE (Cold, Unforgiving): "She aided the poison in my veins. Cast her into the road."`
-- **Verified Cliffhanger:** Juliana (Unflinching, Firm): 'As a scullery maid.'
-  - *Script proof (last 3s):* `[E47_B052 | 98.8s-101.2s] CAM: Close-up of Juliana staring straight into Catherine's eyes without blinking. / [E47_B053 | 99.2s-101.0s] JULIANA (Unflinching, Firm): "As a scullery maid."`
-- **Why it works:** Villainous expulsion order immediately countered by Juliana's principled defiance
-- **Ranking rationale:** Perfect 15/15 critic score; villainous expulsion instantly countered by principled defiance creates instant sympathy and ideological conflict.
-
-### #3 [Wave 1 (Launch Hero)] Catherine commands bride's entrance (32.2s)
-- **ID:** `ST03` | **Format:** Cross-Episode Stitched | **Trope:** Flash-Forward Mashup
-- **Cold-Scroll Critic:** Hook 5/5 | Clarity 5/5 | Cliffhanger 5/5 (**15/15**)
-- **Segments:**
-  - Episode 41: `00:00.00 -> 00:15.50` (15.5s | beats `E41_B001..E41_B010`)
-  - Episode 46: `01:41.80 -> 01:58.50` (16.7s | beats `E46_B057..E46_B062`)
-- **Suggested 0-3s Text Overlay:** "Imperious command followed by cruel threat"
-- **Verified 0-3s Hook:** Catherine abruptly pulls away from Rupert and raises white-gloved hand to command silence
+  - Episode 41: `00:00.00 -> 00:17.50` (17.5s | beats `E41_B001..E41_B011`)
+  - Episode 1: `00:00.00 -> 00:20.50` (20.5s | beats `E01_B001..E01_B013`)
+- **Suggested 0-3s Text Overlay:** "Matriarch blocks bride at cathedral doors"
+  - *Overlay basis:* Matriarch tells Juliana to turn around, then declares Gerald is no longer waiting for her, blocking Juliana's entry into the wedding.
+- **Verified 0-3s Hook:** Wide symmetrical shot of candlelit aisle toward altar with Catherine, Rupert, and Priest standing before first spoken word
   - *Script proof (0-3s):* `[E41_B001 | 0.0s-1.8s] CAM: Wide symmetrical shot looking down the candlelit, flower-strewn aisle toward the altar where Rupert, Catherine, and the Priest stand. / [E41_B002 | 1.8s-2.8s] CATHERINE (Imperious, Commanding): "Wait."`
-- **Verified Cliffhanger:** Alexander challenges High Priest to peerage court showdown in ten days, defiant glare locked on
-  - *Script proof (last 3s):* `[E46_B061 | 111.8s-118.5s] CAM: Medium close-up of Alexander glaring with icy authority. / [E46_B062 | 112.0s-118.2s] ALEXANDER (Defiant, Commanding): "Then let it prove that in ten days, before witnesses. Not with six halberds pointed at me in my own chapel."`
-- **Why it works:** Imperious command followed by cruel threat establishes Catherine as immediate villain with dangerous ambition
-- **Ranking rationale:** Perfect 15/15 critic score; imperious command establishes Catherine as an immediate dangerous villain with ambitious agency.
+- **Verified Cliffhanger:** Catherine's sadistic, triumphant sneer as she declares she wants everyone to see what happens to a woman who defies the family
+  - *Script proof (last 3s):* `[E01_B012 | 17.8s-20.5s] CAM: Close-up on the Matriarch wearing an ornate tiara and sapphire jewelry, gazing down with merciless disdain. / [E01_B013 | 18.0s-19.4s] MATRIARCH (Blunt, Unforgiving): "Not anymore."`
+- **Why it works:** Immediate visual spectacle of aristocratic power and cruelty hooks cold viewers instantly
+- **Ranking rationale:** A wide symmetrical shot of a candlelit aisle toward the altar with Catherine's sadistic, triumphant sneer declaring she wants everyone to see what happens to a woman who defies the family, delivering immediate visual spectacle and aristocratic cruelty.
 
-### #4 [Wave 1 (Launch Hero)] Gerald's Secret Fiancee (39.1s)
-- **ID:** `C01` | **Format:** Continuous | **Trope:** Cruel Ultimatum
-- **Cold-Scroll Critic:** Hook 5/5 | Clarity 4/5 | Cliffhanger 5/5 (**14/15**)
+### #3 [Wave 1 (Launch Hero)] Noblewoman strikes and humiliates Juliana with riding crop (31.2s)
+- **ID:** `ST03` | **Format:** Cross-Episode Stitched | **Trope:** Flash-Forward Mashup
+- **Cold-Scroll Critic:** Hook 5/5 | Clarity 3/5 | Cliffhanger 4/5 (**12/15**)
+- **NEEDS REVIEW:** CLIFFHANGER text does not match the clip's last 3 seconds
 - **Segments:**
-  - Episode 1: `00:11.30 -> 00:50.40` (39.1s | beats `E01_B008..E01_B032`)
-- **Suggested 0-3s Text Overlay:** "Matriarch denies Juliana at the altar"
-- **Verified 0-3s Hook:** Matriarch coldly tells Juliana to turn around as Lady Juliana looks confused and breathless asking why.
-  - *Script proof (0-3s):* `[E01_B008 | 11.3s-13.1s] MATRIARCH (Cold, Commanding): "You should turn around, Juliana." / [E01_B009 | 13.5s-14.3s] LADY JULIANA (Confused, Breathless): "Why?"`
-- **Verified Cliffhanger:** Juliana gasps 'No...' as the Lady in Gold Gown gloats that Gerald is marrying her, leaving Juliana devastated and staring in shock.
-  - *Script proof (last 3s):* `[E01_B031 | 46.8s-50.0s] LADY JULIANA (Outraged, Accusing): "You knew this before I walked through those doors!" / [E01_B032 | 46.8s-50.4s] CAM: Close-up on Juliana clutching her chest, her sorrow turning into burning outrage.`
-- **Why it works:** The Matriarch's blunt denial 'Not anymore' combined with the visual of Juliana walking toward the altar creates immediate romantic betrayal tension.
-- **Ranking rationale:** Strong 14/15 critic score; blunt denial 'Not anymore' combined with altar visual creates immediate romantic betrayal tension perfect for cold-scroll.
+  - Episode 24: `00:31.00 -> 00:45.50` (14.5s | beats `E24_B023..E24_B034`)
+  - Episode 46: `01:41.80 -> 01:58.50` (16.7s | beats `E46_B057..E46_B062`)
+- **Suggested 0-3s Text Overlay:** "Noblewoman humiliates maid with riding crop"
+  - *Overlay basis:* Noblewoman strikes and humiliates Lady Juliana, a maid, by calling her inferior and unworthy of respect.
+- **Verified 0-3s Hook:** Noblewoman rearing back riding crop and striking Juliana violently across the torso
+  - *Script proof (0-3s):* `[E24_B023 | 31.0s-32.5s] LADY JULIANA (Steely, Steadfast): "I cannot do that." / [E24_B024 | 32.5s-34.5s] ACT: The noblewoman suddenly rears back her riding crop and strikes Juliana violently across the torso.`
+- **Verified Cliffhanger:** Juliana looking down enduring humiliation while stifling her breath after being called a maid and not a woman
+  - *Script proof (last 3s):* `[E46_B061 | 111.8s-118.5s] CAM: Medium close-up of Alexander glaring with icy authority. / [E46_B062 | 112.0s-118.2s] ALEXANDER (Defiant, Commanding): "Then let it prove that in ten days, before witnesses. Not with six halberds pointed at me in my own chapel."`
+- **Why it works:** Immediate physical violence and degradation creates shocking, visceral hook that demands continuation
+- **Ranking rationale:** Immediate physical violence as a noblewoman rears back with a riding crop to strike Juliana violently across the torso, creating a shocking, visceral hook that demands continuation through degradation and humiliation.
 
-### #5 [Wave 2 (Scale/Retarget)] Alexander's Defense (50.0s)
-- **ID:** `C09` | **Format:** Continuous | **Trope:** Cruel Ultimatum
-- **Cold-Scroll Critic:** Hook 5/5 | Clarity 4/5 | Cliffhanger 5/5 (**14/15**)
+### #4 [Wave 1 (Launch Hero)] Alexander dismantles thugs protecting Juliana (50.0s)
+- **ID:** `C09` | **Format:** Continuous | **Trope:** Betrayal | Revenge
+- **Cold-Scroll Critic:** Hook 5/5 | Clarity 3/5 | Cliffhanger 4/5 (**12/15**)
 - **Segments:**
   - Episode 16: `00:00.00 -> 00:50.00` (50.0s | beats `E16_B001..E16_B042`)
-- **Suggested 0-3s Text Overlay:** "Alexander dismantles three thugs effortlessly"
-- **Verified 0-3s Hook:** Alexander stands unyielding blocking Juliana's path as the Thug with Cap menacingly demands 'Move aside, soldier.'
+- **Suggested 0-3s Text Overlay:** "Thugs attack Juliana, Alexander defends and interrogates"
+  - *Overlay basis:* Alexander protects Juliana from three thugs who attack her in a garden; Alexander overpowers and threatens the thugs to find who sent them.
+- **Verified 0-3s Hook:** Alexander stands unyielding blocking path while Thug with Cap steps forward clutching iron pipe under full moon
   - *Script proof (0-3s):* `[E16_B001 | 0.0s-2.1s] CAM: Wide shot from behind Alexander's trench coat looking toward the three thugs standing across the trampled garden under the full moon. / [E16_B002 | 0.0s-2.1s] ACT: Alexander stands tall and unyielding, blocking the path to Juliana, while the Thug with Cap steps forward clutching an iron pipe.`
-- **Verified Cliffhanger:** Alexander roars 'Who?!' while tightening his grip on the Thug with Cap's throat, leaving the attacker's identity completely unresolved.
+- **Verified Cliffhanger:** Alexander roaring "Who?!" while tightening grip on thug's throat lifting him against wall as third thug charges in desperation
   - *Script proof (last 3s):* `[E16_B041 | 48.0s-50.0s] ACT: Alexander tightens his grip on the thug's throat, lifting him higher against the stone wall. / [E16_B042 | 48.8s-49.6s] ALEXANDER (Roaring): "Who?!"`
-- **Why it works:** Pure physical action dominance as Alexander effortlessly dismantles three thugs, establishing him as an unstoppable protector.
-- **Ranking rationale:** Strong 14/15 critic score; pure physical action dominance establishes him as an unstoppable protector with high-drama reversal potential.
+- **Why it works:** Immediate physical confrontation with Alexander effortlessly dominating multiple attackers while Juliana watches
+- **Ranking rationale:** Alexander unyieldingly blocks a path while a thug with a cap steps forward clutching an iron pipe under a full moon, leading to Alexander roaring 'Who?!' while tightening grip on the thug's throat, lifting him against a wall as a third thug charges in desperation.
 
-### #6 [Wave 2 (Scale/Retarget)] Race Against Time (45.2s)
-- **ID:** `C12` | **Format:** Continuous | **Trope:** Cruel Ultimatum
-- **Cold-Scroll Critic:** Hook 5/5 | Clarity 4/5 | Cliffhanger 5/5 (**14/15**)
-- **Segments:**
-  - Episode 23: `01:26.00 -> 02:11.20` (45.2s | beats `E23_B045..E23_B066`)
-- **Suggested 0-3s Text Overlay:** "Arsenic declared; intruder arrives mid-cure"
-- **Verified 0-3s Hook:** Lady Juliana declares 'Arsenic' with venomous resolve as the Duchess chokes and spasms violently on the bed.
-  - *Script proof (0-3s):* `[E23_B045 | 86.0s-88.0s] LADY JULIANA (Venomous, Resolute): "Arsenic." / [E23_B046 | 88.0s-90.5s] SFX: Sudden violent coughing and sputtering from the Duchess.`
-- **Verified Cliffhanger:** The metallic clack of the door latch turning followed by the slow creak of wood hinges signals an intruder arriving mid-cure, leaving the poisoning outcome hanging.
-  - *Script proof (last 3s):* `[E23_B065 | 127.5s-129.5s] CAM: Tight close-up of Juliana's charcoal-blackened hand clutching the glass medicine vial firmly. / [E23_B066 | 129.2s-131.2s] SFX: Loud, metallic clack of the door latch turning, followed by the slow creak of wood hinges.`
-- **Why it works:** The immediate medical emergency combined with the sudden external threat creates desperate, urgent pacing.
-- **Ranking rationale:** Strong 14/15 critic score; immediate medical emergency combined with sudden external threat creates desperate, urgent pacing ideal for retargeting.
-
-### #7 [Wave 2 (Scale/Retarget)] Bearded Stranger Intervenes (44.8s) *(compressed from 79.75s)*
-- **ID:** `C03` | **Format:** Continuous | **Trope:** Rescue
-- **Cold-Scroll Critic:** Hook 5/5 | Clarity 5/5 | Cliffhanger 4/5 (**14/15**)
-- **Segments:**
-  - Episode 3: `01:06.00 -> 01:50.80` (44.8s | beats `E03_B056..E03_B092`)
-- **Suggested 0-3s Text Overlay:** "Stranger roars to protect Juliana"
-- **Compression Note:** One continuous 42s span from stranger's arrival through his proposal.
-- **Verified 0-3s Hook:** Bearded Stranger steps into the aisle and roars 'Take your hands off her' with thunderous imposing voice
-  - *Script proof (0-3s):* `[E03_B056 | 66.0s-68.1s] CAM: Wide eye-level shot looking down the petal-strewn marble aisle. A tall, rugged man in a worn dark trench coat—The Bearded Stranger—emerges into the center of the nave. / [E03_B057 | 66.0s-68.1s] ACT: The Bearded Stranger steps deliberately into the aisle, his heavy boots echoing.`
-- **Verified Cliffhanger:** Bearded Stranger gazes down at Juliana with tender reverence after she shakes her head 'no' to being hurt
-  - *Script proof (last 3s):* `[E03_B091 | 107.4s-109.0s] THE BEARDED STRANGER (O.S.) (Affirming, Sincere): "...to remember your worth." / [E03_B092 | 108.8s-110.8s] CAM: Close-up on The Bearded Stranger's rugged, bearded face looking down at her with tender reverence.`
-- **Why it works:** Immediate physical intervention in a family chapel creates instant conflict and protective dynamic
-- **Ranking rationale:** Strong 14/15 critic score; immediate physical intervention in a family chapel creates instant conflict and protective dynamic with high engagement potential.
-
-### #8 [Wave 2 (Scale/Retarget)] Juliana kneeling in briars (21.7s) *(compressed from 67.2s)*
-- **ID:** `C08` | **Format:** Continuous | **Trope:** Secret Identity
-- **Cold-Scroll Critic:** Hook 5/5 | Clarity 4/5 | Cliffhanger 5/5 (**14/15**)
-- **Segments:**
-  - Episode 13: `00:45.80 -> 01:07.50` (21.7s | beats `E13_B026..E13_B044`)
-- **Suggested 0-3s Text Overlay:** "Blood welling from deep puncture wounds"
-- **Compression Note:** One continuous span from kneeling at briars through Alexander's roar; ends right before Clarissa's mockery.
-- **Verified 0-3s Hook:** Juliana drops to her knees in front of frozen blackthorn branches, steadying trembling breath
-  - *Script proof (0-3s):* `[E13_B026 | 45.8s-47.0s] ACT: Juliana drops to her knees in front of the frozen blackthorn branches, steadying her trembling breath. / [E13_B027 | 45.8s-47.0s] CAM: Medium shot of Juliana kneeling on the frozen soil at the edge of the briars.`
-- **Verified Cliffhanger:** Juliana's hand scraping against frost-covered stone, bright red blood welling from deep puncture wounds
-  - *Script proof (last 3s):* `[E13_B043 | 62.0s-67.5s] CAM: Low-angle medium close-up of Gerald shouting down into the garden. / [E13_B044 | 62.2s-67.0s] GERALD (Taunting, Cruel): "Keep searching, Juliana. Your husband's freedom is somewhere in that garden."`
-- **Why it works:** Immediate physical pain and blood hooks cold viewers instantly
-- **Ranking rationale:** Strong 14/15 critic score; immediate physical pain and blood hooks cold viewers instantly, making it a powerful pain-point creative for scaling.
-
-### #9 [Wave 2 (Scale/Retarget)] Gerald breaks engagement at altar (38.3s)
-- **ID:** `ST01` | **Format:** Cross-Episode Stitched | **Trope:** Flash-Forward Mashup
-- **Cold-Scroll Critic:** Hook 5/5 | Clarity 4/5 | Cliffhanger 5/5 (**14/15**)
-- **Segments:**
-  - Episode 1: `01:00.10 -> 01:12.40` (12.3s | beats `E01_B040..E01_B046`)
-  - Episode 18: `02:38.00 -> 03:04.00` (26.0s | beats `E18_B074..E18_B079`)
-- **Suggested 0-3s Text Overlay:** "Jilted groom declares 'I changed my mind'"
-- **Verified 0-3s Hook:** Former groom coldly declares "I changed my mind" to a weeping bride
-  - *Script proof (0-3s):* `[E01_B040 | 60.1s-61.8s] THE FORMER GROOM (Cold, Callous): "I changed my mind." / [E01_B041 | 60.1s-63.0s] CAM: Tight close-up on Gerald's hardened profile as he glances down.`
-- **Verified Cliffhanger:** Alexander vows revenge after their home is taken, eyes hardening into lethal fury as fire flickers behind him
-  - *Script proof (last 3s):* `[E18_B079 | 179.5s-184.0s] ACT: Juliana slowly pulls back slightly from his embrace, her tear-filled blue eyes looking up into his hardened features.`
-- **Why it works:** Immediate conflict with jilted groom and weeping bride creates instant emotional hook
-- **Ranking rationale:** Strong 14/15 critic score; immediate conflict with jilted groom and weeping bride creates instant emotional hook perfect for retargeting audiences who engaged with C01.
-
-### #10 [Wave 2 (Scale/Retarget)] Medicine Confiscated (36.6s)
-- **ID:** `C15` | **Format:** Continuous | **Trope:** Cruel Ultimatum
+### #5 [Wave 2 (Scale/Retarget)] Mother discovers son's secret (41.5s) *(compressed from 200.75s)*
+- **ID:** `C19` | **Format:** Continuous | **Trope:** Revenge
 - **Cold-Scroll Critic:** Hook 5/5 | Clarity 4/5 | Cliffhanger 4/5 (**13/15**)
 - **Segments:**
-  - Episode 27: `00:46.40 -> 01:23.00` (36.6s | beats `E27_B026..E27_B049`)
-- **Suggested 0-3s Text Overlay:** "Nobleman demands 'Girl. Show me what you are holding'"
-- **Verified 0-3s Hook:** Loud violent pounding echoes on wooden double doors as Juliana gasps and snaps her head toward the entrance in alarm.
-  - *Script proof (0-3s):* `[E27_B026 | 46.4s-48.3s] SFX: Loud, violent pounding echoes on the wooden double doors. / [E27_B027 | 46.5s-48.8s] CAM: Juliana gasps, snapping her head toward the entrance in alarm.`
-- **Verified Cliffhanger:** Blond Nobleman coldly demands 'Girl. Show me what you are holding' as Juliana extends her palm revealing the amber glass dropper bottle, with no resolution on whether she is punished.
-  - *Script proof (last 3s):* `[E27_B048 | 78.1s-80.5s] LADY CATHERINE (Incredulous, Accusing): "Who permitted you to give medicine to the Duchess?" / [E27_B049 | 80.8s-83.0s] CAM: Close-up of Juliana holding her ground.`
-- **Why it works:** The sudden intrusion of aristocracy into a private moment creates instant class conflict and suspicion.
-- **Ranking rationale:** Solid 13/15 critic score; sudden intrusion of aristocracy into a private moment creates instant class conflict and suspicion, strong for retargeting.
+  - Episode 36: `00:00.00 -> 00:41.50` (41.5s | beats `E36_B001..E36_B022`)
+- **Suggested 0-3s Text Overlay:** "Mother asks who betrayed son to French"
+  - *Overlay basis:* Alexander's mother asks who tried to kill him; Alexander reveals Sterling and Rupert leaked his location to the French and wanted the investigation buried.
+- **Compression Note:** Cut slow middle travel and resolved cabin scene; keeps hook of Sterling/Rupert reveal and mother's horror.
+- **Verified 0-3s Hook:** Alexander's mother leans forward with both hands on the rustic table, searching her son's scarred face in disbelief
+  - *Script proof (0-3s):* `[E36_B001 | 0.0s-3.8s] ACT: Alexander's mother leans forward with both hands on the rustic table, searching her son's scarred face in disbelief. / [E36_B002 | 0.0s-4.2s] CAM: Medium two-shot across the weathered wooden table lit by the warm glow of an oil lantern, framing Alexander and his mother leaning inward in the dimly lit cabin.`
+- **Verified Cliffhanger:** Alexander's mother leaning over the map, her voice cracking
+  - *Script proof (last 3s):* `[E36_B021 | 36.2s-38.7s] ALEXANDER (Spitting with Contempt): "They wanted the investigation buried." / [E36_B022 | 38.9s-41.5s] CAM: Medium close-up of Alexander's mother leaning over the map, her voice cracking.`
+- **Why it works:** Immediate emotional conflict between mother and son creates instant curiosity
+- **Ranking rationale:** Alexander's mother leans forward with both hands on a rustic table, searching her son's scarred face in disbelief, her voice cracking as she confronts him with immediate emotional conflict that creates instant curiosity about his secret.
 
-### #11 [Wave 3 (Test)] Peasant mother begs for fever cure (43.3s) *(compressed from 83.8s)*
-- **ID:** `C06` | **Format:** Intra-Episode Cut | **Trope:** Rescue
-- **Cold-Scroll Critic:** Hook 5/5 | Clarity 4/5 | Cliffhanger 4/5 (**13/15**)
+### #6 [Wave 2 (Scale/Retarget)] Gerald threatens Juliana's husband (52.7s)
+- **ID:** `C05` | **Format:** Continuous | **Trope:** Betrayal
+- **Cold-Scroll Critic:** Hook 4/5 | Clarity 4/5 | Cliffhanger 5/5 (**13/15**)
 - **Segments:**
-  - Episode 9: `00:05.50 -> 00:31.00` (25.5s | beats `E09_B008..E09_B022`)
-  - Episode 9: `00:38.20 -> 00:56.00` (17.8s | beats `E09_B030..E09_B044`)
-- **Suggested 0-3s Text Overlay:** "Mother pleads for help with feverish child"
-- **Compression Note:** Cut slow mother exposition and early remedy selection; jump from herb identification to water preparation and administration.
-- **Verified 0-3s Hook:** Soaked peasant mother frantically pleads for help as she enters with feverish child
-  - *Script proof (0-3s):* `[E09_B008 | 5.5s-11.2s] CAM: Medium shot framing the doorway as a soaked, distraught peasant mother steps across the threshold clutching a swaddled child. / [E09_B009 | 6.3s-11.1s] PEASANT MOTHER (Frantic, Weeping): "Please! They told me there was a woman here who knows herbs. My boy is burning with fever!"`
-- **Verified Cliffhanger:** Alexander returns with hot water as Juliana prepares herbal remedy while mother sobs 'Please save him'
-  - *Script proof (last 3s):* `[E09_B043 | 54.0s-56.0s] CAM: Close-up of Juliana raising a calm finger, urging patience. / [E09_B044 | 54.3s-55.2s] JULIANA (Quiet, Focused): "Wait."`
-- **Why it works:** Immediate medical crisis with compassionate healer responding to desperate plea
-- **Ranking rationale:** High 13/15 critic score; immediate medical crisis with compassionate healer responding, but experimental format as an Intra-Episode Cut makes it a test creative.
+  - Episode 7: `00:50.80 -> 01:43.50` (52.7s | beats `E07_B025..E07_B053`)
+- **Suggested 0-3s Text Overlay:** "Beggar husband threatens Gerald's power"
+  - *Overlay basis:* Gerald threatens to make Juliana's husband disappear; Juliana defends her choice of husband over comfort; the Scarred Bearded Man's arrival intimidates Gerald into fleeing.
+- **Verified 0-3s Hook:** Gerald (Bitter, Sneering): 'You chose that scarred beggar over a life of comfort.'
+  - *Script proof (0-3s):* `[E07_B025 | 50.8s-54.8s] CAM: Wide shot framing Juliana facing off against Gerald and Aristocratic Woman in the bleak courtyard. / [E07_B026 | 51.5s-54.6s] GERALD (Bitter, Sneering): "You chose that scarred beggar over a life of comfort."`
+- **Verified Cliffhanger:** Juliana turning toward the Scarred Bearded Man, her eyes gleaming with genuine admiration
+  - *Script proof (last 3s):* `[E07_B053 | 99.0s-103.5s] CAM: Medium profile two-shot of Juliana turning toward the Scarred Bearded Man, her eyes gleaming with genuine admiration.`
+- **Why it works:** Gerald's threat against the husband creates immediate conflict and jeopardy
+- **Ranking rationale:** Gerald's bitter, sneering threat 'You chose that scarred beggar over a life of comfort' creates immediate conflict and jeopardy, with Juliana turning toward the Scarred Bearded Man, her eyes gleaming with genuine admiration.
 
-### #12 [Wave 3 (Test)] Lord interrogates maid about Juliana's herbs (46.0s) *(compressed from 84.8s)*
-- **ID:** `C19` | **Format:** Intra-Episode Cut | **Trope:** Rescue
-- **Cold-Scroll Critic:** Hook 5/5 | Clarity 3/5 | Cliffhanger 5/5 (**13/15**)
+### #7 [Wave 2 (Scale/Retarget)] Shoulder wound reveal (52.7s) *(compressed from 68.5s)*
+- **ID:** `C13` | **Format:** Intra-Episode Cut | **Trope:** Revenge | Rescue | Secret Identity
+- **Cold-Scroll Critic:** Hook 4/5 | Clarity 4/5 | Cliffhanger 5/5 (**13/15**)
 - **Segments:**
-  - Episode 33: `00:00.00 -> 00:21.00` (21.0s | beats `E33_B001..E33_B013`)
-  - Episode 33: `00:27.50 -> 00:52.50` (25.0s | beats `E33_B019..E33_B031`)
-- **Suggested 0-3s Text Overlay:** "Juliana raises eyes with utter disdain in cathedral nave"
-- **Compression Note:** Cut slow middle dialogue between maid's testimony about herbs and Lord's accusatory turn toward her mother's book; retains hook and escalating coercion.
-- **Verified 0-3s Hook:** Lord coldly demands 'And who saved him?' in dim library study as maid enters trembling
-  - *Script proof (0-3s):* `[E33_B001 | 0.0s-5.2s] CAM: Wide shot of a dimly lit, wood-paneled library study. An aristocratic lord in formal dark attire stands facing a young maid standing nervously by the open door. / [E33_B002 | 2.5s-4.8s] LORD (Cold, Authoritative): "Your brother is breathing again."`
-- **Verified Cliffhanger:** Maid sobs 'Yes' to cornering question 'Did she prepare things no physician had prescribed?' as Lord's sinister face fills screen
-  - *Script proof (last 3s):* `[E33_B030 | 49.2s-52.5s] CAM: Medium shot of the maid clutching her hands together tightly, overwhelmed with guilt. / [E33_B031 | 50.0s-51.6s] MAID (Choked Sob): "Yes."`
-- **Why it works:** Progressive interrogation escalating from suspicion to incrimination with maid's guilt on the line
-- **Ranking rationale:** Solid 12/15 critic score; public humiliation of the protagonist combined with antagonist gloating creates instant sympathy, but tested as a higher-variance creative.
+  - Episode 25: `00:00.00 -> 00:33.80` (33.8s | beats `E25_B001..E25_B021`)
+  - Episode 25: `00:44.60 -> 01:03.50` (18.9s | beats `E25_B030..E25_B038`)
+- **Suggested 0-3s Text Overlay:** "Alexander assaults Juliana over shoulder wound"
+  - *Overlay basis:* Alexander grabs Juliana's shoulder, inflicting pain, demanding to know who hurt her.
+- **Compression Note:** Cut the middle interrogation loop; kept the initial conflict hook (Alexander grabbing shoulder, wound reveal, 'Who did this?') then jumped to the reveal of Ashburg Manor and Alexander's shock at the Dowager Duchess name.
+- **Verified 0-3s Hook:** Wide tracking shot through sun-dappled forest with mist and roots, establishing a pensive Juliana walking hurriedly
+  - *Script proof (0-3s):* `[E25_B001 | 0.0s-4.2s] CAM: Wide tracking shot through a dense, sun-dappled forest as mist curls around towering tree trunks and tangled roots. / [E25_B002 | 0.6s-4.2s] ACT: Juliana walks hurriedly along the leaf-strewn forest path, clutching her dark hooded cloak tightly around her shoulders, breathing heavily.`
+- **Verified Cliffhanger:** Alexander's face freezing in shock, eyes widening at Juliana's revelation she went to Ashburg Manor to help the Dowager Duchess
+  - *Script proof (last 3s):* `[E25_B038 | 57.5s-63.5s] CAM: Tight close-up of Alexander's face freezing in shock, his eyes widening as the revelation hits him.`
+- **Why it works:** Cold open drops viewer directly into tense forest confrontation with immediate physical conflict
+- **Ranking rationale:** A wide tracking shot through sun-dappled forest with mist and roots establishes pensive Juliana walking hurriedly, followed by Alexander's face freezing in shock with eyes widening at her revelation she went to Ashburg Manor to help the Dowager Duchess.
 
-### #13 [Wave 3 (Test)] Garden rescue effort (45.0s)
-- **ID:** `C10` | **Format:** Continuous | **Trope:** Rescue
-- **Cold-Scroll Critic:** Hook 4/5 | Clarity 4/5 | Cliffhanger 4/5 (**12/15**)
+### #8 [Wave 2 (Scale/Retarget)] Catherine humiliates Juliana at every turn (30.0s)
+- **ID:** `C16` | **Format:** Continuous | **Trope:** Betrayal | Cruel Ultimatum | Revenge
+- **Cold-Scroll Critic:** Hook 4/5 | Clarity 4/5 | Cliffhanger 5/5 (**13/15**)
 - **Segments:**
-  - Episode 17: `00:00.00 -> 00:45.00` (45.0s | beats `E17_B001..E17_B032`)
-- **Suggested 0-3s Text Overlay:** "Alexander's intense protective gaze locks onto Juliana"
-- **Verified 0-3s Hook:** High angle wide shot looking down at the muddy, trampled garden. Broken wooden planters and splintered planks litter the ground as Juliana kneels amidst the ruined soil
-  - *Script proof (0-3s):* `[E17_B001 | 0.0s-3.0s] CAM: High angle wide shot looking down at the muddy, trampled garden. Broken wooden planters and splintered planks litter the ground as Juliana kneels amidst the ruined soil. / [E17_B002 | 0.0s-3.0s] ACT: Juliana sits on her knees in her dirt-smudged dress, her hands wrapped in clean linen bandages, sorrowfully examining the wreckage. In the distant background, Alexander paces near the perimeter fence.`
-- **Verified Cliffhanger:** CAM: Extreme close-up of Alexander's intense, protective gaze locking onto hers
-  - *Script proof (last 3s):* `[E17_B031 | 40.0s-44.5s] ACT: Juliana wrings out a clean linen cloth from the basin and tenderly dabs at the fresh cuts and abrasions on the back of Alexander's right hand. / [E17_B032 | 42.0s-45.0s] CAM: Close-up of Juliana's bandaged hands delicately pressing the white cloth against Alexander's wounded knuckles.`
-- **Why it works:** Juliana's fragile hope and Alexander's vow to protect her hooks cold viewers instantly
-- **Ranking rationale:** Moderate 12/15 critic score; Juliana's fragile hope and Alexander's vow to protect her, but tested as experimental creative due to high-angle garden format.
+  - Episode 31: `00:29.00 -> 00:59.00` (30.0s | beats `E31_B018..E31_B030`)
+- **Suggested 0-3s Text Overlay:** "Jilted bride vs. cruel mistress"
+  - *Overlay basis:* Catherine threatens Juliana with social humiliation, revealing Gerald chose Clarisse over Juliana at the altar.
+- **Verified 0-3s Hook:** CAM: Over-the-shoulder medium shot focusing on Juliana as Catherine presents the charred, singed pages of the botanical book.
+  - *Script proof (0-3s):* `[E31_B018 | 29.0s-34.8s] CAM: Over-the-shoulder medium shot focusing on Juliana as Catherine presents the charred, singed pages of the botanical book. / [E31_B019 | 29.3s-34.8s] CATHERINE (Scornful): "Your family dressed you like a lady. They educated you. They gave you a respectable name."`
+- **Verified Cliffhanger:** CAM: Close-up of the red-hot iron hovering over the damp stone floor, rising steam and heat waves warping the air, before cutting to Catherine's gloating expression.
+  - *Script proof (last 3s):* `[E31_B030 | 54.8s-59.0s] CAM: Close-up of the red-hot iron hovering over the damp stone floor, rising steam and heat waves warping the air, before cutting to Catherine's gloating expression.`
+- **Why it works:** Catherine's verbal barbs combined with the physical threat of the red-hot iron creates immediate visceral tension.
+- **Ranking rationale:** An over-the-shoulder medium shot focuses on Juliana as Catherine presents charred, singed pages of a botanical book, with a close-up of a red-hot iron hovering over damp stone floor rising steam and heat waves warping the air before cutting to Catherine's gloating expression.
 
-### #14 [Wave 3 (Test)] Duchess exposes Rupert's betrayal (32.8s)
-- **ID:** `C16` | **Format:** Continuous | **Trope:** Rescue
-- **Cold-Scroll Critic:** Hook 5/5 | Clarity 4/5 | Cliffhanger 3/5 (**12/15**)
+### #9 [Wave 2 (Scale/Retarget)] Gerald goads constable into search (20.6s)
+- **ID:** `C07` | **Format:** Continuous | **Trope:** Betrayal | Cruel Ultimatum | Rescue
+- **Cold-Scroll Critic:** Hook 4/5 | Clarity 4/5 | Cliffhanger 5/5 (**13/15**)
 - **Segments:**
-  - Episode 28: `00:15.20 -> 00:48.00` (32.8s | beats `E28_B014..E28_B036`)
-- **Suggested 0-3s Text Overlay:** "Duchess collapses coughing violently"
-- **Verified 0-3s Hook:** Close-up of Juliana glaring back in fierce indignation, breathing heavily as she resists the guard's arm across her shoulder
-  - *Script proof (0-3s):* `[E28_B014 | 15.2s-18.5s] CAM: Close-up of Juliana glaring back in fierce indignation, breathing heavily as she resists the guard's arm across her shoulder. / [E28_B015 | 15.3s-18.4s] JULIANA (Furious, Defiant): "I did not poison her! Look at her eyes, the fever has broken!"`
-- **Verified Cliffhanger:** The Duchess collapses back onto the pillows, coughing violently and clutching her chest
-  - *Script proof (last 3s):* `[E28_B035 | 45.6s-47.0s] DOWAGER DUCHESS (Gasping): "They have been—" / [E28_B036 | 46.8s-48.0s] ACT: The Duchess collapses back onto the pillows, coughing violently and clutching her chest.`
-- **Why it works:** Immediate conflict (poison accusation) plus sudden maternal revelation creates instant stakes
-- **Ranking rationale:** Moderate 12/15 critic score; immediate conflict plus sudden maternal revelation creates stakes, but tested as creative variant due to lower hook/clarity scores.
+  - Episode 11: `00:33.00 -> 00:53.60` (20.6s | beats `E11_B030..E11_B046`)
+- **Suggested 0-3s Text Overlay:** "Gerald tricks constable into home search"
+  - *Overlay basis:* Gerald taunts the Constable into searching Juliana's cottage, while Alexander silently commands the search from the sidelines.
+- **Verified 0-3s Hook:** Alexander menacingly tells Gerald to choose his next words carefully as Gerald feigns alarm pointing toward the approaching Constable
+  - *Script proof (0-3s):* `[E11_B030 | 33.0s-34.9s] ALEXANDER (Low, Menacing): "Choose your next words carefully." / [E11_B031 | 34.9s-37.0s] CAM: Medium shot of Gerald pointing back toward the approaching Constable, feigning alarm.`
+- **Verified Cliffhanger:** Alexander darkly grates "Search it." as the camera pushes in on his scarred face with lethal restraint moments before Juliana looks up at him in panicked confusion
+  - *Script proof (last 3s):* `[E11_B045 | 50.1s-51.0s] ALEXANDER (Dark, Grated): "Search it." / [E11_B046 | 50.8s-53.6s] CAM: Medium two-shot of Juliana looking up at Alexander in panicked confusion.`
+- **Why it works:** Immediate conflict between Gerald and Constable with Alexander's ominous command creating instant tension
+- **Ranking rationale:** Alexander menacingly tells Gerald to choose his next words carefully as Gerald feigns alarm pointing toward an approaching Constable, leading to Alexander darkly grating 'Search it' as the camera pushes in on his scarred face with lethal restraint moments before Juliana looks up at him in panicked confusion.
 
-### #15 [Wave 3 (Test)] Rupert's wartime betrayal revealed (49.1s)
-- **ID:** `C23` | **Format:** Continuous | **Trope:** Poison Frame-Up | Treason Revealed
-- **Cold-Scroll Critic:** Hook 4/5 | Clarity 3/5 | Cliffhanger 4/5 (**11/15**)
+### #10 [Wave 2 (Scale/Retarget)] Crown reveals the leak (42.7s)
+- **ID:** `C23` | **Format:** Continuous | **Trope:** Cruel Ultimatum | Betrayal
+- **Cold-Scroll Critic:** Hook 4/5 | Clarity 3/5 | Cliffhanger 5/5 (**12/15**)
+- **NEEDS REVIEW:** CLIFFHANGER text does not match the clip's last 3 seconds
 - **Segments:**
-  - Episode 43: `00:26.10 -> 01:15.20` (49.1s | beats `E43_B025..E43_B061`)
-- **Suggested 0-3s Text Overlay:** "Alexander declares 'Then let the Crown decide'"
-- **Verified 0-3s Hook:** Alexander (Cold, Authoritative): 'Then let the Crown decide.'
+  - Episode 43: `00:26.10 -> 01:08.80` (42.7s | beats `E43_B025..E43_B054`)
+- **Suggested 0-3s Text Overlay:** "Crown reads leak report; names Rupert and Henry"
+  - *Overlay basis:* Crown Official reads a report identifying Duke Alexander Ashburn's unit was ambushed due to a deliberate leak; Alexander then hands a dossier to the Crown Official naming Lord Henry Sterling and Rupert Ashburn as the leak sources.
+- **Verified 0-3s Hook:** Alexander: 'Then let the Crown decide.'
   - *Script proof (0-3s):* `[E43_B025 | 26.1s-28.0s] ALEXANDER (Cold, Authoritative): "Then let the Crown decide." / [E43_B026 | 28.0s-30.0s] CAM: Close-up on Alexander's hands holding an official War Office document bundle sealed with red wax and ribbon.`
-- **Verified Cliffhanger:** Alexander (Furious, Thunderous): 'You sold my men to the enemy.'
-  - *Script proof (last 3s):* `[E43_B060 | 72.7s-74.8s] CAM: Low-angle tracking push-in on Alexander raising the red-ribboned war document toward the cathedral arches. / [E43_B061 | 72.8s-75.2s] ALEXANDER (Resonant, Accusatory): "And when you believed I was dead..."`
-- **Why it works:** Official dossier reveal plus Rupert's petrified reaction creates immediate conspiracy intrigue
-- **Ranking rationale:** Moderate 11/15 critic score; official dossier reveal plus Rupert's petrified reaction creates conspiracy intrigue, but experimental format limits launch priority.
+- **Verified Cliffhanger:** Crown Official: 'Rupert Ashburn.'
+  - *Script proof (last 3s):* `[E43_B053 | 64.5s-66.0s] CAM: Extreme close-up on Rupert's horrified eyes darting in sheer terror. / [E43_B054 | 66.0s-68.8s] CAM: Close-up on the Dowager Duchess covering her mouth in agonizing disbelief.`
+- **Why it works:** Official confirmation of deliberate leak exposes Rupert as the traitor
+- **Ranking rationale:** Alexander declares 'Then let the Crown decide,' leading to a Crown Official confirming 'Rupert Ashburn,' exposing the deliberate leak and Rupert as the traitor with immediate stakes for the political storyline.
 
-### #16 [Wave 3 (Test)] Juliana refuses to yield (31.7s)
-- **ID:** `C11` | **Format:** Continuous | **Trope:** Secret Identity
-- **Cold-Scroll Critic:** Hook 4/5 | Clarity 4/5 | Cliffhanger 5/5 (**13/15**)
+### #11 [Wave 3 (Test)] Beggar's bargain (58.4s) *(compressed from 78.5s)*
+- **ID:** `C26` | **Format:** Intra-Episode Cut | **Trope:** Humiliation | Revenge
+- **Cold-Scroll Critic:** Hook 5/5 | Clarity 3/5 | Cliffhanger 4/5 (**12/15**)
 - **Segments:**
-  - Episode 20: `00:56.50 -> 01:28.20` (31.7s | beats `E20_B035..E20_B052`)
-- **Suggested 0-3s Text Overlay:** "Juliana asserts 'I keep the basket.'"
-- **Verified 0-3s Hook:** CAM: Medium close-up tilting down on JULIANA kneeling in the straw beside a rustic wooden crate, sorting sprigs of dried lavender and sage
-  - *Script proof (0-3s):* `[E20_B035 | 56.5s-60.3s] CAM: Medium close-up tilting down on JULIANA kneeling in the straw beside a rustic wooden crate, sorting sprigs of dried lavender and sage into a woven basket. Her hands are bound in linen bandages from the recent fire.`
-- **Verified Cliffhanger:** JULIANA (Unyielding): 'I keep the basket.'
-  - *Script proof (last 3s):* `[E20_B050 | 81.0s-88.2s] CAM: Medium two-shot of Juliana and Seamus standing facing each other in the barn, the lantern casting a warm amber glow between them. / [E20_B052 | 84.8s-86.5s] JULIANA (Proud, Indomitable): "They have reduced me to myself."`
-- **Why it works:** Juliana's defiant refusal to yield to the cold and her assertion that she is the only healer hooks cold viewers instantly
-- **Ranking rationale:** Solid 13/15 critic score; defiant refusal hooks viewers, but tested as experimental due to lower hook_3s score of 4 versus other top creatives.
+  - Episode 47: `00:56.80 -> 01:11.50` (14.7s | beats `E47_B026..E47_B033`)
+  - Episode 47: `01:14.80 -> 01:58.50` (43.7s | beats `E47_B036..E47_B062`)
+- **Suggested 0-3s Text Overlay:** "Lady turns enemy into servant"
+  - *Overlay basis:* Lady Ashbourne orders Catherine cast into the road; Juliana intervenes and forces Catherine into servitude.
+- **Compression Note:** Cut slow middle: Vaughn's baton draw and Alexander's stride (B034-B035, B036) plus Catherine's collapse and Juliana's halt (B038-B041). Retains explosive opening conflict and climactic key handover before final resolution.
+- **Verified 0-3s Hook:** Lady Ashbourne's sharp contemptuous glare down at kneeling weeping Catherine in the mud
+  - *Script proof (0-3s):* `[E47_B026 | 56.8s-59.8s] LADY ASHBOURNE (Sharp, Contemptuous): "You dare show your face in Ashbourne courtyard?" / [E47_B027 | 56.8s-60.0s] CAM: Medium shot of Lady Ashbourne leaning heavily on her walking cane, glaring down at Catherine who kneels in the mud.`
+- **Verified Cliffhanger:** Juliana presenting rough hemp apron and heavy iron keys right to Catherine's face, demanding she scour kitchen grease until midnight
+  - *Script proof (last 3s):* `[E47_B062 | 114.5s-118.5s] CAM: Juliana presents the rough hemp apron and heavy keys right to Catherine's face.`
+- **Why it works:** Power dynamic flip: Catherine begs for mercy but Juliana redirects her into servitude with cold authority
+- **Ranking rationale:** Lady Ashbourne's sharp contemptuous glare down at kneeling weeping Catherine in the mud, followed by Juliana presenting rough hemp apron and heavy iron keys right to Catherine's face, demanding she scour kitchen grease until midnight, flipping the power dynamic with cold authority.
 
-### #17 [Wave 3 (Test)] Lady Juliana's perilous disguise (42.5s)
-- **ID:** `C13` | **Format:** Continuous | **Trope:** Secret Identity
-- **Cold-Scroll Critic:** Hook 4/5 | Clarity 4/5 | Cliffhanger 5/5 (**13/15**)
-- **Segments:**
-  - Episode 22: `00:00.00 -> 00:42.50` (42.5s | beats `E22_B001..E22_B022`)
-- **Suggested 0-3s Text Overlay:** "Maidservants passing through damp courtyard"
-- **Verified 0-3s Hook:** Wide shot of gothic stone archway with maidservants passing through damp courtyard
-  - *Script proof (0-3s):* `[E22_B001 | 0.0s-4.0s] CAM: Wide shot framing the gothic stone archway of Ashbury Manor as other maidservants carrying laundry baskets pass through the damp courtyard. / [E22_B002 | 0.0s-4.0s] ACT: Lady Juliana walks nervously along the stone pavement dressed in a modest dark maid's dress and a plain white apron, looking around cautiously.`
-- **Verified Cliffhanger:** Prudence opens the heavy wooden service door, and both women step inside into the dark servants' corridor as the door shuts firmly behind them
-  - *Script proof (last 3s):* `[E22_B021 | 37.0s-39.5s] LADY JULIANA (Quietly Resolute): "Today, I am only a maid." / [E22_B022 | 39.8s-42.5s] ACT: Prudence opens the heavy wooden service door, and both women step inside into the dark servants' corridor as the door shuts firmly behind them.`
-- **Why it works:** Cold open immediately establishes dangerous mission and social stakes with no preamble
-- **Ranking rationale:** Solid 13/15 critic score; cold open establishes dangerous mission and social stakes, but tested as experimental due to slower atmospheric hook.
-
-### #18 [Wave 3 (Test)] Gerald's Arrival (47.0s)
-- **ID:** `C07` | **Format:** Continuous | **Trope:** Cruel Ultimatum
-- **Cold-Scroll Critic:** Hook 4/5 | Clarity 3/5 | Cliffhanger 4/5 (**11/15**)
-- **Segments:**
-  - Episode 11: `00:04.00 -> 00:51.00` (47.0s | beats `E11_B005..E11_B045`)
-- **Suggested 0-3s Text Overlay:** "Gerald radiates smug self-satisfaction in muck"
-- **Verified 0-3s Hook:** Polished black boots step into muck as Gerald radiates smug self-satisfaction while buttoning his coat.
-  - *Script proof (0-3s):* `[E11_B005 | 4.0s-6.5s] CAM: Tight shot tilting up as polished black boots step down directly into the muck, revealing Gerald clad in an opulent burgundy double-breasted coat. / [E11_B006 | 5.5s-7.0s] ACT: Gerald buttons his coat, smug self-satisfaction radiating from his expression.`
-- **Verified Cliffhanger:** Alexander's eyes smolder with lethal restraint as Gerald taunts 'If he has nothing to hide... let the constable search,' leaving the search outcome unresolved.
-  - *Script proof (last 3s):* `[E11_B044 | 48.4s-50.0s] GERALD (O.S.) (Smug): "...let the constable search." / [E11_B045 | 50.1s-51.0s] ALEXANDER (Dark, Grated): "Search it."`
-- **Why it works:** The immediate clash of class and accusation creates instant conflict as Gerald insults Juliana's marriage to a beggar.
-- **Ranking rationale:** Lower 11/15 critic score; immediate clash of class and accusation creates conflict, but ranked lowest due to weakest standalone clarity and hook scores.
-
-### #19 [Wave 3 (Test)] Forced hearth scrubbing punishment (46.5s)
-- **ID:** `C14` | **Format:** Continuous | **Trope:** Cruel Ultimatum
-- **Cold-Scroll Critic:** Hook 4/5 | Clarity 3/5 | Cliffhanger 4/5 (**11/15**)
-- **Segments:**
-  - Episode 24: `00:45.50 -> 01:32.00` (46.5s | beats `E24_B036..E24_B068`)
-- **Suggested 0-3s Text Overlay:** "Smudges of dark soot stain Juliana's cheek"
-- **Verified 0-3s Hook:** Medium shot of the noblewoman turning the crop in her white-gloved hands with smug satisfaction
-  - *Script proof (0-3s):* `[E24_B036 | 45.5s-48.5s] CAM: Medium shot of the noblewoman turning the crop in her white-gloved hands with smug satisfaction. / [E24_B037 | 48.5s-51.5s] ACT: The noblewoman leads Juliana and a frightened Prudence down a dark flagstone hallway.`
-- **Verified Cliffhanger:** Juliana raises her head. Smudges of dark soot stain her fair cheek, but her piercing blue eyes burn with unwavering defiance and unyielding resolve as she stares toward the hallway
-  - *Script proof (last 3s):* `[E24_B067 | 85.2s-91.5s] ACT: Juliana raises her head. Smudges of dark soot stain her fair cheek, but her piercing blue eyes burn with unwavering defiance and unyielding resolve as she stares toward the hallway. / [E24_B068 | 85.2s-92.0s] CAM: Tight close-up of Juliana's soot-streaked face turning slowly toward the chamber exit, her jaw set firm as dramatic music builds to a powerful crescendo.`
-- **Why it works:** Sadistic power dynamic established then Juliana's defiant stare cuts through the oppression
-- **Ranking rationale:** Lowest 11/15 critic score; sadistic power dynamic established then defiant stare, but ranked last due to poorest hook_3s and standalone clarity performance.
-
-### #20 [Backlog] Juliana's Public Shaming (48.5s)
-- **ID:** `C21` | **Format:** Continuous | **Trope:** Rescue | Vengeful Return
+### #12 [Wave 3 (Test)] Duchess recognizes Juliana's signet ring (22.5s)
+- **ID:** `C14` | **Format:** Continuous | **Trope:** Betrayal | Frame-Up | Cruel Ultimatum
 - **Cold-Scroll Critic:** Hook 4/5 | Clarity 4/5 | Cliffhanger 4/5 (**12/15**)
 - **Segments:**
-  - Episode 41: `00:15.50 -> 01:04.00` (48.5s | beats `E41_B011..E41_B035`)
-- **Verified 0-3s Hook:** Heavy wooden cathedral doors creak open revealing silhouette of three figures against daylight
-  - *Script proof (0-3s):* `[E41_B011 | 15.5s-17.5s] SFX: Heavy wooden creak of the cathedral double doors swinging open. / [E41_B012 | 15.5s-20.0s] CAM: Wide shot from behind the altar down the aisle as the great church doors slowly open, revealing the silhouette of three figures against the daylight.`
-- **Verified Cliffhanger:** Juliana raises her eyes straight back to Catherine with utter disdain while standing between guards in the cathedral nave
-  - *Script proof (last 3s):* `[E41_B035 | 60.8s-64.0s] CAM: Dramatic low-angle full shot looking up at Juliana, her posture straight, imposing, and regal despite the heavy chains.`
-- **Why it works:** Public humiliation of the protagonist combined with antagonist's gloating creates instant sympathy and conflict
-- **Ranking rationale:** Public humiliation of the protagonist combined with antagonist's gloating creates instant sympathy and conflict
+  - Episode 26: `01:26.50 -> 01:49.00` (22.5s | beats `E26_B034..E26_B043`)
+- **Suggested 0-3s Text Overlay:** "Duchess grabs Juliana's engraved ring"
+  - *Overlay basis:* The Dowager Duchess aggressively reaches for Juliana's hand to inspect her signet ring, shocking Juliana who is confused and alarmed.
+- **Verified 0-3s Hook:** CAM tracking down Juliana's apron to her hand resting against bed linens revealing engraved signet ring
+  - *Script proof (0-3s):* `[E26_B034 | 86.5s-90.8s] CAM: Medium tracking down Juliana's apron to her hand as she rests it against the bed linens, revealing a distinctive engraved signet ring on her finger. / [E26_B035 | 87.0s-90.5s] ACT: Juliana rests her right hand against the edge of the bedcover, unwittingly placing the unique ring directly within the Duchess's line of sight.`
+- **Verified Cliffhanger:** Duchess stretching out frail hand reaching across blanket toward Juliana's arm as she demands to see the hand
+  - *Script proof (last 3s):* `[E26_B043 | 105.5s-109.0s] CAM: Close-up shot of the Duchess's withered, shaking hand reaching across the blanket toward Juliana's arm.`
+- **Why it works:** Immediate recognition reaction from Duchess with Juliana confused creates instant mystery
+- **Ranking rationale:** CAM tracking down Juliana's apron to her hand resting against bed linens revealing an engraved signet ring, with the Duchess stretching out a frail hand reaching across a blanket toward Juliana's arm as she demands to see the hand, creating instant mystery through recognition reaction.
+
+### #13 [Wave 3 (Test)] Juliana stands up to Gerald's insults (50.2s) *(compressed from 67.0s)*
+- **ID:** `C04` | **Format:** Continuous | **Trope:** Rescue
+- **Cold-Scroll Critic:** Hook 4/5 | Clarity 4/5 | Cliffhanger 4/5 (**12/15**)
+- **Segments:**
+  - Episode 7: `00:21.00 -> 01:11.20` (50.2s | beats `E07_B008..E07_B034`)
+- **Suggested 0-3s Text Overlay:** "Gerald threatens husband to break Juliana"
+  - *Overlay basis:* Gerald threatens to make Juliana's husband disappear to intimidate her.
+- **Compression Note:** Cut Aristocratic Woman's mocking laughter and Gerald's between Juliana's dignity display and his influence threat.
+- **Verified 0-3s Hook:** ACT: Juliana rinses the heavy mud from her hands in a cold rainwater puddle and rises to her feet, holding her head high.
+  - *Script proof (0-3s):* `[E07_B008 | 21.0s-24.0s] ACT: Juliana rinses the heavy mud from her hands in a cold rainwater puddle and rises to her feet, holding her head high. / [E07_B009 | 22.0s-24.5s] ARISTOCRATIC WOMAN (Mocking, Condescending): "This is where you live now?"`
+- **Verified Cliffhanger:** CAM: Close-up of Gerald lunging forward, aggressively pointing his finger into Juliana's face.
+  - *Script proof (last 3s):* `[E07_B033 | 68.6s-69.5s] GERALD (Spiteful, Boastful): "And your husband?" / [E07_B034 | 69.5s-71.2s] GERALD (V.O.) (Snarl): "Where is that beggar husband?"`
+- **Why it works:** Juliana's defiant response to Gerald's class-based insults creates immediate conflict.
+- **Ranking rationale:** Juliana rinses heavy mud from her hands in a cold rainwater puddle and rises to her feet holding her head high, followed by CAM: Close-up of Gerald lunging forward aggressively pointing his finger into Juliana's face, creating immediate class-based conflict.
+
+### #14 [Wave 3 (Test)] Prudence begs Juliana to save dying boy (21.3s)
+- **ID:** `C11` | **Format:** Continuous | **Trope:** Betrayal | Secret Identity | Cruel Ultimatum
+- **Cold-Scroll Critic:** Hook 4/5 | Clarity 4/5 | Cliffhanger 3/5 (**11/15**)
+- **Segments:**
+  - Episode 21: `00:18.20 -> 00:39.50` (21.3s | beats `E21_B013..E21_B023`)
+- **Suggested 0-3s Text Overlay:** "Lady Juliana refuses dying boy"
+  - *Overlay basis:* Lady Juliana refuses to help Prudence's dying son; Prudence begs for the boy's life.
+- **Verified 0-3s Hook:** Prudence anguished resentfully telling how door was shut in her face because they have no silver
+  - *Script proof (0-3s):* `[E21_B013 | 18.2s-21.7s] PRUDENCE (Anguished, Resentful): "He shut the door in my face because we have no silver!" / [E21_B014 | 18.2s-21.8s] CAM: Close-up of Prudence, her face twisted in bitter anguish as she gestures back toward the rain-soaked outdoors.`
+- **Verified Cliffhanger:** Lady Juliana snatching herbal ledger from workbench as Prudence pleads seven-year-old will die without her
+  - *Script proof (last 3s):* `[E21_B023 | 35.8s-39.5s] ACT: Lady Juliana immediately reaches down and pulls Prudence firmly back to her feet, then turns to snatch her heavy leather-bound herbal ledger from the wooden workbench.`
+- **Why it works:** Immediate emotional stakes with Prudence's desperate plea contrasted against Juliana's helplessness
+- **Ranking rationale:** Prudence anguishedly tells how a door was shut in her face because they have no silver, with Lady Juliana snatching a herbal ledger from a workbench as Prudence pleads a seven-year-old will die without her, creating immediate emotional stakes contrasted against Juliana's helplessness.
 
 
 ---
 ## Quality Audit: Rejected & Failed Picks
 
-- **C25 (Duchess by Conviction)** — Rejected at `validator`: DURATION_OUT_OF_BOUNDS (6.5s not in 20-60s)
-- **C05 (Gerald's Arrogance)** — Rejected at `trimmer_validator`: DURATION_OUT_OF_BOUNDS (89.1s not in 20-60s)
-- **C18 (Courtroom Defiance)** — Rejected at `trimmer_validator`: DURATION_OUT_OF_BOUNDS (147.2s not in 20-60s)
-- **C24 (Invalid Marriage Declaration)** — Rejected at `cold_scroll_critic`: [Deterministic Gate: 4/3/3 = 10/15 below threshold] Scene cut disrupts tension - the legal revelation feels like a lecture rather than a cliffhanger, and the jump to the priest thrusting paper into camera feels disconnected from the marriage conflict
-- **C04 (Rainy Path to Cottage)** — Rejected at `cold_scroll_critic`: Total score 11 but scene cut penalty applies - the mid-episode jump from cottage threshold to interior feels like a trimmed scene, and the 'disappointed?' line resolves the gentle tension instead of cutting on a hook
-- **C17 (Catherine branding Juliana)** — Rejected at `cold_scroll_critic`: [Deterministic Gate: 4/3/3 = 10/15 below threshold] Standalone clarity low—without show context, Catherine's specific insults about the altar feel like truncated dialogue; ending resolves tension instead of cutting on a cliffhanger
-- **C22 (Alexander returns to cathedral)** — Rejected at `cold_scroll_critic`: [Deterministic Gate: 4/2/2 = 8/15 below threshold] --- SCENE CUT --- penalizes standalone_clarity to 2; the mid-episode jump to Alexander's mother feels confusing and disconnected without backstory; ending resolves tension with mother acceptance instead of cutting on a cliffhanger
-- **C02 (Groom rejects bride at altar)** — Rejected at `cold_scroll_critic`: First 3 seconds are strong but standalone clarity drops due to altar context requiring show knowledge; final cut resolves tension with father rejection rather than true cliffhanger
-- **ST02 (Wedding gown trudge through mud)** — Rejected at `stitched_critic`: [Deterministic Gate: 3/2/4 = 9/15 below threshold] Slow establishing shot of walking fails to stop scrolling; scene cut to Gerald's triumphant laugh feels disconnected and confusing without context
+- **C10 (Stoic Vow in Garden)** — Rejected at `validator`: DURATION_OUT_OF_BOUNDS (11.5s not in 20-60s)
+- **C15 (Dungeon Despair Vow)** — Rejected at `validator`: DURATION_OUT_OF_BOUNDS (5.8s not in 20-60s)
+- **C20 (Juliana's Defiance)** — Rejected at `validator`: HALLUCINATED_BEAT_ID ( -> )
+- **C21 (Dungeon Solidarity)** — Rejected at `validator`: HALLUCINATED_BEAT_ID ( -> )
+- **C01 (Altar Betrayal & Public Humiliation)** — Rejected at `trimmer_validator`: OVERLAPPING_OR_OUT_OF_ORDER_INTRA_CUT
+- **C06 (Your touch is the only medicine)** — Rejected at `trimmer_validator`: OVERLAPPING_OR_OUT_OF_ORDER_INTRA_CUT
+- **C08 (Briar Sacrifice & Ring)** — Rejected at `trimmer_validator`: OVERLAPPING_OR_OUT_OF_ORDER_INTRA_CUT
+- **C17 (Trial by Fire)** — Rejected at `trimmer_validator`: DURATION_OUT_OF_BOUNDS (93.8s not in 20-60s)
+- **C24 (Proclamation & Betrayal)** — Rejected at `trimmer_validator`: DURATION_OUT_OF_BOUNDS (68.6s not in 20-60s)
+- **C12 (Juliana races to save Duchess from poison)** — Rejected at `cold_scroll_critic`: [Deterministic Gate: 4/2/5 = 11/15 below threshold] Total score 14 but standalone clarity penalized to 2 due to confusing jump cut from previous context; ending cuts on clacking door creating strong cliffhanger
+- **C22 (Juliana paraded before sneering aristocrats)** — Rejected at `cold_scroll_critic`: [Deterministic Gate: 3/3/4 = 10/15 below threshold] Clear setup of public shaming, though the opening wide shot is slow to engage.
+- **C02 (The Bearded Stranger intervenes to protect Juliana)** — Rejected at `cold_scroll_critic`: The final beat resolves the immediate fight—guard is dropped—leaving no unresolved tension to pull the viewer forward.
+- **C18 (Alexander's mother escapes a locked house)** — Rejected at `cold_scroll_critic`: [Deterministic Gate: 3/3/2 = 8/15 below threshold] The mother's escape resolves into a reunion with Alexander—no cliffhanger, just a heartwarming reveal that ends the tension.
+- **C25 (Priest annuls secret marriage)** — Rejected at `cold_scroll_critic`: [Deterministic Gate: 4/2/3 = 9/15 below threshold] Scene cut disrupts narrative flow; confusing jump from wedding to priest's revelation about Alexander being 'dead'
+- **ST02 (Former groom coldly cancels wedding moments before vows)** — Rejected at `stitched_critic`: [Deterministic Gate: 5/2/3 = 10/15 below threshold] Scene cut confuses timeline; Juliana's devastated reaction feels disconnected from the groom's cold decision without context
