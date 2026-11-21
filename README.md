@@ -2,7 +2,7 @@
 
 A Python pipeline and Streamlit dashboard that reads timestamped microdrama screenplays (`.zip` or `.txt`) and returns ranked **20–60s promo clips** (episode + start/end timestamps, hook, cliffhanger, why it works). Code handles parsing, timestamps and every hard rule; the LLM handles judgement; a human editor makes the final pick.
 
-> **Post-submission branch.** `main` is exactly what I submitted on 21 Nov 2026. This branch (`post-submission-fixes`) contains fixes for problems I found *after* the deadline — see [Post-Submission Fixes](#post-submission-fixes-after-the-21-nov-deadline). The files in `outputs/` are the original, unedited v4 run.
+> **Two runs are included, both unedited.** `outputs/` is the v4 run on the full 50-episode pack. `outputs_v5/` is the v5 run after the fixes listed in [v5 Fixes](#v5-fixes-found-by-re-checking-the-v4-output) — including the problems v5 still has.
 
 ---
 
@@ -87,9 +87,9 @@ python run_cli.py --input samples/fake_show_boardroom --provider nvidia --out ou
 
 ---
 
-## Post-Submission Fixes (after the 21 Nov deadline)
+## v5 Fixes (found by re-checking the v4 output)
 
-Found by re-checking the submitted v4 output against the scripts:
+Found by re-checking the v4 output line by line against the scripts:
 
 | Problem in v4 | Evidence | Fix on this branch |
 |---|---|---|
@@ -100,7 +100,19 @@ Found by re-checking the submitted v4 output against the scripts:
 | Cached runs printed "API calls: 0" | `llm_client.py` only counts real calls | Report shows cache reuse **and** the original fresh-run usage |
 | Same model scored its own picks | Scout, critic, ranker were all Nemotron 30B | Optional `--critic-provider` for an independent judge |
 
-**Still not done / known limits:** no human-labelled gold set yet; reversed meanings can only be caught by a human; v5 has not yet been benchmarked on a full real run (numbers above the table are v4).
+### What v5 still gets wrong (checked against the scripts)
+
+v5 full run: 50 episodes, 38 API calls, 342K tokens, **14 promos ranked, 15 rejected, 4 auto-flagged**. Run-to-run variation means v5 is not directly comparable with v4 (the scout picks different scenes each run; one scout batch failed over from NVIDIA to Gemini).
+
+| Problem | Evidence |
+|---|---|
+| Overlay still reverses meaning — the who-does-what step did **not** fix this | #14 says "Lady Juliana refuses dying boy"; at 35.9s she says "Let me grab my ledger. We go now." #7 says "Alexander assaults Juliana"; he finds a wound someone else caused and asks "Who did this?" |
+| Clips cut just before their best line | #5 ends at 41.5s; "They declared me dead." starts at 41.6s. #3 ends 0.3s before the High Priest's "…lose her twice" |
+| Two promos reuse the same footage | #6 and #13 share 20.4s of Episode 7 (00:50.8–01:11.2); the overlap filter only covers stitched promos |
+| Critic scores are lenient | #7 opens on a 4s wide forest shot (Hook 4/5); #6 ends after the conflict is resolved (Cliffhanger 5/5) |
+| One auto-flag is a false alarm | #1 "at altar": the scene is at the altar, but the clip never shows it |
+
+**Next fixes (not built):** use a quoted line from the clip as the overlay instead of generated text; extend a cut when a dialogue line starts within 1s after it; block overlapping continuous promos; a human-labelled gold set. Every promo still needs human approval before posting.
 
 ---
 
@@ -119,11 +131,12 @@ microdrama-promo-engine/
 ├── parser_diagnostics.py  # Prints per-episode parse stats (was test_parser.py)
 ├── samples/               # Original fake show for testing on an unseen show
 ├── tests/                 # pytest: parser, grounding, end-to-end with a fake LLM
-├── outputs/               # ORIGINAL submitted v4 artifacts (unchanged)
+├── outputs/               # v4 run on the full pack (unedited)
 │   ├── ranked_promos.csv
 │   ├── promo_report.md
 │   ├── promos_raw.json
 │   └── Solution_Doc.pdf
+├── outputs_v5/            # v5 run on the full pack (unedited)
 ├── requirements.txt / requirements-dev.txt
 ├── .env.example
 └── .gitignore
