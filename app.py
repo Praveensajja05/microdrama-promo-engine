@@ -109,6 +109,16 @@ with st.sidebar:
             st.session_state["result"] = json.loads(latest_json.read_text(encoding="utf-8"))
             st.success("Loaded outputs/promos_raw.json")
 
+if not api_key:
+    st.info(
+        "**No API key is set on this public demo (to keep it private).** "
+        "To see a full 50-episode run, click **View saved results** below. "
+        "To run the tool yourself, open the sidebar (**»** at top-left), paste an NVIDIA or Gemini API key, "
+        "then upload the screenplay .zip."
+    )
+    if Path("outputs/promos_raw.json").exists() and st.button("View saved results (full 50-episode run)", key="main_load_saved"):
+        st.session_state["result"] = json.loads(Path("outputs/promos_raw.json").read_text(encoding="utf-8"))
+
 uploaded = st.file_uploader(
     "Upload episode scripts (.zip archive or multiple .txt files)",
     type=["zip", "txt"],
