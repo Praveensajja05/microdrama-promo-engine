@@ -1,0 +1,133 @@
+EPISODE NUMBER: Episode 1
+EPISODE LOGLINE: Mia, a quiet executive assistant, is humiliated and fired in front of the whole board by her boss and her ex-fiance, not knowing she is the secret granddaughter of the company's founder.
+CONTINUITY NOTES: First episode. Establishes Mia's humiliation by Victor and Chloe.
+
+--- SCRIPT START ---
+
+SCENE 01
+Scene heading: INT. HARTLEY TOWER - BOARDROOM - DAY
+Scene start: 00:00.00
+Scene end: 00:37.00
+
+Actions and dialogue:
+
+**SOUND FX:**
+Start: (00:00.00) | End: (00:01.20)
+Sharp splash of hot coffee hitting skin, a collective gasp around the table.
+
+**CAMERA:**
+Start: (00:00.00) | End: (00:02.50)
+Close-up as a full cup of coffee hits Mia's face, liquid streaming down her cheeks and blouse.
+
+**CHLOE (Venomous, Smiling):**
+Start: (00:01.30) | End: (00:03.40)
+"Oops. Assistants should learn to hold the cup properly."
+
+**ACTION:**
+Start: (00:02.50) | End: (00:06.00)
+Mia stands frozen at the head of the glass table, coffee dripping onto the quarterly reports she printed.
+
+**CAMERA:**
+Start: (00:06.00) | End: (00:09.00)
+Wide shot of twelve board members in dark suits, some smirking, some looking away.
+
+**VICTOR (Cold, Bored):**
+Start: (00:06.50) | End: (00:09.80)
+"Clean yourself up, Mia. Actually, don't bother. You're fired."
+
+**MIA (Stunned, Quiet):**
+Start: (00:10.20) | End: (00:12.00)
+"Fired? I built this presentation."
+
+**CAMERA:**
+Start: (00:12.00) | End: (00:15.00)
+Over-the-shoulder on Victor sliding a thin envelope across the table toward her.
+
+**VICTOR (Dismissive):**
+Start: (00:12.50) | End: (00:16.00)
+"And Chloe is presenting it. She has the right last name for this room."
+
+**ACTION:**
+Start: (00:16.00) | End: (00:19.50)
+Chloe loops her arm through Victor's and flashes a large diamond engagement ring at Mia.
+
+**CHLOE (Gloating):**
+Start: (00:17.00) | End: (00:20.50)
+"Victor proposed last night. The ring you wanted? It looks better on me."
+
+**CAMERA:**
+Start: (00:20.50) | End: (00:23.50)
+Tight close-up of Mia's eyes filling with tears as she recognises the ring.
+
+**MIA (Breaking):**
+Start: (00:21.00) | End: (00:24.00)
+"That was your grandmother's ring, Victor. You promised it to me."
+
+**VICTOR (Laughing):**
+Start: (00:24.50) | End: (00:27.50)
+"I promised a lot of things to a girl who fetches coffee."
+
+**SOUND FX:**
+Start: (00:27.50) | End: (00:29.00)
+Scattered laughter from the board members.
+
+**ACTION:**
+Start: (00:29.00) | End: (00:33.00)
+Two security guards step in and grip Mia's arms, steering her toward the glass doors.
+
+**CAMERA:**
+Start: (00:33.00) | End: (00:37.00)
+Tracking shot following Mia down the corridor as staff film her on their phones.
+
+SCENE 02
+Scene heading: INT. HARTLEY TOWER - LOBBY - CONTINUOUS
+Scene start: 00:37.00
+Scene end: 01:10.00
+
+Actions and dialogue:
+
+**ACTION:**
+Start: (00:37.00) | End: (00:41.00)
+Mia is pushed out through the revolving door; her box of belongings spills across the marble floor.
+
+**CAMERA:**
+Start: (00:41.00) | End: (00:44.00)
+Low angle on Mia kneeling among scattered pens and a framed photo of an old man.
+
+**ACTION:**
+Start: (00:44.00) | End: (00:48.00)
+She picks up the photo. The old man in it is the founder whose portrait hangs above the lobby desk.
+
+**CAMERA:**
+Start: (00:48.00) | End: (00:51.00)
+Slow push from the giant founder portrait down to the small photo in Mia's trembling hands.
+
+**ACTION:**
+Start: (00:51.00) | End: (00:55.00)
+Mia wipes the coffee from her face, her expression hardening. She takes out an old flip phone.
+
+**MIA (Steady, Cold):**
+Start: (00:55.50) | End: (00:59.00)
+"Grandfather. You asked if I was ready to come home."
+
+**OLD MAN (V.O.) (Warm, Surprised):**
+Start: (00:59.50) | End: (01:02.00)
+"After six years? What changed, child?"
+
+**CAMERA:**
+Start: (01:02.00) | End: (01:05.00)
+Close-up of Mia looking up at the tower's top floor, eyes burning.
+
+**MIA (Deadly Calm):**
+Start: (01:02.50) | End: (01:06.50)
+"Someone just showed me what this company has become."
+
+**SOUND FX:**
+Start: (01:06.50) | End: (01:08.50)
+Deep cinematic bass hit rising to a cliffhanger sting.
+
+**CAMERA:**
+Start: (01:08.50) | End: (01:10.00)
+Cut to black.
+
+--- SCRIPT END ---

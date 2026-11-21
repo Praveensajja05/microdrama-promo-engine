@@ -29,6 +29,7 @@ def build_csv_bytes(result: dict) -> bytes:
         "Segments (Episode & Timestamps)", "Burned-In 0-3s Overlay",
         "Hook (0-3s)", "Cliffhanger", "Why It Works", "Ranking Reason",
         "Critic Scores (H/C/Cl)", "Critic Total (/15)",
+        "Overlay Basis (who does what to whom)", "Auto Review Flags",
     ])
     for p in result.get("ranked_promos", []):
         segs_str = " + ".join(
@@ -42,6 +43,7 @@ def build_csv_bytes(result: dict) -> bytes:
             p.get("total_duration_sec", ""), segs_str, p.get("overlay_hook", ""),
             p.get("hook_0_3s", ""), p.get("cliffhanger", ""), p.get("why_it_works", ""),
             p.get("ranking_reason", ""), c_score, p.get("critic_total", "-"),
+            p.get("overlay_who_does_what_to_whom", ""), " | ".join(p.get("review_flags", [])),
         ])
     return buf.getvalue().encode("utf-8")
 
@@ -81,13 +83,29 @@ with st.sidebar:
     )
 
     st.divider()
+    st.header("3. Independent Critic (Optional)")
+    st.caption("Use a DIFFERENT model to score clips, so the scout model isn't grading its own picks.")
+    critic_choice = st.selectbox("Critic provider", ["same as primary"] + list(PROVIDER_PRESETS.keys()), index=0)
+    critic_key = ""
+    critic_model = ""
+    if critic_choice != "same as primary":
+        c_preset = PROVIDER_PRESETS[critic_choice]
+        critic_key = st.text_input(
+            f"Critic {critic_choice.upper()} API Key",
+            value=os.getenv(c_preset["env_key"], ""),
+            type="password",
+            key=f"critic_key_{critic_choice}",
+        )
+        critic_model = st.text_input("Critic model", value=c_preset["strong_model"], key=f"critic_model_{critic_choice}")
+
+    st.divider()
     batch_size = st.slider("Episodes per Scout batch", 2, 10, 5)
     use_cache = st.checkbox("Use disk cache (resume on re-run)", value=True)
 
     latest_json = Path("outputs/promos_raw.json")
     if latest_json.exists():
         st.divider()
-        if st.button("Load Latest Saved Run (outputs/)", use_container_width=True):
+        if st.button("Load Latest Saved Run (outputs/)", width="stretch"):
             st.session_state["result"] = json.loads(latest_json.read_text(encoding="utf-8"))
             st.success("Loaded outputs/promos_raw.json")
 
@@ -114,7 +132,7 @@ if uploaded:
                 }
                 for e in episodes
             ]),
-            use_container_width=True,
+            width="stretch",
             hide_index=True,
         )
 
@@ -138,11 +156,21 @@ if uploaded:
                 strong_model=strong_model,
                 backups=backups,
             )
+            critic_llm = None
+            if critic_choice != "same as primary" and critic_key:
+                critic_llm = SwappableLLMClient(
+                    provider=critic_choice,
+                    api_key=critic_key,
+                    model=critic_model,
+                    strong_model=critic_model,
+                    backups=[],
+                )
             pipe = PromoPipeline(
                 episodes=episodes,
                 llm=llm,
                 strong_model=strong_model,
                 batch_size=batch_size,
+                critic_llm=critic_llm,
             )
             res = pipe.run(
                 progress_cb=lambda msg, frac: (status.write(msg), prog.progress(frac)),
@@ -167,6 +195,17 @@ if "result" in st.session_state:
     )
     c4.metric("API Calls", m.get("llm_calls", 0))
     c5.metric("Total Tokens", f"{m.get('prompt_tokens', 0) + m.get('completion_tokens', 0):,}")
+    if m.get("llm_calls", 0) == 0 and "cache_hits" not in m:
+        st.caption("This saved run was produced from cached results, so its API-call/token counts read 0. "
+                   "Run with the disk cache off (or `--no-cache` in the CLI) to measure real usage.")
+    if m.get("cache_hits"):
+        fr = m.get("fresh_run_usage")
+        st.caption(
+            f"This run reused {m['cache_hits']} cached LLM results, so the numbers above are only what it spent now."
+            + (f" The original fresh run used {fr['llm_calls']} calls / {fr['prompt_tokens'] + fr['completion_tokens']:,} tokens." if fr else "")
+        )
+    if "promos_flagged_for_review" in m:
+        st.info(f"Auto review flags: {m['promos_flagged_for_review']} of {m.get('final_ranked_count', 0)} promos need a human look.")
 
     if m.get("failover_events"):
         st.warning("Automatic failover triggered during run:\n- " + "\n- ".join(m["failover_events"]))
@@ -177,7 +216,7 @@ if "result" in st.session_state:
         data=build_csv_bytes(res),
         file_name="ranked_promos.csv",
         mime="text/csv",
-        use_container_width=True,
+        width="stretch",
     )
     md_path = Path("outputs/promo_report.md")
     if md_path.exists():
@@ -186,14 +225,14 @@ if "result" in st.session_state:
             data=md_path.read_text(encoding="utf-8"),
             file_name="promo_report.md",
             mime="text/markdown",
-            use_container_width=True,
+            width="stretch",
         )
     dl3.download_button(
         "Download promos_raw.json",
         data=json.dumps(res, indent=2),
         file_name="promos_raw.json",
         mime="application/json",
-        use_container_width=True,
+        width="stretch",
     )
 
     tab1, tab2, tab3 = st.tabs(["Ranked Promos", "Quality Audit (Rejected)", "Raw JSON"])
@@ -211,8 +250,12 @@ if "result" in st.session_state:
             )
             with st.expander(header, expanded=(p["rank"] <= 5)):
                 st.markdown(f"**Segments:** {segs}")
+                for flag in p.get("review_flags", []):
+                    st.warning(f"Needs review: {flag}")
                 if p.get("overlay_hook"):
                     st.markdown(f"**Suggested 0-3s Text Overlay:** `\"{p['overlay_hook']}\"`")
+                if p.get("overlay_who_does_what_to_whom"):
+                    st.caption(f"Overlay basis: {p['overlay_who_does_what_to_whom']}")
                 st.markdown(f"**Verified 0-3s Hook:** {p['hook_0_3s']}")
                 st.markdown(f"**Verified Cliffhanger:** {p['cliffhanger']}")
                 st.markdown(f"**Why it works:** {p['why_it_works']}")
@@ -247,7 +290,7 @@ if "result" in st.session_state:
                 "Segments": ", ".join(r.get("segments_preview", [])) if r.get("segments_preview") else "-",
                 "Reason": r.get("reason", ""),
             })
-        st.dataframe(pd.DataFrame(audit_rows), use_container_width=True, hide_index=True)
+        st.dataframe(pd.DataFrame(audit_rows), width="stretch", hide_index=True)
 
     with tab3:
         st.json(res, expanded=False)

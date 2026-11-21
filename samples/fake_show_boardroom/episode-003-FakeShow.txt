@@ -1,0 +1,109 @@
+EPISODE NUMBER: Episode 3
+EPISODE LOGLINE: Mia's grandfather collapses during the board vote, and a nurse discovers his heart medication was switched.
+CONTINUITY NOTES: Follows Episode 2. Board vote to confirm Mia as heir.
+
+--- SCRIPT START ---
+
+SCENE 01
+Scene heading: INT. HARTLEY TOWER - BOARDROOM - DAY
+Scene start: 00:00.00
+Scene end: 00:15.50
+
+Actions and dialogue:
+
+**ACTION:**
+Start: (00:00.00) | End: (00:02.50)
+The founder clutches his chest and crashes onto the glass table, scattering ballots.
+
+**MIA (Screaming):**
+Start: (00:00.80) | End: (00:02.80)
+"Grandfather!"
+
+**CAMERA:**
+Start: (00:02.80) | End: (00:06.00)
+High angle as board members leap up; Mia drops to her knees beside him.
+
+**ACTION:**
+Start: (00:06.00) | End: (00:10.00)
+Victor quietly slips a small orange pill bottle into his jacket pocket.
+
+**CAMERA:**
+Start: (00:10.00) | End: (00:12.50)
+Insert on Victor's pocket, the bottle's label half visible.
+
+**CHLOE (Fake Concern):**
+Start: (00:12.50) | End: (00:15.50)
+"The stress was too much for him. Poor man."
+
+SCENE 02
+Scene heading: INT. CITY HOSPITAL - CORRIDOR - DAY
+Scene start: 00:15.50
+Scene end: 01:03.50
+
+Actions and dialogue:
+
+**CAMERA:**
+Start: (00:15.50) | End: (00:19.00)
+Tracking shot as Mia runs beside the stretcher through swinging doors.
+
+**DOCTOR (Urgent):**
+Start: (00:19.00) | End: (00:22.00)
+"His heart rate is crashing. What medication is he on?"
+
+**MIA (Frantic):**
+Start: (00:22.20) | End: (00:25.00)
+"Digoxin. The same pills for ten years."
+
+**ACTION:**
+Start: (00:25.00) | End: (00:28.50)
+A young nurse runs up holding the founder's pill organiser and a printed lab sheet.
+
+**NURSE (Shaken):**
+Start: (00:28.50) | End: (00:32.00)
+"Doctor, these aren't his pills. Someone replaced them."
+
+**CAMERA:**
+Start: (00:32.00) | End: (00:35.00)
+Close-up on Mia's face turning from fear to fury.
+
+**MIA (Low, Dangerous):**
+Start: (00:35.20) | End: (00:38.50)
+"Who had access to his office this morning?"
+
+**NURSE (Hesitant):**
+Start: (00:39.00) | End: (00:42.50)
+"Security logs show only one visitor. A Mr. Victor Lane."
+
+**SOUND FX:**
+Start: (00:42.50) | End: (00:44.00)
+Heart monitor flatlines with a long piercing tone.
+
+**CAMERA:**
+Start: (00:44.00) | End: (00:47.00)
+Mia spins toward the operating room window as the doctors start compressions.
+
+**DOCTOR (Shouting, O.S.):**
+Start: (00:47.00) | End: (00:49.50)
+"Charging. Clear!"
+
+**ACTION:**
+Start: (00:49.50) | End: (00:53.50)
+Mia presses her hand to the glass, her other hand dialing a number on her phone.
+
+**MIA (Into Phone, Ice Cold):**
+Start: (00:54.00) | End: (00:58.00)
+"Lock down the tower. Nobody leaves. Especially Victor."
+
+**SOUND FX:**
+Start: (00:58.00) | End: (01:00.00)
+The flatline tone stops abruptly. Silence.
+
+**CAMERA:**
+Start: (01:00.00) | End: (01:02.50)
+Extreme close-up of the heart monitor screen, the line still flat, waiting.
+
+**CAMERA:**
+Start: (01:02.50) | End: (01:03.50)
+Cut to black.
+
+--- SCRIPT END ---

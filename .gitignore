@@ -7,3 +7,7 @@ __pycache__/
 data/
 .DS_Store
 Thumbs.db
+
+# Manual-check sheets quote screenplay lines (confidential input pack)
+eval/*.csv
+outputs_fake_show/

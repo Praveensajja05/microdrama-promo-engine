@@ -4,10 +4,12 @@ import json
 from pathlib import Path
 from typing import Any, Callable, Dict, List, Optional, Tuple
 
+from grounding import audit_promo, character_words, place_and_people_words
 from llm_client import SwappableLLMClient
 from parser import Episode, format_timestamp
 from prompts import (
     CRITIC_SYSTEM_PROMPT,
+    OVERLAY_SYSTEM_PROMPT,
     RANKER_SYSTEM_PROMPT,
     SCOUT_SYSTEM_PROMPT,
     STITCHER_SYSTEM_PROMPT,
@@ -31,10 +33,18 @@ class PromoPipeline:
         strong_model: Optional[str] = None,
         batch_size: int = 5,
         cache_dir: str = ".cache",
+        critic_llm: Optional[SwappableLLMClient] = None,
     ):
         self.episodes = episodes
         self.llm = llm
         self.strong_model = strong_model or llm.model
+        # Optional independent judge: a DIFFERENT model/provider scores the clips, so the
+        # scout model is not grading its own picks. Falls back to the primary client.
+        self.critic_llm = critic_llm
+        self.critic_model = critic_llm.strong_model if critic_llm else self.strong_model
+        self.cache_hits = 0
+        self.specific_words = place_and_people_words(episodes)
+        self.character_names = character_words(episodes)
         self.batch_size = batch_size
         self.ep_map: Dict[int, Episode] = {ep.episode_num: ep for ep in episodes}
         self.beat_index: Dict[str, Tuple[int, int]] = {}
@@ -49,13 +59,30 @@ class PromoPipeline:
                 + CRITIC_SYSTEM_PROMPT
                 + STITCHER_SYSTEM_PROMPT
                 + RANKER_SYSTEM_PROMPT
+                + OVERLAY_SYSTEM_PROMPT
             ).encode()
         ).hexdigest()[:6]
         fingerprint = hashlib.md5(
-            f"v4:{llm.provider}:{llm.model}:{self.strong_model}:{len(episodes)}:{sum(len(e.beats) for e in episodes)}:{prompt_hash}".encode()
+            f"v5:{llm.provider}:{llm.model}:{self.strong_model}:{self.critic_model}:{len(episodes)}:{sum(len(e.beats) for e in episodes)}:{prompt_hash}".encode()
         ).hexdigest()[:10]
         self.cache_path = Path(cache_dir) / f"run_{fingerprint}"
         self.cache_path.mkdir(parents=True, exist_ok=True)
+
+    # ---------- Cache Helpers ----------
+    def _cache_load(self, cache_file: Path, use_cache: bool) -> Optional[Any]:
+        """Returns cached JSON (and counts the hit) or None."""
+        if use_cache and cache_file.exists():
+            self.cache_hits += 1
+            return json.loads(cache_file.read_text(encoding="utf-8"))
+        return None
+
+    def _usage(self) -> Dict[str, int]:
+        clients = [self.llm] + ([self.critic_llm] if self.critic_llm else [])
+        return {
+            "llm_calls": sum(c.total_calls for c in clients),
+            "prompt_tokens": sum(c.total_prompt_tokens for c in clients),
+            "completion_tokens": sum(c.total_completion_tokens for c in clients),
+        }
 
     # ---------- Deterministic Helpers ----------
     def _resolve_segment(
@@ -349,9 +376,8 @@ class PromoPipeline:
             c_idx = (start // chunk_size) + 1
             cache_file = self.cache_path / f"{cache_prefix}_{c_idx:02d}.json"
 
-            if use_cache and cache_file.exists():
-                cres = json.loads(cache_file.read_text(encoding="utf-8"))
-            else:
+            cres = self._cache_load(cache_file, use_cache)
+            if cres is None:
                 isolated = []
                 for c in chunk:
                     clip_text = "\n--- SCENE CUT ---\n".join(s["transcript"] for s in c["segments"])
@@ -359,10 +385,11 @@ class PromoPipeline:
                         f"=== CANDIDATE {c['candidate_id']} | Format: {c.get('promo_format', 'Continuous')} "
                         f"(Total Duration: {c['total_duration_sec']}s) ===\n{clip_text}"
                     )
-                cres = self.llm.call_json(
+                judge = self.critic_llm or self.llm
+                cres = judge.call_json(
                     CRITIC_SYSTEM_PROMPT,
                     "Review these isolated cold-scroll clips with ZERO external context:\n\n" + "\n\n".join(isolated),
-                    model_override=self.strong_model,
+                    model_override=self.critic_model,
                 )
                 cache_file.write_text(json.dumps(cres, indent=2), encoding="utf-8")
 
@@ -389,9 +416,8 @@ class PromoPipeline:
             report(f"Stage 1/5 — Scouting {ep_range} (batch {b_idx}/{len(batches)})...", 0.05 + 0.35 * (b_idx / len(batches)))
 
             cache_file = self.cache_path / f"scout_batch_{b_idx:02d}.json"
-            if use_cache and cache_file.exists():
-                res = json.loads(cache_file.read_text(encoding="utf-8"))
-            else:
+            res = self._cache_load(cache_file, use_cache)
+            if res is None:
                 script_blob = "\n\n".join(ep.to_prompt_text() for ep in batch)
                 user_prompt = (
                     f"STORY SO FAR:\n{rolling_summary}\n\n"
@@ -436,9 +462,8 @@ class PromoPipeline:
                 t_idx = (t_start // trim_chunk_size) + 1
                 cache_file = self.cache_path / f"trimmer_chunk_{t_idx:02d}.json"
 
-                if use_cache and cache_file.exists():
-                    tres = json.loads(cache_file.read_text(encoding="utf-8"))
-                else:
+                tres = self._cache_load(cache_file, use_cache)
+                if tres is None:
                     blocks = []
                     for item in chunk:
                         seg = item["segment"]
@@ -585,9 +610,8 @@ class PromoPipeline:
         if len(verified_atoms) >= 2:
             report(f"Stage 4/5 — Crafting flash-forward cross-episode stitches from {len(verified_atoms)} fresh atoms...", 0.82)
             stitcher_cache = self.cache_path / "stitcher_stage4a.json"
-            if use_cache and stitcher_cache.exists():
-                st_res = json.loads(stitcher_cache.read_text(encoding="utf-8"))
-            else:
+            st_res = self._cache_load(stitcher_cache, use_cache)
+            if st_res is None:
                 avoid_windows = [
                     f"Ep {s['episode']} ({s['start_ts']}-{s['end_ts']})"
                     for s in approved_segs
@@ -667,9 +691,8 @@ class PromoPipeline:
         # STAGE 4B: Dedicated Global Ranker (Title-Anchored, Zero Cross-Wiring)
         report(f"Stage 5/5 — Globally ranking {len(pool)} verified promos & generating overlay hooks...", 0.92)
         ranker_cache = self.cache_path / "ranker_stage4b.json"
-        if use_cache and ranker_cache.exists():
-            rres = json.loads(ranker_cache.read_text(encoding="utf-8"))
-        else:
+        rres = self._cache_load(ranker_cache, use_cache)
+        if rres is None:
             compact_pool = [
                 {
                     "id": c["candidate_id"],
@@ -719,7 +742,6 @@ class PromoPipeline:
                     tier = "Wave 2 (Scale/Retarget)"
                 item["rank"] = len(final_ranked) + 1
                 item["posting_tier"] = tier
-                item["overlay_hook"] = str(entry.get("overlay_hook", "")).strip()
                 reason = str(entry.get("ranking_reason", "")).strip()
                 item["ranking_reason"] = reason if reason else item["why_it_works"]
                 final_ranked.append(item)
@@ -734,8 +756,48 @@ class PromoPipeline:
                 copy_item["ranking_reason"] = copy_item["why_it_works"]
                 final_ranked.append(copy_item)
 
+        # STAGE 4C: Per-promo overlay writer. v4 wrote all overlays in ONE ranker call and
+        # cross-wired them (#12 got another promo's "cathedral" text). Now each overlay is
+        # written from its OWN clip only.
+        report(f"Stage 5/5 — Writing overlays one promo at a time ({len(final_ranked)} promos)...", 0.95)
+        for item in final_ranked:
+            if item.get("posting_tier") == "Backlog":
+                continue
+            ov_cache = self.cache_path / f"overlay_{item['candidate_id']}.json"
+            ores = self._cache_load(ov_cache, use_cache)
+            if ores is None:
+                clip_text = "\n--- SCENE CUT ---\n".join(s["transcript"] for s in item["segments"])
+                try:
+                    ores = self.llm.call_json(
+                        OVERLAY_SYSTEM_PROMPT,
+                        f"CLIP {item['candidate_id']} ({item['total_duration_sec']}s):\n{clip_text}",
+                        model_override=self.strong_model,
+                    )
+                except RuntimeError as e:
+                    ores = {"overlay_hook": "", "who_does_what_to_whom": f"OVERLAY_FAILED: {str(e)[:120]}"}
+                ov_cache.write_text(json.dumps(ores, indent=2), encoding="utf-8")
+            item["overlay_hook"] = str(ores.get("overlay_hook", "")).strip()
+            item["overlay_who_does_what_to_whom"] = str(ores.get("who_does_what_to_whom", "")).strip()
+
+        # Deterministic grounding audit: flags for a human, never auto-deletes.
+        for item in final_ranked:
+            item["review_flags"] = audit_promo(item, self.specific_words, self.character_names, self.ep_map)
+        flagged_count = sum(1 for p in final_ranked if p["review_flags"])
+
         intra_count = sum(1 for p in final_ranked if p.get("promo_format") == "Intra-Episode Cut")
         cross_count = sum(1 for p in final_ranked if p.get("promo_format") == "Cross-Episode Stitched")
+
+        # Honest usage numbers: a fully fresh run saves its own usage; a run that reused cache
+        # reports what it spent now AND what the original fresh run cost.
+        usage = self._usage()
+        metrics_file = self.cache_path / "fresh_run_usage.json"
+        if self.cache_hits == 0:
+            metrics_file.write_text(json.dumps(usage, indent=2), encoding="utf-8")
+        original_usage = (
+            json.loads(metrics_file.read_text(encoding="utf-8"))
+            if self.cache_hits > 0 and metrics_file.exists()
+            else None
+        )
 
         report("Done!", 1.0)
         return {
@@ -745,9 +807,12 @@ class PromoPipeline:
                 "provider": self.llm.provider,
                 "scout_model": self.llm.model,
                 "critic_ranker_model": self.strong_model,
-                "llm_calls": self.llm.total_calls,
-                "prompt_tokens": self.llm.total_prompt_tokens,
-                "completion_tokens": self.llm.total_completion_tokens,
+                "critic_provider": (self.critic_llm.provider if self.critic_llm else self.llm.provider),
+                "critic_model": self.critic_model,
+                **usage,
+                "cache_hits": self.cache_hits,
+                "fresh_run_usage": original_usage,
+                "promos_flagged_for_review": flagged_count,
                 "raw_candidates_found": len(all_raw_candidates),
                 "oversized_sent_to_trimmer": len(oversized_queue),
                 "recovered_by_trimmer": recovered_count,
@@ -775,7 +840,8 @@ def export_outputs(result: Dict[str, Any], out_dir: str = "outputs") -> Path:
             "Rank", "ID", "Tier", "Title", "Format", "Total_Sec",
             "Segments (Episode & Timestamps)", "Burned-In 0-3s Overlay",
             "Hook (0-3s)", "Cliffhanger", "Why It Works", "Ranking Reason",
-            "Critic Scores (H/C/Cl)", "Critic Total (/15)"
+            "Critic Scores (H/C/Cl)", "Critic Total (/15)",
+            "Overlay Basis (who does what to whom)", "Auto Review Flags",
         ])
         for p in result["ranked_promos"]:
             segs_str = " + ".join(f"Ep {s['episode']} [{s['start_ts']} - {s['end_ts']}]" for s in p["segments"])
@@ -786,15 +852,27 @@ def export_outputs(result: Dict[str, Any], out_dir: str = "outputs") -> Path:
                 p["rank"], p["candidate_id"], p.get("posting_tier", ""), p["title"],
                 fmt, p["total_duration_sec"], segs_str, p.get("overlay_hook", ""),
                 p["hook_0_3s"], p["cliffhanger"], p["why_it_works"],
-                p.get("ranking_reason", ""), c_score, p.get("critic_total", "-")
+                p.get("ranking_reason", ""), c_score, p.get("critic_total", "-"),
+                p.get("overlay_who_does_what_to_whom", ""), " | ".join(p.get("review_flags", [])),
             ])
 
     m = result["meta"]
+    usage_line = f"- **API calls:** {m['llm_calls']} | **Tokens:** {m['prompt_tokens']:,} in / {m['completion_tokens']:,} out"
+    if m.get("cache_hits"):
+        fr = m.get("fresh_run_usage")
+        usage_line += f" *(this run reused {m['cache_hits']} cached LLM results"
+        usage_line += (
+            f"; the original fresh run used {fr['llm_calls']} calls / "
+            f"{fr['prompt_tokens'] + fr['completion_tokens']:,} tokens)*"
+            if fr else "; fresh-run usage not recorded — rerun with --no-cache to measure)*"
+        )
+    critic_desc = f"{m.get('critic_provider', m['provider'])} / {m.get('critic_model', m['critic_ranker_model'])}"
     md = [
-        "# Ranked Promo Report (v4)\n",
+        "# Ranked Promo Report (v5)\n",
         f"- **Episodes processed:** {m['episodes_processed']} ({m['total_beats_parsed']:,} beats)",
-        f"- **Model:** `{m['provider']} / {m['scout_model']}` (Critic/Ranker: `{m['critic_ranker_model']}`)",
-        f"- **API calls:** {m['llm_calls']} | **Tokens:** {m['prompt_tokens']:,} in / {m['completion_tokens']:,} out",
+        f"- **Scout model:** `{m['provider']} / {m['scout_model']}` | **Critic:** `{critic_desc}` | **Ranker & overlays:** `{m['critic_ranker_model']}`",
+        usage_line,
+        f"- **Auto review flags:** {m.get('promos_flagged_for_review', 0)} of {m['final_ranked_count']} promos need a human look (wrong place/person in text, or hook/cliffhanger text that doesn't match the actual first/last 3 seconds)",
         f"- **Funnel:** {m['raw_candidates_found']} scouted -> {m['oversized_sent_to_trimmer']} sent to Smart Trimmer ({m['recovered_by_trimmer']} recovered) -> **{m['final_ranked_count']} Approved & Ranked** ({m.get('intra_episode_cuts_approved', 0)} Intra-Episode Cuts, {m.get('cross_episode_stitched_approved', 0)} Cross-Episode Stitched) | **{m['rejected_count']} Rejected in Audit**\n",
         "---\n## Ranked Promos\n",
     ]
@@ -813,11 +891,15 @@ def export_outputs(result: Dict[str, Any], out_dir: str = "outputs") -> Path:
         first_proof = " / ".join(p["segments"][0].get("opening_3s", [])[:2])
         last_proof = " / ".join(p["segments"][-1].get("closing_3s", [])[-2:])
         overlay_line = f"- **Suggested 0-3s Text Overlay:** \"{p['overlay_hook']}\"\n" if p.get("overlay_hook") else ""
+        if p.get("overlay_who_does_what_to_whom"):
+            overlay_line += f"  - *Overlay basis:* {p['overlay_who_does_what_to_whom']}\n"
+        flags_line = "".join(f"- **NEEDS REVIEW:** {f}\n" for f in p.get("review_flags", []))
         trim_note_line = f"- **Compression Note:** {p['trim_note']}\n" if p.get("trim_note") else ""
         md.append(
             f"### #{p['rank']} [{p['posting_tier']}] {p['title']} ({p['total_duration_sec']}s){trim_tag}\n"
             f"- **ID:** `{p['candidate_id']}` | **Format:** {fmt} | **Trope:** {p['trope']}\n"
             f"- **Cold-Scroll Critic:** {c_tag}\n"
+            f"{flags_line}"
             f"- **Segments:**\n{seg_lines}\n"
             f"{overlay_line}"
             f"{trim_note_line}"

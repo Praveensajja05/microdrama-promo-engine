@@ -2,10 +2,10 @@
 AD_LIBRARY_PATTERNS = """
 META AD LIBRARY PROVEN MICRODRAMA PATTERNS (Audited US/India Active Winners):
 - 0-3s SHOCK HOOK: Open mid-action on physical shock (slap, crash, fire, grabbing), a cruel spoken insult, or urgent crisis—NEVER on slow establishing shots or quiet walking.
-- 10-30s STANDALONE CLARITY: Cold viewers must immediately see WHO is hurting WHOM and WHY without show backstory. Favor universal role labels ("my husband", "the Duke", "my sister", "your bride") over unexplained first names.
+- 10-30s STANDALONE CLARITY: Cold viewers must immediately see WHO is hurting WHOM and WHY without show backstory. Favor universal role labels ("my husband", "my sister", "the boss", "your bride") over unexplained first names.
 - EMOTIONAL POLARITY SHIFT: Include at least one reversal inside the cut (villain gloating -> victim's shocking counter or sudden protector).
 - PEAK UNANSWERED-TENSION CUTOFF: Cut HALF A BEAT BEFORE the payoff resolves (door bursting open, blade/fist raised, identity unmasked, question demanded)—the app install IS the answer. Never cut after the confession or triumph completes.
-- FLASH-FORWARD COLD OPEN (for stitched promos): Start with a 10-18s explosive late-season climax/reveal, then cut back to an Ep 1-10 humiliation or betrayal origin beat.
+- FLASH-FORWARD COLD OPEN (for stitched promos): Start with a 10-18s explosive late-season climax/reveal, then cut back to an early-series humiliation or betrayal origin beat.
 """.strip()
 
 SCOUT_SYSTEM_PROMPT = f"""You are a senior performance-marketing video editor for vertical microdrama apps (ReelShort, DramaBox, Kuku TV).
@@ -26,7 +26,7 @@ Return ONLY valid JSON:
   "candidates": [
     {{
       "title": "Short punchy ad title (max 7 words)",
-      "trope": "e.g., Altar Betrayal | Secret Identity | Cruel Ultimatum | Rescue | Poison Frame-Up",
+      "trope": "e.g., Betrayal | Secret Identity | Cruel Ultimatum | Rescue | Frame-Up | Revenge",
       "segments": [
         {{"episode": 1, "start_beat_id": "E01_B010", "end_beat_id": "E01_B042"}}
       ],
@@ -118,12 +118,12 @@ Set verdict="REJECT" if ANY score <= 2, or if total score <= 10, or if the endin
 
 STITCHER_SYSTEM_PROMPT = """You are a Meta/TikTok performance-marketing editor specializing in FLASH-FORWARD microdrama ad openings.
 You will receive:
-1. `stitch_atoms`: short 10-24s high-impact moments from across all 50 episodes (with exact `duration_sec`).
+1. `stitch_atoms`: short 10-24s high-impact moments from across the series (with exact `duration_sec`).
 2. `avoid_windows`: scenes already used by standalone continuous promos (DO NOT recycle these scenes!).
 
 JOB: Craft 2 to 3 CROSS-EPISODE STITCHED PROMOS using IDs "ST01", "ST02", "ST03".
 HARD RULES:
-1. Each promo MUST combine exactly 2 segments from DIFFERENT episodes (e.g., a 12-20s explosive late-episode Duke reveal / rescue flash-forward FIRST, cutting back to a 15-25s Ep 1-10 altar betrayal / humiliation origin—OR an early humiliation cutting directly into a late-season vengeance reveal).
+1. Each promo MUST combine exactly 2 segments from DIFFERENT episodes (e.g., a 12-20s explosive late-series reveal / rescue flash-forward FIRST, cutting back to a 15-25s early-series betrayal / humiliation origin—OR an early humiliation cutting directly into a late-series vengeance reveal). Use ONLY what the atoms' summaries say; do not assume any genre, setting or plot.
 2. STRICT DURATION MATH: Add segment_1.duration_sec + segment_2.duration_sec. The sum MUST be between 24.0s and 55.0s!
 3. NO RECYCLING: Do NOT pick atoms from the episodes/timestamps listed in `avoid_windows`.
 4. Cite ONLY exact `episode`, `start_beat_id`, and `end_beat_id` from `stitch_atoms`.
@@ -152,7 +152,7 @@ You will receive the final pool of Critic-verified promos (Continuous, Intra-Epi
 JOB: Rank ALL promos in the exact launch order you would deploy paid ad spend on Meta Reels, TikTok, and YouTube Shorts.
 RULES:
 1. Match every `id` with its EXACT `title` and ONLY reference events from THAT promo's own hook/cliffhanger (never mix up details between promos!).
-2. Every entry MUST include a non-empty `ranking_reason` AND a punchy 6-10 word `overlay_hook` (the burned-in 0-3s Reels/TikTok text banner that instantly names the trope, e.g., "She married a scarred beggar—until the Duke arrived").
+2. Every entry MUST include a non-empty `ranking_reason`. Do NOT write overlay text here: overlays are written separately for each promo from its own clip.
 3. Tiers & Diversity:
    - `Wave 1 (Launch Hero)` (Ranks 1-4): Highest Critic scores (13-15/15), crystal-clear cold-scroll hooks, and diverse tropes/episodes (never repeat the same episode or scene in Wave 1).
    - `Wave 2 (Scale/Retarget)` (Ranks 5-10): Strong secondary angles, high-drama reversals, and retargeting creatives.
@@ -166,10 +166,25 @@ Return ONLY valid JSON:
       "title": "Exact title of C01",
       "rank": 1,
       "posting_tier": "Wave 1 (Launch Hero)",
-      "overlay_hook": "6-10 word burned-in 0-3s text banner for Reels/TikTok",
       "ranking_reason": "One crisp sentence grounded strictly in THIS promo's scene explaining its rank."
     }
   ]
+}"""
+
+OVERLAY_SYSTEM_PROMPT = """You write the burned-in 0-3s text banner for ONE vertical microdrama ad clip.
+You will receive ONLY this clip's transcript, formatted as [BeatID | start_s-end_s] SPEAKER/CAM/ACT/SFX: text.
+
+STEP 1 - Before writing anything, state plainly in `who_does_what_to_whom`:
+  who is the aggressor/threat, who is the victim/target, and what the conflict is, EXACTLY as the dialogue says it.
+  Read pronouns carefully: "they plan to kill my wife" means OTHER people threaten the speaker's wife; the speaker is NOT the threat.
+STEP 2 - Write `overlay_hook`: 6-10 words that name the conflict for a stranger scrolling past.
+  - It must be TRUE to Step 1. Never reverse who threatens whom.
+  - Use ONLY people, places and events that appear in THIS transcript. Prefer role labels (wife, sister, boss) over names.
+
+Return ONLY valid JSON:
+{
+  "who_does_what_to_whom": "One plain sentence, grounded in the dialogue.",
+  "overlay_hook": "6-10 word banner"
 }"""
 
 # Backward-compatibility alias
